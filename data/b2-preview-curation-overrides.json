@@ -1,0 +1,116 @@
+{
+  "kind": "HEMO_B2_PREVIEW_CURATION_OVERRIDES",
+  "scope": "Preview-only refinements grounded in session/talk headings; not personal choices",
+  "source": "data/b2-indexed-candidates.json",
+  "entries": [
+    {
+      "sessionId": "h26-28-0900-a-revolucao-do-diagnostico-e-da-gestao-vbhc-inteligenc",
+      "rationale": "O título menciona explicitamente VBHC, inteligência artificial e eficiência na linha de cuidado hematológica: conexão direta com gestão por valor e tecnologia. Aplicações concretas e resultados ainda dependem de confirmação da programação detalhada.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-28-0930-parte-i-aabb-e-a-qualidade-conhecendo-a-aabb-e-razoes-",
+      "rationale": "O módulo identificado apresenta a AABB e as razões para acreditação AABB/ABHH, diretamente relacionadas a padrões de qualidade de serviços. Exige verificar inscrição específica e escopo detalhado.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-28-0900-ia-com-proposito-confianca-e-educacao-na-medicina",
+      "rationale": "A subpalestra identificada é 'Gemini Academy: IA na Educação Médica'. Aderência à IA em saúde, mas o foco disponível é educação médica, não automação de gestão ou hemoterapia.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [
+        "h26-28-0900-ia-com-proposito-confianca-e-educacao-na-medicina-talk-0930-gemini-academy-ia-na-educacao-medica"
+      ],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-29-0845-automacao-como-estrategia-para-reducao-de-erros-labora",
+      "rationale": "O título prioriza automação e prevenção de erros laboratoriais. A fala subordinada aborda NAT individual versus pool e impactos em segurança e custos, alinhando qualidade, risco e eficiência.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [
+        "h26-29-0845-automacao-como-estrategia-para-reducao-de-erros-labora-talk-0935-sorologia-nat-individual-x-pool-impact"
+      ],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-29-1400-gestao-da-qualidade-riscos-e-legislacao",
+      "rationale": "As falas identificadas tratam de mudanças, desafios de implantação e visão da ANVISA sobre uma portaria citada no programa; relevantes a regulação, risco e processos. Não se presume interpretação jurídica nem vigência da norma.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [
+        "h26-29-1400-gestao-da-qualidade-riscos-e-legislacao-talk-1400-portaria-gm-ms-n-11-685-2026-principai",
+        "h26-29-1400-gestao-da-qualidade-riscos-e-legislacao-talk-1425-portaria-gm-ms-n-11-685-2026-desafios-",
+        "h26-29-1400-gestao-da-qualidade-riscos-e-legislacao-talk-1450-visao-da-anvisa-quanto-as-alteracoes-d"
+      ],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-29-1545-qualidade-auditoria-e-seguranca-do-paciente",
+      "rationale": "As falas indexadas contemplam auditoria baseada em riscos, retorno econômico do PBM, capacitação e barreiras de segurança transfusional: elevada aderência técnica e gerencial.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [
+        "h26-29-1545-qualidade-auditoria-e-seguranca-do-paciente-talk-1545-chega-de-checklists-burocraticos-imple",
+        "h26-29-1545-qualidade-auditoria-e-seguranca-do-paciente-talk-1605-do-custo-da-transfusao-ao-valor-do-cui",
+        "h26-29-1545-qualidade-auditoria-e-seguranca-do-paciente-talk-1625-capacitacao-e-engajamento-o-fator-huma",
+        "h26-29-1545-qualidade-auditoria-e-seguranca-do-paciente-talk-1645-alem-da-compatibilidade-construindo-se"
+      ],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-29-0845-modulo-1-implementacao-hospitalar-sessao-1-o-desafio-d",
+      "rationale": "O próprio título discute implantação de PBM em hospital real, vinculado a protocolos transfusionais, integração assistencial e mudança de processos; métodos concretos ainda a verificar.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-30-1400-gestao-estrategica-da-captacao-transformando-dados-em-",
+      "rationale": "Três falas identificadas abordam indicadores para corrigir rotas, estoque sustentável e integração entre captação, produção, atendimento e comunicação: convergência com gestão por indicadores e suprimentos.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [
+        "h26-30-1400-gestao-estrategica-da-captacao-transformando-dados-em--talk-1400-o-diagnostico-dos-numeros-compreendend",
+        "h26-30-1400-gestao-estrategica-da-captacao-transformando-dados-em--talk-1425-estoque-como-bussola-da-captacao-plane",
+        "h26-30-1400-gestao-estrategica-da-captacao-transformando-dados-em--talk-1450-integracao-entre-captacao-producao-ate"
+      ],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-30-1545-comunicacao-pbm-e-cultura-do-sangue-construindo-novas-",
+      "rationale": "O título conecta comunicação institucional, PBM e transformação cultural na hemorrede, com potencial de mudança de processos e práticas multiprofissionais; programação detalhada pendente.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-30-0845-doencas-infecciosas-transmissiveis-pela-transfusao",
+      "rationale": "O assunto é diretamente relevante ao risco infeccioso e à segurança transfusional; protocolos e tecnologias específicos não estão descritos nos dados atualmente disponíveis.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-31-0900-hemovigilancia-e-seguranca-transfusional",
+      "rationale": "Entre as falas subordinadas identificadas há atualização sobre hemovigilância e segurança em agências transfusionais com foco explícito em fluxos, processos, ferramentas e tecnologias para redução de risco.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [
+        "h26-31-0900-hemovigilancia-e-seguranca-transfusional-talk-0900-hemovigilancia-onde-estamos-e-para-ond",
+        "h26-31-0900-hemovigilancia-e-seguranca-transfusional-talk-0925-hemovigilancia-atualizacoes-do-marco-c",
+        "h26-31-0900-hemovigilancia-e-seguranca-transfusional-talk-0950-seguranca-transfusional-nas-agencias-t"
+      ],
+      "confidence": "media"
+    },
+    {
+      "sessionId": "h26-31-0900-vamos-discutir-imuno-hematologia",
+      "rationale": "Três falas identificadas tratam de variantes Rh/anticorpos, reações hemolíticas pós-transfusionais e busca de doadores raros: utilidade direta à segurança, compatibilidade e abastecimento hemoterápico.",
+      "evidenceBasis": "session_and_indexed_talk_titles",
+      "talkIds": [
+        "h26-31-0900-vamos-discutir-imuno-hematologia-talk-0900-tema-1-variantes-de-rh-e-seus-anticorp",
+        "h26-31-0900-vamos-discutir-imuno-hematologia-talk-0930-tema-2-reacoes-hemoliticas-pos-transfu",
+        "h26-31-0900-vamos-discutir-imuno-hematologia-talk-1030-tema-4-busca-de-doadores-raros"
+      ],
+      "confidence": "media"
+    }
+  ]
+}
