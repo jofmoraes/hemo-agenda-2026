@@ -21,9 +21,19 @@
       "30": 23,
       "31": 20
     },
-    "knownTalks": 17,
+    "knownTalks": 38,
     "scope": "REGISTROS PARCIAIS EM ÍNDICES DE GRADE/LISTA + AGENDAS INDIVIDUAIS OFICIAIS; NÃO É O UNIVERSO DA PROGRAMAÇÃO. Reconciliar cada sala, modalidade, subpalestra e papel.",
-    "completenessVerified": false
+    "completenessVerified": false,
+    "sources": [
+      "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "https://hemo.org.br/evento/hemo2026/programacao/agenda/*"
+    ],
+    "notes": [
+      "Excertos oficiais não demonstram o universo total.",
+      "Papéis corrigidos somente quando confirmados em grade/lista ou agenda individual.",
+      "Salas não estimadas por ordem de colunas em texto achatado."
+    ]
   },
   "sessions": [
     {
@@ -59,7 +69,7 @@
         "score": 88,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -75,7 +85,8 @@
       "participants": [
         {
           "name": "RENATA RIZZO",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Palestrante",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
@@ -92,10 +103,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 67,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Conexão com terapia celular, acreditação ou operação assistencial."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -172,16 +183,18 @@
       "title": "Imuno-hematologia",
       "type": "educacional",
       "track": "Hemoterapia",
-      "stage": "",
+      "stage": "Sala 201AB",
       "description": "",
       "participants": [
         {
           "name": "CRISTIANE DA SILVA RODRIGUES DE ARAÚJO",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas"
         },
         {
           "name": "ÉDYLA ALMEIDA DE SOUSA MORAES",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
@@ -190,18 +203,18 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "stageSourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13541",
+        "stageSourceCheckedAt": "2026-10-24T20:07:58.974Z"
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -217,8 +230,9 @@
       "participants": [
         {
           "name": "MARCIA GARNICA",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
-          "institution": ""
+          "role": "Moderador(a)",
+          "institution": "",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13317"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13317",
@@ -315,10 +329,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -367,11 +381,13 @@
       "participants": [
         {
           "name": "CARLOS CHIATTONE",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         },
         {
           "name": "YANA NOVIS",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
@@ -400,7 +416,7 @@
       "title": "Achados morfológicos que direcionam condutas clínicas",
       "type": "educacional",
       "track": "Hematologia Laboratorial",
-      "stage": "",
+      "stage": "Sala 202 AB",
       "description": "",
       "participants": [
         {
@@ -418,11 +434,11 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "stageSourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/15831",
+        "stageSourceCheckedAt": "2026-10-24T20:07:58.974Z"
       },
       "recommendation": {
         "targetProfile": "Flora",
@@ -466,10 +482,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -600,7 +616,7 @@
       "title": "Imunohematologia: Desafios na Rotina Imunohematológica do Banco de Sangue",
       "type": "cientifica",
       "track": "Ciências Biomédicas",
-      "stage": "",
+      "stage": "Sala 201C",
       "description": "",
       "participants": [
         {
@@ -614,11 +630,11 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "stageSourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13525",
+        "stageSourceCheckedAt": "2026-10-24T20:07:58.974Z"
       },
       "recommendation": {
         "targetProfile": "Flora",
@@ -641,8 +657,9 @@
       "participants": [
         {
           "name": "CELSO ARRAIS",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
-          "institution": ""
+          "role": "Moderador(a)",
+          "institution": "",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16265"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16265",
@@ -732,7 +749,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       },
       "accessNote": "Inscrição à parte."
     },
@@ -884,7 +901,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       },
       "accessNote": "Inscrição à parte."
     },
@@ -922,7 +939,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -1029,7 +1046,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       },
       "accessNote": "Inscrição à parte."
     },
@@ -1334,7 +1351,7 @@
         "score": 88,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -1367,7 +1384,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -1444,10 +1461,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 35,
-        "level": "baixa",
-        "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -1483,7 +1500,7 @@
         "score": 88,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -1516,7 +1533,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -1593,7 +1610,7 @@
         "score": 88,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -1656,10 +1673,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
-        "level": "baixa",
-        "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -1696,10 +1713,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -1732,7 +1749,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -1884,7 +1901,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -2024,7 +2041,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2040,11 +2057,13 @@
       "participants": [
         {
           "name": "EUGÊNIA MARIA AMORIM UBIALI",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         },
         {
           "name": "KAREN DE LIMA PRATA",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
@@ -2062,7 +2081,7 @@
         "score": 88,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2132,7 +2151,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2160,10 +2179,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2210,11 +2229,13 @@
       "participants": [
         {
           "name": "LUIS FERNANDO BOUZAS",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         },
         {
           "name": "GIULIANA MARTINELLI DOTOLI",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
@@ -2232,7 +2253,7 @@
         "score": 88,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2453,7 +2474,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2490,10 +2511,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2523,10 +2544,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
-        "level": "baixa",
-        "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2619,8 +2640,9 @@
       "participants": [
         {
           "name": "LILIAN MARIA DE CASTILHO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
-          "institution": ""
+          "role": "Palestrante",
+          "institution": "",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13541"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13541",
@@ -2640,7 +2662,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2771,11 +2793,13 @@
       "participants": [
         {
           "name": "PATRICIA CARSTEN",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         },
         {
           "name": "FRANKLIN JOSE CÂNDIDO SANTOS",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
@@ -2793,7 +2817,7 @@
         "score": 88,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2867,7 +2891,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2939,10 +2963,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2953,7 +2977,7 @@
       "title": "Atualização em aférese terapêutica",
       "type": "cientifica",
       "track": "Hemoterapia",
-      "stage": "",
+      "stage": "Sala 202 AB",
       "description": "",
       "participants": [
         {
@@ -2971,18 +2995,18 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "stageSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "stageSourceCheckedAt": "2026-10-24T20:07:58.974Z"
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -2993,7 +3017,7 @@
       "title": "Comunicação, PBM e cultura do sangue: construindo novas narrativas para a hemorrede",
       "type": "cientifica",
       "track": "Captação de Doadores de Sangue",
-      "stage": "",
+      "stage": "Sala 210",
       "description": "",
       "participants": [
         {
@@ -3011,18 +3035,18 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "stageSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "stageSourceCheckedAt": "2026-10-24T20:07:58.974Z"
       },
       "recommendation": {
         "targetProfile": "Flora",
         "score": 88,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -3147,16 +3171,18 @@
       "title": "Suporte hemoterápico ao TMO",
       "type": "cientifica",
       "track": "Hemoterapia",
-      "stage": "",
+      "stage": "Sala 201AB",
       "description": "",
       "participants": [
         {
           "name": "JOAO CARLOS PINA SARAIVA FILHO",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         },
         {
           "name": "LORENA COSTA CORRÊA",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
@@ -3165,18 +3191,18 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "stageSourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13520",
+        "stageSourceCheckedAt": "2026-10-24T20:07:58.974Z"
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -3187,20 +3213,33 @@
       "title": "100 anos da Doença de von Willebrand: evolução diagnóstica na hemostasia",
       "type": "cientifica",
       "track": "Hemostasia & Trombose / Hematologia Laboratorial",
-      "stage": "",
+      "stage": "Auditório Anexo",
       "description": "",
-      "participants": [],
+      "participants": [
+        {
+          "name": "GABRIELA GÓES YAMAGUTI-HAYAKAWA",
+          "institution": "",
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas"
+        },
+        {
+          "name": "JOÃO CARLOS DE CAMPOS GUERRA",
+          "institution": "",
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas"
+        }
+      ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
       "verifiedAt": "2026-10-24T02:03:02.016Z",
       "evidence": {
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "stageSourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13267",
+        "stageSourceCheckedAt": "2026-10-24T20:07:58.974Z"
       },
       "recommendation": {
         "targetProfile": "Flora",
@@ -3361,11 +3400,13 @@
       "participants": [
         {
           "name": "JOSÉ FRANCISCO COMENALLI MARQUES JR.",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas"
         },
         {
           "name": "CÉSAR DE ALMEIDA NETO",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "role": "Moderador(a)",
+          "roleSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas"
         }
       ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
@@ -3385,7 +3426,7 @@
         "score": 88,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -3453,10 +3494,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -3584,14 +3625,16 @@
         "checkedAt": "2026-10-24T02:03:02.016Z",
         "missingFields": [],
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "stageSourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13541",
+        "stageSourceCheckedAt": "2026-10-24T20:07:58.974Z"
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -3702,10 +3745,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -3848,10 +3891,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 82,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     },
     {
@@ -3888,7 +3931,7 @@
         "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
       }
     }
   ],
@@ -4230,6 +4273,447 @@
         "status": "INDEXED_OFFICIAL_LIST",
         "checkedAt": "2026-10-24T02:03:02.016Z",
         "coverage": "PARTIAL"
+      }
+    },
+    {
+      "id": "h26-28-0900-imuno-hematologia-talk-0900-sistema-rh-atualizacoes-e-perspectivas",
+      "parentSessionId": "h26-28-0900-imuno-hematologia",
+      "title": "Sistema Rh: atualizações e perspectivas futuras",
+      "start": "09:00",
+      "end": "09:20",
+      "participants": [
+        {
+          "name": "LILIAN MARIA DE CASTILHO",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13541",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-28-0900-imuno-hematologia-talk-0920-sistema-abo-atualizacoes-e-avancos-em-",
+      "parentSessionId": "h26-28-0900-imuno-hematologia",
+      "title": "Sistema ABO: atualizações e avanços em relação ao sangue universal",
+      "start": "09:20",
+      "end": "09:40",
+      "participants": [
+        {
+          "name": "CARLA LUANA DINARDO",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13520",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-28-1030-imunohematologia-desafios-na-rotina-imunohematologica--talk-1030-ahai-tad-negativa",
+      "parentSessionId": "h26-28-1030-imunohematologia-desafios-na-rotina-imunohematologica-",
+      "title": "AHAI TAD negativa",
+      "start": "10:30",
+      "end": "10:50",
+      "participants": [
+        {
+          "name": "DENISE MENEZES BRUNETTA",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13525",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-28-1030-achados-morfologicos-que-direcionam-condutas-clinicas-talk-1050-caso-clinico-2",
+      "parentSessionId": "h26-28-1030-achados-morfologicos-que-direcionam-condutas-clinicas",
+      "title": "Caso clínico 2",
+      "start": "10:50",
+      "end": "11:10",
+      "participants": [
+        {
+          "name": "KLEBER YOTSUMOTO FERTRIN",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/15831",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-28-1215-novo-nordisk-alem-da-abr-o-que-realmente-define-o-suce-talk-1215-abr-0-alcancamos-o-objetivo-um-unico-p",
+      "parentSessionId": "h26-28-1215-novo-nordisk-alem-da-abr-o-que-realmente-define-o-suce",
+      "title": "ABR 0: alcançamos o objetivo? Um único parametro é suficiente para avaliar a eficácia da profilaxia?",
+      "start": "12:15",
+      "end": "12:40",
+      "participants": [
+        {
+          "name": "ALESSANDRA NUNES LOUREIRO PREZZOTI",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13267",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-28-1215-mundipharma-cada-hora-importa-novos-objetivos-no-manej-talk-1230-desafios-ocultos-da-candidiase-invasiv",
+      "parentSessionId": "h26-28-1215-mundipharma-cada-hora-importa-novos-objetivos-no-manej",
+      "title": "Desafios ocultos da Candidíase Invasiva no transplante e na onco-hematologia",
+      "start": "12:30",
+      "end": "12:45",
+      "participants": [
+        {
+          "name": "MARCIA GARNICA",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13317",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-28-1515-lilly-eficacia-seguranca-e-decisao-compartilhada-na-jo-talk-1515-abertura-colocando-o-paciente-no-centr",
+      "parentSessionId": "h26-28-1515-lilly-eficacia-seguranca-e-decisao-compartilhada-na-jo",
+      "title": "Abertura + Colocando o paciente no centro: o papel da decisão compartilhada",
+      "start": "15:15",
+      "end": "15:30",
+      "participants": [
+        {
+          "name": "THIAGO XAVIER CARNEIRO",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16342",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-28-1630-sanofi-avancos-no-tratamento-do-mieloma-multiplo-como-talk-1630-avancos-no-tratamento-do-mieloma-multi",
+      "parentSessionId": "h26-28-1630-sanofi-avancos-no-tratamento-do-mieloma-multiplo-como",
+      "title": "Avanços no Tratamento do Mieloma Múltiplo: Como a Administração Transforma o Cuidado com o Paciente",
+      "start": "16:30",
+      "end": "17:30",
+      "participants": [
+        {
+          "name": "XAVIER P. LELEU | ON-LINE",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-29-1400-otimizando-o-cuidado-da-alfa-talassemia-do-diagnostico-talk-1445-tratamento-da-alfa-talassemia-e-a-impo",
+      "parentSessionId": "h26-29-1400-otimizando-o-cuidado-da-alfa-talassemia-do-diagnostico",
+      "title": "Tratamento da alfa talassemia e a importância da hemoglobina funcional",
+      "start": "14:45",
+      "end": "15:10",
+      "participants": [
+        {
+          "name": "KLEBER YOTSUMOTO FERTRIN",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/15831",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-29-1230-gsk-entendendo-o-papel-do-adc-no-tratamento-da-primeir-talk-1230-um-novo-olhar-para-a-primeira-recaida-",
+      "parentSessionId": "h26-29-1230-gsk-entendendo-o-papel-do-adc-no-tratamento-da-primeir",
+      "title": "Um novo olhar para a primeira recaída do mieloma múltiplo",
+      "start": "12:30",
+      "end": "12:40",
+      "participants": [
+        {
+          "name": "ANGELO MAIOLINO",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13441",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-29-1230-gsk-entendendo-o-papel-do-adc-no-tratamento-da-primeir-talk-1300-quando-a-ciencia-muda-a-pratica-atuali",
+      "parentSessionId": "h26-29-1230-gsk-entendendo-o-papel-do-adc-no-tratamento-da-primeir",
+      "title": "Quando a ciência muda a prática: atualizações dos estudos DREAMM-7 e DREAMM-8",
+      "start": "13:00",
+      "end": "13:20",
+      "participants": [
+        {
+          "name": "THIAGO XAVIER CARNEIRO",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16342",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-29-1230-grifols-medicina-transfusional-talk-1255-desvendando-variantes-de-rh-na-pratica",
+      "parentSessionId": "h26-29-1230-grifols-medicina-transfusional",
+      "title": "Desvendando variantes de RH na prática transfusional: qual risco de formação de anticorpos no caso de fenotipos parciais e qual relevância dos anticorpos formados",
+      "start": "12:55",
+      "end": "13:15",
+      "participants": [
+        {
+          "name": "CARLA LUANA DINARDO",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13520",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-30-1030-registros-de-doadores-raros-na-america-latina-talk-1030-descobrindo-raridades-dicas-para-encon",
+      "parentSessionId": "h26-30-1030-registros-de-doadores-raros-na-america-latina",
+      "title": "Descobrindo raridades: dicas para encontrar doadores raros",
+      "start": "10:30",
+      "end": "10:55",
+      "participants": [
+        {
+          "name": "LILIAN MARIA DE CASTILHO",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13541",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-30-1030-registros-de-doadores-raros-na-america-latina-talk-1055-organizacao-de-bancos-de-doadores-raro",
+      "parentSessionId": "h26-30-1030-registros-de-doadores-raros-na-america-latina",
+      "title": "Organização de bancos de doadores raros no Brasil: dificuldades e conquistas",
+      "start": "10:55",
+      "end": "11:20",
+      "participants": [
+        {
+          "name": "DENISE MENEZES BRUNETTA",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13525",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-30-1400-gestao-estrategica-da-captacao-transformando-dados-em--talk-1450-integracao-entre-captacao-producao-ate",
+      "parentSessionId": "h26-30-1400-gestao-estrategica-da-captacao-transformando-dados-em-",
+      "title": "Integração entre captação, produção, atendimento e comunicação",
+      "start": "14:50",
+      "end": "15:15",
+      "participants": [
+        {
+          "name": "ANA CRISTINA NOVAIS MENDES",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-30-1545-suporte-hemoterapico-ao-tmo-talk-1610-sindrome-do-linfocito-passageiro",
+      "parentSessionId": "h26-30-1545-suporte-hemoterapico-ao-tmo",
+      "title": "Síndrome do linfócito passageiro",
+      "start": "16:10",
+      "end": "16:35",
+      "participants": [
+        {
+          "name": "CARLA LUANA DINARDO | ON-LINE",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13520",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-30-1545-hemoglobinopatia-sc-talk-1545-fisiopatologia-da-hemoglobinopatia-sc",
+      "parentSessionId": "h26-30-1545-hemoglobinopatia-sc",
+      "title": "Fisiopatologia da hemoglobinopatia SC",
+      "start": "15:45",
+      "end": "16:05",
+      "participants": [
+        {
+          "name": "KLEBER YOTSUMOTO FERTRIN",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/15831",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-30-1545-sessao-movimento-abhh-mulheres-talk-1600-atendimento-hemoterapico-em-complicaco",
+      "parentSessionId": "h26-30-1545-sessao-movimento-abhh-mulheres",
+      "title": "Atendimento hemoterápico em complicações obstétricas",
+      "start": "16:00",
+      "end": "16:15",
+      "participants": [
+        {
+          "name": "DENISE MENEZES BRUNETTA",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13525",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-31-0900-100-anos-da-doenca-de-von-willebrand-evolucao-diagnost-talk-0900-bleeding-score-e-precisao-diagnostica-",
+      "parentSessionId": "h26-31-0900-100-anos-da-doenca-de-von-willebrand-evolucao-diagnost",
+      "title": "Bleeding Score e Precisão Diagnóstica: Integrando o Fenótipo Hemorrágico ao Laboratório",
+      "start": "09:00",
+      "end": "09:20",
+      "participants": [
+        {
+          "name": "ALESSANDRA NUNES LOUREIRO PREZZOTI",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13267",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-31-0900-vamos-discutir-imuno-hematologia-talk-1030-tema-4-busca-de-doadores-raros",
+      "parentSessionId": "h26-31-0900-vamos-discutir-imuno-hematologia",
+      "title": "Tema 4: Busca de Doadores Raros",
+      "start": "10:30",
+      "end": "11:00",
+      "participants": [
+        {
+          "name": "DENISE MENEZES BRUNETTA",
+          "role": "Debatedor(a)"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13525",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-31-1530-imuno-hematologia-plaquetaria-talk-1555-desialilacao-plaquetaria-o-que-e-e-qua",
+      "parentSessionId": "h26-31-1530-imuno-hematologia-plaquetaria",
+      "title": "Desialilação plaquetária: o que é e qual o impacto na refratariedade plaquetária transfusional?",
+      "start": "15:55",
+      "end": "16:20",
+      "participants": [
+        {
+          "name": "CARLA LUANA DINARDO",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13520",
+      "verifiedAt": "2026-10-24T20:07:58.974Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
       }
     }
   ],
