@@ -1,0 +1,245 @@
+{
+  "kind": "HEMO_2026_FLORA_PROPOSED_CONFLICTS",
+  "status": "CANDIDATES_ONLY_NOT_PERSONAL_CHOICES",
+  "checkedAt": "2026-10-24T20:15:27.278Z",
+  "days": [
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30",
+    "2026-10-31"
+  ],
+  "conflicts": [
+    {
+      "day": "2026-10-28",
+      "timeWindow": [
+        "09:00",
+        "11:00"
+      ],
+      "detection": "overlap between candidate recommendations, NOT a selected agenda conflict",
+      "primarySuggestionId": "h26-28-0930-parte-i-aabb-e-a-qualidade-conhecendo-a-aabb-e-razoes-",
+      "alternatives": [
+        {
+          "sessionId": "h26-28-0930-parte-i-aabb-e-a-qualidade-conhecendo-a-aabb-e-razoes-",
+          "start": "09:30",
+          "end": "11:00",
+          "venue": "Sala 202C",
+          "score": 95,
+          "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores."
+        },
+        {
+          "sessionId": "h26-28-0900-a-revolucao-do-diagnostico-e-da-gestao-vbhc-inteligenc",
+          "start": "09:00",
+          "end": "10:15",
+          "venue": null,
+          "score": 95,
+          "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores."
+        },
+        {
+          "sessionId": "h26-28-0900-apresentacao-treinamento-de-auditores-aabb-abhh-e-entr",
+          "start": "09:00",
+          "end": "09:30",
+          "venue": null,
+          "score": 95,
+          "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores."
+        },
+        {
+          "sessionId": "h26-28-0900-imuno-hematologia",
+          "start": "09:00",
+          "end": "10:15",
+          "venue": "Sala 201AB",
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        },
+        {
+          "sessionId": "h26-28-0900-avancos-e-praticas-de-enfermagem-em-hemoterapia",
+          "start": "09:00",
+          "end": "10:15",
+          "venue": null,
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        },
+        {
+          "sessionId": "h26-28-0900-pratica-transfusional",
+          "start": "09:00",
+          "end": "10:15",
+          "venue": null,
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        }
+      ],
+      "resolution": "Rever interesses de Flora; se escolher mais de uma sessão simultânea, priorizar a de maior aderência ou dividir o tempo somente quando horários e deslocamento permitirem."
+    },
+    {
+      "day": "2026-10-28",
+      "timeWindow": [
+        "10:30",
+        "13:00"
+      ],
+      "detection": "overlap between candidate recommendations, NOT a selected agenda conflict",
+      "primarySuggestionId": "h26-28-1130-parte-ii-o-programa-de-acreditacao-conhecendo-os-padro",
+      "alternatives": [
+        {
+          "sessionId": "h26-28-1130-parte-ii-o-programa-de-acreditacao-conhecendo-os-padro",
+          "start": "11:30",
+          "end": "13:00",
+          "venue": "Sala 202C",
+          "score": 95,
+          "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores."
+        },
+        {
+          "sessionId": "h26-28-1030-imunohematologia-desafios-na-rotina-imunohematologica-",
+          "start": "10:30",
+          "end": "11:45",
+          "venue": "Sala 201C",
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        },
+        {
+          "sessionId": "h26-28-1030-afereses",
+          "start": "10:30",
+          "end": "11:45",
+          "venue": null,
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        }
+      ],
+      "resolution": "Rever interesses de Flora; se escolher mais de uma sessão simultânea, priorizar a de maior aderência ou dividir o tempo somente quando horários e deslocamento permitirem."
+    },
+    {
+      "day": "2026-10-29",
+      "timeWindow": [
+        "08:45",
+        "10:15"
+      ],
+      "detection": "overlap between candidate recommendations, NOT a selected agenda conflict",
+      "primarySuggestionId": "h26-29-0845-automacao-como-estrategia-para-reducao-de-erros-labora",
+      "alternatives": [
+        {
+          "sessionId": "h26-29-0845-automacao-como-estrategia-para-reducao-de-erros-labora",
+          "start": "08:45",
+          "end": "10:15",
+          "venue": "Sala 202 AB",
+          "score": 95,
+          "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores."
+        },
+        {
+          "sessionId": "h26-29-0845-modulo-1-implementacao-hospitalar-sessao-1-o-desafio-d",
+          "start": "08:45",
+          "end": "09:50",
+          "venue": null,
+          "score": 95,
+          "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores."
+        }
+      ],
+      "resolution": "Rever interesses de Flora; se escolher mais de uma sessão simultânea, priorizar a de maior aderência ou dividir o tempo somente quando horários e deslocamento permitirem."
+    },
+    {
+      "day": "2026-10-30",
+      "timeWindow": [
+        "14:00",
+        "15:30"
+      ],
+      "detection": "overlap between candidate recommendations, NOT a selected agenda conflict",
+      "primarySuggestionId": "h26-30-1400-gestao-estrategica-da-captacao-transformando-dados-em-",
+      "alternatives": [
+        {
+          "sessionId": "h26-30-1400-gestao-estrategica-da-captacao-transformando-dados-em-",
+          "start": "14:00",
+          "end": "15:30",
+          "venue": "Sala 210",
+          "score": 95,
+          "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores."
+        },
+        {
+          "sessionId": "h26-30-1400-imuno-hematologia-o-classico-e-o-futuro",
+          "start": "14:00",
+          "end": "15:30",
+          "venue": "Sala 202 AB",
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        },
+        {
+          "sessionId": "h26-30-1400-transfusao-de-plaquetas",
+          "start": "14:00",
+          "end": "15:30",
+          "venue": "Sala 201AB",
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        }
+      ],
+      "resolution": "Rever interesses de Flora; se escolher mais de uma sessão simultânea, priorizar a de maior aderência ou dividir o tempo somente quando horários e deslocamento permitirem."
+    },
+    {
+      "day": "2026-10-30",
+      "timeWindow": [
+        "15:45",
+        "17:15"
+      ],
+      "detection": "overlap between candidate recommendations, NOT a selected agenda conflict",
+      "primarySuggestionId": "h26-30-1545-comunicacao-pbm-e-cultura-do-sangue-construindo-novas-",
+      "alternatives": [
+        {
+          "sessionId": "h26-30-1545-comunicacao-pbm-e-cultura-do-sangue-construindo-novas-",
+          "start": "15:45",
+          "end": "17:15",
+          "venue": "Sala 210",
+          "score": 95,
+          "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores."
+        },
+        {
+          "sessionId": "h26-30-1545-atualizacao-em-aferese-terapeutica",
+          "start": "15:45",
+          "end": "17:15",
+          "venue": "Sala 202 AB",
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        },
+        {
+          "sessionId": "h26-30-1545-suporte-hemoterapico-ao-tmo",
+          "start": "15:45",
+          "end": "17:15",
+          "venue": "Sala 201AB",
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        }
+      ],
+      "resolution": "Rever interesses de Flora; se escolher mais de uma sessão simultânea, priorizar a de maior aderência ou dividir o tempo somente quando horários e deslocamento permitirem."
+    },
+    {
+      "day": "2026-10-31",
+      "timeWindow": [
+        "09:00",
+        "11:00"
+      ],
+      "detection": "overlap between candidate recommendations, NOT a selected agenda conflict",
+      "primarySuggestionId": "h26-31-0900-hemovigilancia-e-seguranca-transfusional",
+      "alternatives": [
+        {
+          "sessionId": "h26-31-0900-hemovigilancia-e-seguranca-transfusional",
+          "start": "09:00",
+          "end": "10:30",
+          "venue": "Sala 201AB",
+          "score": 95,
+          "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores."
+        },
+        {
+          "sessionId": "h26-31-0900-vamos-discutir-imuno-hematologia",
+          "start": "09:00",
+          "end": "11:00",
+          "venue": "Sala 202C",
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        },
+        {
+          "sessionId": "h26-31-0900-medicina-transfusional",
+          "start": "09:00",
+          "end": "10:30",
+          "venue": null,
+          "score": 86,
+          "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão."
+        }
+      ],
+      "resolution": "Rever interesses de Flora; se escolher mais de uma sessão simultânea, priorizar a de maior aderência ou dividir o tempo somente quando horários e deslocamento permitirem."
+    }
+  ]
+}
