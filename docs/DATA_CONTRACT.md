@@ -9,3 +9,13 @@ Durante B1, `pending_b2` e todas as coleções vazias. Somente B2 pode preencher
 **Subeventos:** `talks` com `parentSessionId`, id, título, horário e participantes, sem duplicar a sessão na grade. `works` com ID oficial, autores, modalidade, área e fonte. `exhibitors` com estande apenas se confirmado, data/fonte.
 
 Recomendações automáticas devem ser separadas de preferências realmente registradas por Flora. O armazenamento inicial é exclusivamente local: `hemo2026:flora:preferences:v1` e `hemo2026:flora:ui:v1`, backup `HEMO_2026_FLORA_BACKUP` v1. Nada de Sheets/OAuth/persistência externa na B1. 
+
+## B2-W1 - Contrato de candidatos não publicados
+
+- `public/schedule.json` continua o contrato de produção, com `kind=HEMO_2026_PROGRAM`, `status=pending_b2` e arrays vazios. **Não consumir o staging no frontend antes da auditoria integral.**
+- `data/b2-indexed-candidates.json` é um inventário de pesquisa separado, com `kind=HEMO_B2_INDEXED_CANDIDATES`, `status=PARTIAL_NOT_PUBLISHABLE`, `coverage.completenessVerified=false`. A contagem `coverage.knownSessions` é mínimo encontrado, **não** quantidade total de sessões por dia. Manter campos faltantes como string vazia e `evidence.missingFields`.
+- A confiança de `evidence.status` distingue **trechos indexados** da grade/lista e agendas individuais, não um `verified` de programação integral. `sourceUrl` e `verifiedAt` são URL pública e data da pesquisa, não evidência de que o HTML completo foi baixado.
+- `recommendation={targetProfile:"Flora",score,level,confidence,rationale,evidenceBasis,personalChoice:false}` é juízo automatizado público preliminar. Não preencher `attending`, `interest` ou quaisquer escolhas privadas de Flora dentro de `sessions[]`.
+- `data/b2-flora-conflicts.json` reúne simultaneidades **de sugestões** em `conflicts[].alternatives[].sessionId`. Não substituir `conflictIds` do app, que só considera `attending:true` efetivamente escolhido.
+- `tests/fixtures/b2-baseline-ids.json` preserva os 49 IDs de sessões/17 de falas da base inicial. Trocar identificadores requer migração explicitamente documentada das preferências associadas.
+- Para passar a `verified` na branch B2: demonstrar cobertura total 28–31/10 por dia/sala/tipo; reconciliar salas, participantes e falas com fonte materializada e hashes; ajustar testes B1+B2 que hoje exigem `pending_b2`; executar suites/HTTP/UX reais; obter auditoria independente e gate de publicação separado.
