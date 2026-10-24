@@ -43,7 +43,7 @@ test('strict schema, dates, duration, subordinate containment, source and lack o
  assert.deepEqual(auditSchedule(data.sessions).errors,[]);
  for(const s of data.sessions){
   assert.match(s.id,/^h26-/);
-  assert.ok(/^https:\/\/hemo\.org\.br\//.test(s.sourceUrl),'official source '+s.id);
+  assert.ok(/^https:\/\/(?:www\.)?hemo\.org\.br\//.test(s.sourceUrl),'official source '+s.id);
   assert.ok(Number.isFinite(Date.parse(s.verifiedAt)));
   assert.ok(s.evidence?.checkedAt);
   assert.ok(minutes(s.start)<minutes(s.end));
@@ -55,7 +55,7 @@ test('strict schema, dates, duration, subordinate containment, source and lack o
   assert.ok(minutes(s.start)<=minutes(t.start));
   assert.ok(minutes(t.end)<=minutes(s.end));
   assert.ok(minutes(t.start)<minutes(t.end));
-  assert.ok(/^https:\/\/hemo\.org\.br\//.test(t.sourceUrl));
+  assert.ok(/^https:\/\/(?:www\.)?hemo\.org\.br\//.test(t.sourceUrl));
  }
 });
 
