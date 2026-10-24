@@ -8,7 +8,7 @@
     "2026-10-30",
     "2026-10-31"
   ],
-  "checkedAt": "2026-10-24T20:00:00Z",
+  "checkedAt": "2026-10-24T20:09:21.196Z",
   "officialSources": {
     "grade": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
     "list": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista"
@@ -16,12 +16,12 @@
   "coverage": {
     "status": "partial",
     "knownSessions": {
-      "28": 28,
+      "28": 33,
       "29": 34,
       "30": 23,
       "31": 20
     },
-    "knownTalks": 38,
+    "knownTalks": 42,
     "scope": "REGISTROS PARCIAIS EM ÍNDICES DE GRADE/LISTA + AGENDAS INDIVIDUAIS OFICIAIS; NÃO É O UNIVERSO DA PROGRAMAÇÃO. Reconciliar cada sala, modalidade, subpalestra e papel.",
     "completenessVerified": false,
     "sources": [
@@ -110,6 +110,38 @@
       }
     },
     {
+      "id": "h26-28-0900-avancos-e-praticas-de-enfermagem-em-hemoterapia",
+      "day": "2026-10-28",
+      "start": "09:00",
+      "end": "10:15",
+      "title": "Avanços e Práticas de Enfermagem em Hemoterapia",
+      "type": "educacional",
+      "track": "Enfermagem em Hematologia, Hemoterapia e TMO",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:09:21.196Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:09:21.196Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 91,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Conexão direta com acreditação, hemoterapia e/ou inteligência artificial aplicada à saúde."
+      }
+    },
+    {
       "id": "h26-28-0900-citometria-para-clinicos",
       "day": "2026-10-28",
       "start": "09:00",
@@ -173,6 +205,36 @@
         "level": "baixa",
         "confidence": "baixa",
         "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-28-0900-ia-com-proposito-confianca-e-educacao-na-medicina",
+      "day": "2026-10-28",
+      "start": "09:00",
+      "end": "10:15",
+      "title": "IA com Propósito: Confiança e Educação na Medicina",
+      "type": "educacional",
+      "track": "Comunicação / IA",
+      "stage": "Arena Hemo Talks Bossa Nova",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/palestrante/17953",
+      "verifiedAt": "2026-10-24T20:09:21.196Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:09:21.196Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 91,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Conexão direta com acreditação, hemoterapia e/ou inteligência artificial aplicada à saúde."
       }
     },
     {
@@ -369,6 +431,36 @@
       }
     },
     {
+      "id": "h26-28-0900-qual-e-a-celula",
+      "day": "2026-10-28",
+      "start": "09:00",
+      "end": "10:15",
+      "title": "Qual é a célula?",
+      "type": "educacional",
+      "track": "Hematologia Pediátrica / Sangue Jovem",
+      "stage": "Arena Hemo Talks Samba",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:09:21.196Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:09:21.196Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 58,
+        "level": "baixa",
+        "confidence": "media",
+        "rationale": "Relevância secundária conforme tema educacional divulgado."
+      }
+    },
+    {
       "id": "h26-28-0900-revisao-de-linfoma-folicular-da-biologia-a-pratica-cli",
       "day": "2026-10-28",
       "start": "09:00",
@@ -407,6 +499,37 @@
         "confidence": "baixa",
         "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
       }
+    },
+    {
+      "id": "h26-28-0930-parte-i-aabb-e-a-qualidade-conhecendo-a-aabb-e-razoes-",
+      "day": "2026-10-28",
+      "start": "09:30",
+      "end": "11:00",
+      "title": "Parte I: AABB e a Qualidade - Conhecendo a AABB e Razões para acreditação AABB/ABHH",
+      "type": "treinamento",
+      "track": "Acreditação AABB/ABHH",
+      "stage": "Sala 202C",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:09:21.196Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:09:21.196Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 91,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Conexão direta com acreditação, hemoterapia e/ou inteligência artificial aplicada à saúde."
+      },
+      "accessNote": "Inscrição à parte segundo programação oficial."
     },
     {
       "id": "h26-28-1030-achados-morfologicos-que-direcionam-condutas-clinicas",
@@ -680,6 +803,38 @@
         "level": "baixa",
         "confidence": "baixa",
         "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-28-1030-plaquetas-parte-2",
+      "day": "2026-10-28",
+      "start": "10:30",
+      "end": "11:45",
+      "title": "Plaquetas | parte 2",
+      "type": "educacional",
+      "track": "Hemostasia & Trombose",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:09:21.196Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:09:21.196Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 58,
+        "level": "baixa",
+        "confidence": "media",
+        "rationale": "Relevância secundária conforme tema educacional divulgado."
       }
     },
     {
@@ -3395,7 +3550,7 @@
       "title": "Hemovigilância e segurança transfusional",
       "type": "cientifica",
       "track": "Hemoterapia",
-      "stage": "",
+      "stage": "Sala 201AB",
       "description": "",
       "participants": [
         {
@@ -3415,11 +3570,10 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "stageSourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista"
       },
       "recommendation": {
         "targetProfile": "Flora",
@@ -4712,6 +4866,90 @@
       "evidence": {
         "status": "OFFICIAL_DETAIL_INDEXED",
         "checkedAt": "2026-10-24T20:07:58.974Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-28-0900-ia-com-proposito-confianca-e-educacao-na-medicina-talk-0930-gemini-academy-ia-na-educacao-medica",
+      "parentSessionId": "h26-28-0900-ia-com-proposito-confianca-e-educacao-na-medicina",
+      "title": "Gemini Academy: IA na Educação Médica",
+      "start": "09:30",
+      "end": "10:00",
+      "participants": [
+        {
+          "name": "GABRIELA RODRIGUES MATIAS",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/palestrante/17953",
+      "verifiedAt": "2026-10-24T20:09:21.196Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:09:21.196Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-31-0900-hemovigilancia-e-seguranca-transfusional-talk-0900-hemovigilancia-onde-estamos-e-para-ond",
+      "parentSessionId": "h26-31-0900-hemovigilancia-e-seguranca-transfusional",
+      "title": "Hemovigilância: onde estamos e para onde vamos?",
+      "start": "09:00",
+      "end": "09:25",
+      "participants": [
+        {
+          "name": "Eduardo Muñiz Diaz",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:09:21.196Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:09:21.196Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-31-0900-hemovigilancia-e-seguranca-transfusional-talk-0925-hemovigilancia-atualizacoes-do-marco-c",
+      "parentSessionId": "h26-31-0900-hemovigilancia-e-seguranca-transfusional",
+      "title": "Hemovigilância: atualizações do marco conceitual",
+      "start": "09:25",
+      "end": "09:50",
+      "participants": [
+        {
+          "name": "LEONARDO OLIVEIRA LEITÃO",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:09:21.196Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:09:21.196Z",
+        "coverage": "PARTIAL",
+        "roleVerified": true
+      }
+    },
+    {
+      "id": "h26-31-0900-hemovigilancia-e-seguranca-transfusional-talk-0950-seguranca-transfusional-nas-agencias-t",
+      "parentSessionId": "h26-31-0900-hemovigilancia-e-seguranca-transfusional",
+      "title": "Segurança transfusional nas agências transfusionais: foco em fluxos, processos, ferramentas e tecnologias que reduzam o risco na transfusão",
+      "start": "09:50",
+      "end": "10:15",
+      "participants": [
+        {
+          "name": "MONICA JULIANA VIEIRA",
+          "role": "Palestrante"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:09:21.196Z",
+      "evidence": {
+        "status": "OFFICIAL_DETAIL_INDEXED",
+        "checkedAt": "2026-10-24T20:09:21.196Z",
         "coverage": "PARTIAL",
         "roleVerified": true
       }
