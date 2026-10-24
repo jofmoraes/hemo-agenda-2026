@@ -26,6 +26,7 @@ export function auditProgramDataset(data,{preview=false}={}){
  if(!preview&&!['pending_b2','verified'].includes(data.status))errors.push('Contrato de produção rejeita prévia');
  if(data.status==='pending_b2'&&['sessions','talks','works','exhibitors'].some(k=>data[k].length))errors.push('Pendente não pode ter registros');
  if(data.status==='verified'&&(!data.sessions.length||!data.checkedAt||!Number.isFinite(Date.parse(data.checkedAt))))errors.push('Verificado sem data ou sessões');
+ if(data.status==='verified'&&(data.coverage?.completenessVerified===false||data.sourceInventory?.status==='PARTIAL_NOT_PUBLISHABLE'))errors.push('Produção verificada não aceita inventário parcial');
  if(preview){
   if(data.coverage?.completenessVerified!==false)errors.push('Prévia não pode declarar completude');
   if(data.sourceInventory?.status!=='PARTIAL_NOT_PUBLISHABLE')errors.push('Inventário de prévia sem proveniência de parcialidade');
