@@ -33,7 +33,12 @@
       "Excertos oficiais não demonstram o universo total.",
       "Papéis corrigidos somente quando confirmados em grade/lista ou agenda individual.",
       "Salas não estimadas por ordem de colunas em texto achatado."
-    ]
+    ],
+    "curationCounts": {
+      "alta": 28,
+      "media": 9,
+      "baixa": 73
+    }
   },
   "sessions": [
     {
@@ -66,10 +71,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -103,10 +110,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -135,10 +144,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 91,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Conexão direta com acreditação, hemoterapia e/ou inteligência artificial aplicada à saúde."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -168,10 +179,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -201,10 +214,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -231,10 +246,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 91,
-        "level": "alta",
+        "score": 78,
+        "level": "media",
         "confidence": "media",
-        "rationale": "Conexão direta com acreditação, hemoterapia e/ou inteligência artificial aplicada à saúde."
+        "rationale": "Aplicação ou debate de IA/tecnologia na saúde; aderência específica à operação ainda não detalhada.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -273,10 +290,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -311,10 +330,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -354,7 +375,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -391,10 +414,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -424,10 +449,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -454,10 +481,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 58,
+        "score": 45,
         "level": "baixa",
         "confidence": "media",
-        "rationale": "Relevância secundária conforme tema educacional divulgado."
+        "rationale": "Atividade educacional e diagnóstica sem ênfase operacional explícita.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -497,7 +526,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -524,10 +555,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 91,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Conexão direta com acreditação, hemoterapia e/ou inteligência artificial aplicada à saúde."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Inscrição à parte segundo programação oficial."
     },
@@ -568,7 +601,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -605,10 +640,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -648,7 +685,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -688,7 +727,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -728,7 +769,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -761,10 +804,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
+        "score": 86,
+        "level": "alta",
         "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -799,10 +844,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -831,10 +878,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 58,
+        "score": 35,
         "level": "baixa",
-        "confidence": "media",
-        "rationale": "Relevância secundária conforme tema educacional divulgado."
+        "confidence": "baixa",
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -864,10 +913,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -883,7 +934,7 @@
       "participants": [
         {
           "name": "RENATA RIZZO",
-          "role": "Papel não verificado",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -901,10 +952,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Inscrição à parte."
     },
@@ -921,7 +974,7 @@
       "participants": [
         {
           "name": "MARCIA GARNICA",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -939,10 +992,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -959,7 +1014,7 @@
       "participants": [
         {
           "name": "ALESSANDRA NUNES LOUREIRO PREZZOTI",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -977,10 +1032,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -997,7 +1054,7 @@
       "participants": [
         {
           "name": "CELSO ARRAIS",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Moderador(a)",
           "institution": ""
         }
       ],
@@ -1015,10 +1072,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -1035,7 +1094,7 @@
       "participants": [
         {
           "name": "RENATA RIZZO",
-          "role": "Papel não verificado",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -1053,10 +1112,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Inscrição à parte."
     },
@@ -1073,7 +1134,7 @@
       "participants": [
         {
           "name": "THIAGO XAVIER CARNEIRO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -1091,10 +1152,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -1111,7 +1174,7 @@
       "participants": [
         {
           "name": "MARCELO EDUARDO ZANELLA CAPRA",
-          "role": "Papel não verificado",
+          "role": "Moderador(a)",
           "institution": ""
         }
       ],
@@ -1129,10 +1192,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -1149,7 +1214,7 @@
       "participants": [
         {
           "name": "EDUARDO MAGALHÃES REGO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Presidente da ABHH",
           "institution": ""
         }
       ],
@@ -1167,10 +1232,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1198,10 +1265,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Inscrição à parte."
     },
@@ -1218,7 +1287,7 @@
       "participants": [
         {
           "name": "EDUARDO MAGALHÃES REGO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Presidente da ABHH",
           "institution": ""
         }
       ],
@@ -1236,10 +1305,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1270,7 +1341,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
@@ -1311,7 +1384,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
@@ -1352,7 +1427,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
@@ -1393,7 +1470,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
@@ -1434,7 +1513,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
@@ -1465,10 +1546,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1503,10 +1586,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1536,10 +1621,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "score": 62,
+        "level": "media",
+        "confidence": "baixa",
+        "rationale": "Afinidade indireta via operação hospitalar multiprofissional; especificidade ainda insuficiente.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1576,10 +1663,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 35,
+        "score": 42,
         "level": "baixa",
-        "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "confidence": "media",
+        "rationale": "Pesquisa em hemostasia, aderência indireta aos objetivos de gestão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1616,10 +1705,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1652,10 +1743,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1685,10 +1778,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
+        "score": 38,
+        "level": "baixa",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Foco clínico em neutrófilos; não se confunde com gestão de serviços de hemoterapia.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1704,7 +1799,7 @@
       "participants": [
         {
           "name": "ANGELO MAIOLINO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Moderador(a)",
           "institution": ""
         }
       ],
@@ -1722,10 +1817,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1762,10 +1859,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
-        "level": "alta",
+        "score": 66,
+        "level": "media",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Relação indireta com gestão hospitalar, qualidade, processos ou acesso ao cuidado.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1795,10 +1894,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1828,10 +1929,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
+        "score": 66,
+        "level": "media",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Relação indireta com gestão hospitalar, qualidade, processos ou acesso ao cuidado.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1868,10 +1971,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "score": 62,
+        "level": "media",
+        "confidence": "baixa",
+        "rationale": "Afinidade indireta via operação hospitalar multiprofissional; especificidade ainda insuficiente.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1901,10 +2006,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1920,7 +2027,7 @@
       "participants": [
         {
           "name": "EDUARDO MAGALHÃES REGO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Presidente da ABHH",
           "institution": ""
         }
       ],
@@ -1938,10 +2045,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1981,7 +2090,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -1997,7 +2108,7 @@
       "participants": [
         {
           "name": "CELSO ARRAIS",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -2015,10 +2126,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -2035,7 +2148,7 @@
       "participants": [
         {
           "name": "CARLA LUANA DINARDO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -2053,10 +2166,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -2073,7 +2188,7 @@
       "participants": [
         {
           "name": "ANGELO MAIOLINO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -2091,10 +2206,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -2111,7 +2228,7 @@
       "participants": [
         {
           "name": "MARCIA GARNICA",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Moderador(a)",
           "institution": ""
         }
       ],
@@ -2129,10 +2246,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2160,10 +2279,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2193,10 +2314,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
+        "score": 66,
+        "level": "media",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Relação indireta com gestão hospitalar, qualidade, processos ou acesso ao cuidado.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2233,10 +2356,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2252,7 +2377,7 @@
       "participants": [
         {
           "name": "KLEBER YOTSUMOTO FERTRIN",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -2270,10 +2395,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2303,10 +2430,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
+        "score": 38,
+        "level": "baixa",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Foco clínico em neutrófilos; não se confunde com gestão de serviços de hemoterapia.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2334,10 +2463,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2365,10 +2496,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2405,10 +2538,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2424,7 +2559,7 @@
       "participants": [
         {
           "name": "KLEBER YOTSUMOTO FERTRIN",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -2442,10 +2577,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2461,7 +2598,7 @@
       "participants": [
         {
           "name": "NELSON HAMERSCHLAK",
-          "role": "Papel não verificado",
+          "role": "Apresentador(a)",
           "institution": ""
         }
       ],
@@ -2479,10 +2616,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2522,7 +2661,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
@@ -2554,7 +2695,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
@@ -2591,7 +2734,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
@@ -2608,7 +2753,7 @@
       "participants": [
         {
           "name": "DENISE MENEZES BRUNETTA",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Moderador(a)",
           "institution": ""
         }
       ],
@@ -2626,10 +2771,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "score": 70,
+        "level": "media",
+        "confidence": "baixa",
+        "rationale": "Trilha de hemoterapia com potencial relevância assistencial, sem justificativa operacional específica confirmada.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2666,10 +2813,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2699,10 +2848,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
+        "score": 78,
+        "level": "media",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aplicação ou debate de IA/tecnologia na saúde; aderência específica à operação ainda não detalhada.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2742,7 +2893,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2758,7 +2911,7 @@
       "participants": [
         {
           "name": "CELSO ARRAIS",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Moderador(a)",
           "institution": ""
         }
       ],
@@ -2776,10 +2929,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2814,10 +2969,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Segurança e disponibilidade de hemocomponentes e rede de doadores raros.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2833,7 +2990,7 @@
       "participants": [
         {
           "name": "CELSO ARRAIS",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Moderador(a)",
           "institution": ""
         }
       ],
@@ -2851,10 +3008,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
@@ -2892,10 +3051,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 67,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Conexão com terapia celular, acreditação ou operação assistencial."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2911,7 +3072,7 @@
       "participants": [
         {
           "name": "MARCIA GARNICA",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -2929,10 +3090,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2969,10 +3132,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -2988,7 +3153,7 @@
       "participants": [
         {
           "name": "ALESSANDRA NUNES LOUREIRO PREZZOTI",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Moderador(a)",
           "institution": ""
         }
       ],
@@ -3006,10 +3171,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3025,7 +3192,7 @@
       "participants": [
         {
           "name": "LILIAN MARIA DE CASTILHO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Moderador(a)",
           "institution": ""
         }
       ],
@@ -3043,10 +3210,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3062,7 +3231,7 @@
       "participants": [
         {
           "name": "CELSO ARRAIS",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Debatedor(a)",
           "institution": ""
         }
       ],
@@ -3080,10 +3249,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3118,10 +3289,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3158,10 +3331,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3198,10 +3373,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3238,10 +3415,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 67,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Conexão com terapia celular, acreditação ou operação assistencial."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3257,7 +3436,7 @@
       "participants": [
         {
           "name": "KLEBER YOTSUMOTO FERTRIN",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -3275,10 +3454,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3294,7 +3475,7 @@
       "participants": [
         {
           "name": "DENISE MENEZES BRUNETTA",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -3312,10 +3493,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3354,10 +3537,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3401,7 +3586,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3431,10 +3618,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3464,10 +3653,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3507,7 +3698,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3535,10 +3728,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       },
       "accessNote": "Atividade fechada, conforme grade oficial."
     },
@@ -3577,10 +3772,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
+        "score": 95,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Aderência direta a segurança transfusional, PBM, acreditação, gestão, qualidade, custos, processos ou indicadores.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3608,10 +3805,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3648,10 +3847,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3681,10 +3882,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3721,10 +3924,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 67,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Conexão com terapia celular, acreditação ou operação assistencial."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3754,10 +3959,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3785,10 +3992,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3822,10 +4031,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3841,7 +4052,7 @@
       "participants": [
         {
           "name": "THIAGO XAVIER CARNEIRO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -3859,10 +4070,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3899,10 +4112,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3942,7 +4157,9 @@
         "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -3972,10 +4189,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -4005,10 +4224,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 39,
+        "score": 35,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+        "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -4045,10 +4266,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "score": 70,
+        "level": "media",
+        "confidence": "baixa",
+        "rationale": "Trilha de hemoterapia com potencial relevância assistencial, sem justificativa operacional específica confirmada.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     },
     {
@@ -4064,7 +4287,7 @@
       "participants": [
         {
           "name": "CARLA LUANA DINARDO",
-          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "role": "Palestrante",
           "institution": ""
         }
       ],
@@ -4082,10 +4305,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 82,
+        "score": 86,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Aderência direta a hemoterapia, PBM, segurança, qualidade, auditoria, processos, gestão, dados ou tecnologia; inferência baseada em título/trilha."
+        "rationale": "Conteúdo técnico-operacional de hemoterapia, imuno-hematologia, doação ou transfusão.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
       }
     }
   ],
