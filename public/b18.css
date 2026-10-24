@@ -218,3 +218,17 @@ html.app-loaded,body.app-loaded{background:#fbf6ef}
 /* Exclusive HEMO B1 identity and four-day responsive picker. */
 .header{background:linear-gradient(115deg,#47234d,#613359);border-top:5px solid #e4933c}.logo{background:#fffaf3}.day-picker{flex-wrap:nowrap}.day{min-width:0}.empty strong{display:block;font-size:16px;color:#47234d;margin-bottom:8px}.empty a{color:#66346b;font-weight:700}
 @media(max-width:680px){.toolbar .day-picker{flex:1 1 100%;width:100%}.day{font-size:12px;padding:10px 2px}.toolbar .view-picker{flex:0 0 auto}}
+
+
+/* HEMO B2-W2. Visible only when ?preview=1 loaded a validated partial dataset. */
+.preview-banner{position:sticky;top:0;z-index:60;padding:13px 18px;background:#fff2d8;color:#533915;border-left:5px solid #ad6a0a;border-right:1px solid #e5ca95;border-bottom:1px solid #e5ca95;box-shadow:0 3px 9px #2d243018;font-size:13px;line-height:1.4}
+.preview-banner-title{font-size:16px;font-weight:800;line-height:1.25}
+.preview-banner p{margin:5px 0 0}.preview-banner a{color:#50336a;font-weight:800;text-decoration:underline}
+.suggestion{display:inline-block;padding:4px 7px;border-radius:6px;border:1px solid #b8c4c9;font-size:11px;font-weight:750;line-height:1.25;background:#f5f5f5;color:#344452}
+.suggestion-high{border-color:#a382ab;background:#f3ecf6;color:#653c71}
+.suggestion-medium{border-color:#a7b5bc;background:#eff3f6;color:#3c5662}
+.suggestion-low{border-color:#c2c6ca;background:#f3f4f5;color:#525d64}
+.preview-evidence{font-size:12px;line-height:1.4;padding:10px 12px;background:#f7f5ef;border-left:3px solid #aa823e;margin:10px 0}
+.preview-evidence p{margin:4px 0}.talks-list{padding-left:20px}.talks-list li{margin-bottom:9px;line-height:1.4}
+.unknown-field{font-weight:700;color:#7d5219}
+@media(max-width:680px){.preview-banner{padding:11px 13px;font-size:12px}.preview-banner-title{font-size:15px}}
