@@ -31,7 +31,7 @@ export function auditProgramDataset(data,{preview=false}={}){
   if(data.sourceInventory?.status!=='PARTIAL_NOT_PUBLISHABLE')errors.push('Inventário de prévia sem proveniência de parcialidade');
   if(!data.sessions.length||!data.checkedAt||!Number.isFinite(Date.parse(data.checkedAt)))errors.push('Prévia sem registros ou data');
   if(data.coverage?.availableSessions!==data.sessions.length||data.coverage?.availableTalks!==data.talks.length)errors.push('Contagem de registros disponíveis diverge');
-  if(data.coverage?.missingStage!==data.sessions.filter(s=>!s.stage.trim()).length)errors.push('Contagem de salas a confirmar diverge');
+  if(data.coverage?.missingStage!==data.sessions.filter(s=>typeof s.stage!=='string'||!s.stage.trim()).length)errors.push('Contagem de salas a confirmar diverge');
   for(const day of EXPECTED_DAYS){
    const count=data.sessions.filter(s=>s.day===day).length;
    if(!count||data.coverage?.knownSessions?.[day.slice(-2)]!==count)errors.push('Cobertura parcial não reconciliada: '+day);
@@ -57,4 +57,10 @@ export function auditProgramDataset(data,{preview=false}={}){
   }
  }
  return errors;
+}
+
+export function stageLabel(session){return String(session?.stage||'').trim()||'A confirmar';}
+export function uncertainRole(role){return !role||/a confirmar|Papel exibido|não verificado/i.test(String(role));}
+export function talksForSession(talks,id){
+ return talks.filter(t=>t.parentSessionId===id).sort((a,b)=>a.start.localeCompare(b.start));
 }
