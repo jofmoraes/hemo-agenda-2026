@@ -1,4 +1,5 @@
-import {auditSchedule, conflictIds, layoutDay, minutes, normalize} from './schedule-utils.js';
+import {conflictIds, layoutDay, minutes, normalize} from './schedule-utils.js';
+import {auditProgramDataset,previewRequested,schedulePath} from './schedule-mode.js';
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const DAYS=['2026-10-28','2026-10-29','2026-10-30','2026-10-31'];
@@ -11,7 +12,7 @@ const UI_KEY='hemo2026:flora:ui:v1';
 const BACKUP_KIND='HEMO_2026_FLORA_BACKUP';
 const TZ='America/Sao_Paulo';
 const TOPIC_TERMS=[['Hemoterapia','hemoterapia','transfusao','seguranca transfusional'],['PBM','pbm','patient blood management'],['Qualidade','qualidade','auditoria','acreditacao'],['Gestão','gestao','processos','custos','risco','eficiencia'],['Dados e tecnologia','dados','indicadores','inteligencia artificial',' ia '],['Terapia celular','terapia celular','car-t','transplante'],['Regulação','regulacao','anvisa','compliance']];
-const st={sessions:[],prefs:new Map(),drafts:new Map(),legacySources:[],day:DAYS[0],tab:'program',view:'grid',search:'',interest:'',track:'',type:'',priority:'',from:'',to:'',relative:'all',attend:false,conflict:false,importData:null,modalSession:null,storageOk:true};
+const st={sessions:[],talks:[],datasetStatus:'pending_b2',preview:false,prefs:new Map(),drafts:new Map(),legacySources:[],day:DAYS[0],tab:'program',view:'grid',search:'',interest:'',track:'',type:'',priority:'',from:'',to:'',relative:'all',attend:false,conflict:false,importData:null,modalSession:null,storageOk:true};
 const canonical = value => STATES.includes(value)?value:(LEGACY[value]||'Não analisado');
 const statusClass = value => 'status-'+normalize(canonical(value)).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const pref = id => st.prefs.get(id)||{};
@@ -61,11 +62,25 @@ function interestButtons(id,current,mode='list'){
   return `<button type="button" class="interest-choice ${cls} ${active?'selected':''}" ${action}="${esc(value)}" ${mode==='list'?`data-session-id="${esc(id)}"`:''} aria-pressed="${active}" aria-label="${esc(interestLabel(value))}${active?' (selecionado)':''}"><span aria-hidden="true" class="check-mark">${active?'✓ ':''}</span>${esc(interestLabel(value))}</button>`;
  }).join('');
 }
+function stageLabel(s){return String(s.stage||'').trim()||'A confirmar';}
+function uncertainRole(role){return !role||/a confirmar|Papel exibido|não verificado/i.test(role);}
+function proposedSuggestion(s,short=false){
+ if(!st.preview||!s.recommendation)return '';
+ const r=s.recommendation,level=r.level==='alta'?'Alta':r.level==='media'?'Média':'Baixa',
+ cls=r.level==='alta'?'suggestion-high':r.level==='media'?'suggestion-medium':'suggestion-low';
+ return `<span class="suggestion ${cls}" title="Recomendação automática, não é decisão pessoal de Flora">Sugestão Flora: ${esc(level)}${short?'':` · confiança ${esc(r.confidence||'baixa')}`}</span>`;
+}
+function talkList(s){
+ if(!st.preview)return '';
+ const talks=st.talks.filter(t=>t.parentSessionId===s.id).sort((a,b)=>a.start.localeCompare(b.start));
+ if(!talks.length)return '<p class="muted">Palestras subordinadas: A confirmar.</p>';
+ return `<h3>Palestras desta sessão (${talks.length} identificadas)</h3><ol class="talks-list">${talks.map(t=>`<li><strong>${esc(t.start)}–${esc(t.end)}</strong> · ${esc(t.title)}<div class="muted">${esc((t.participants||[]).map(p=>p.name+' · '+(uncertainRole(p.role)?'Papel: A confirmar':p.role)).join('; ')||'Palestrantes: A confirmar')}</div></li>`).join('')}</ol><p class="muted">A lista de falas pode estar incompleta.</p>`;
+}
 function listCard(s,conflicts){
  const p=pref(s.id),service=isService(s),status=service?'service':statusClass(p.interest),label=canonical(p.interest);
  const interest=service?'<span class="service-caption" title="Evento de serviço oficial" aria-label="Evento de serviço oficial">Gap</span>':`<span class="pill ${status}">${esc(interestLabel(label))}</span>`;
  const actions=service?'':`<div class="list-actions"><button class="secondary" data-open="${esc(s.id)}" type="button">Detalhes</button><button class="${saved(s)?'agenda-remove':'primary'}" data-toggle="${esc(s.id)}" aria-pressed="${saved(s)}" type="button">${saved(s)?'✓ Retirar da minha agenda':'+ Incluir na minha agenda'}</button>${conflicts.has(s.id)?'<span class="pill conflict-key">Conflito</span>':''}</div><div class="list-interest" role="group" aria-label="Interesse por esta sessão">${interestButtons(s.id,p.interest)}</div>`;
- return `<article class="list-card ${status} ${conflicts.has(s.id)&&!service?'conflict':''}"><div class="list-head"><div><p class="list-meta"><strong>${esc(s.start)}–${esc(s.end)}</strong> · ${esc(s.stage||s.track||'')}</p><h3>${esc(s.title)}</h3>${locationTrack(s).includes(' · ')?`<p class="muted">${esc(s.track||'')}</p>`:''}</div>${interest}</div>${actions}</article>`;
+ return `<article class="list-card ${status} ${conflicts.has(s.id)&&!service?'conflict':''}"><div class="list-head"><div><p class="list-meta"><strong>${esc(s.start)}–${esc(s.end)}</strong> · ${esc(stageLabel(s))}</p><h3>${esc(s.title)}</h3>${proposedSuggestion(s)}${locationTrack(s).includes(' · ')?`<p class="muted">${esc(s.track||'')}</p>`:''}</div>${interest}</div>${actions}</article>`;
 }
 function grid(events,conflicts,day){
  const official=st.sessions.filter(s=>s.day===day);
@@ -77,7 +92,7 @@ function grid(events,conflicts,day){
   const v=e.event,w=100/e.lanes,top=(e.start-min)/60*hour,h=(e.end-e.start)/60*hour-2,service=isService(v),status=service?'service':statusClass(pref(v.id).interest);
   const attr=service?'role="note"':`type="button" data-open="${esc(v.id)}"`;
   const compact=!service&&(e.lanes>=3||(e.lanes>=2&&h<115)||h<72);
-  return `<${service?'div':'button'} ${attr} class="event ${status} ${compact?'event-compact':''} ${!service&&saved(v)?'attending':''} ${!service&&conflicts.has(v.id)?'conflict':''}" style="top:${top}px;height:${Math.max(24,h)}px;left:calc(${e.lane*w}% + 1px);width:calc(${w}% - 2px)" aria-label="${esc(v.start+' '+v.title)}" title="${esc(v.start+'–'+v.end+' · '+v.title)}"><span class="event-time">${esc(v.start)}–${esc(v.end)}</span><strong>${esc(v.title)}</strong>${service?'':`<span class="event-track">${esc(v.stage||v.track||'')}</span>`}</${service?'div':'button'}>`;
+  return `<${service?'div':'button'} ${attr} class="event ${status} ${compact?'event-compact':''} ${!service&&saved(v)?'attending':''} ${!service&&conflicts.has(v.id)?'conflict':''}" style="top:${top}px;height:${Math.max(24,h)}px;left:calc(${e.lane*w}% + 1px);width:calc(${w}% - 2px)" aria-label="${esc(v.start+' '+v.title)}" title="${esc(v.start+'–'+v.end+' · '+v.title)}"><span class="event-time">${esc(v.start)}–${esc(v.end)}</span><strong>${esc(v.title)}</strong>${service?'':`<span class="event-track">${esc(stageLabel(v))}</span>`}</${service?'div':'button'}>`;
  }).join('');
  return `<div class="calendar"><div class="calendar-main"><div class="hours" style="height:${height}px">${labels.join('')}</div><div class="day-track" style="--hour:${hour}px;height:${height}px">${eventHtml}</div></div><div class="calendar-hint">Toque em uma palestra para abrir detalhes. Eventos simultâneos ficam lado a lado; a borda vermelha sinaliza conflito entre escolhas.</div></div>`;
 }
@@ -92,14 +107,17 @@ function render(){
  const dayLabel=DAY_NAMES[st.day]||'dia',total=st.sessions.filter(saved).length;
  $('eventCount').textContent=st.tab==='mine'?`${events.length} ${events.length===1?'evento':'eventos'} em ${dayLabel} · ${total} no total`:`${events.length} ${events.length===1?'evento':'eventos'}`;
  $('conflictCount').textContent=events.some(s=>conflicts.has(s.id))?`${events.filter(s=>conflicts.has(s.id)).length} com conflito`:'';
- $('sessions').innerHTML=!events.length?(st.datasetStatus==='pending_b2'?'<div class="empty"><strong>Programação em preparação</strong>As sessões oficiais serão carregadas após a auditoria B2. Nenhuma atividade foi inventada. <a href="https://hemo.org.br/evento/hemo2026/pt/programacao/lista" target="_blank" rel="noopener noreferrer">Consultar fonte oficial</a>.</div>':'<div class="empty">Não há sessões para estes filtros neste dia.</div>'):st.view==='grid'?grid(events,conflicts,st.day):`<div class="list">${events.length?events.map(s=>listCard(s,conflicts)).join(''):'<div class="empty">Não há sessões para estes filtros neste dia.</div>'}</div>`;
+ $('sessions').innerHTML=!events.length?(st.datasetStatus==='pending_b2'?'<div class="empty"><strong>Programação em preparação</strong>As sessões oficiais serão carregadas após a auditoria B2. Nenhuma atividade foi inventada. <a href="https://hemo.org.br/evento/hemo2026/pt/programacao/lista" target="_blank" rel="noopener noreferrer">Consultar fonte oficial</a>. <a href="/?preview=1">Abrir prévia parcial para revisão</a>.</div>':'<div class="empty">Não há sessões para estes filtros neste dia.</div>'):st.view==='grid'?grid(events,conflicts,st.day):`<div class="list">${events.length?events.map(s=>listCard(s,conflicts)).join(''):'<div class="empty">Não há sessões para estes filtros neste dia.</div>'}</div>`;
  persistUi();
 }
-function locationTrack(s){const stage=String(s.stage||'').trim(),track=String(s.track||'').trim();const clean=value=>normalize(value).replace(/^(palco|sala|auditorio|trilha|local)\s*[-:–]\s*/,'').trim();return stage&&track&&clean(stage)===clean(track)?stage:[stage,track].filter(Boolean).join(' · ')||'Não informado';}
+function locationTrack(s){const stage=String(s.stage||'').trim(),track=String(s.track||'').trim();const clean=value=>normalize(value).replace(/^(palco|sala|auditorio|trilha|local)\s*[-:–]\s*/,'').trim();return stage&&track&&clean(stage)===clean(track)?stage:[stage||'A confirmar',track].filter(Boolean).join(' · ')||'A confirmar';}
 function detailsHtml(s){
- const people=(s.participants||[]).map(p=>[p.name,p.role,p.institution].filter(Boolean).join(' · '));
+ const people=(s.participants||[]).map(p=>esc(p.name)+' · '+esc(uncertainRole(p.role)?'Função: A confirmar':p.role)+(p.institution?' · '+esc(p.institution):''));
  const source=(()=>{try{const url=new URL(s.sourceUrl);return url.protocol==='https:'?url.href:''}catch{return ''}})();
- return `<section class="session-info" aria-label="Informações da sessão"><dl><div><dt>Horário</dt><dd>${esc(s.day.slice(-2))}/10 · ${esc(s.start)}–${esc(s.end)}</dd></div><div><dt>Local / trilha</dt><dd>${esc(locationTrack(s))}</dd></div></dl>${s.description?`<p>${esc(s.description)}</p>`:''}${people.length?`<h3>Participantes</h3><ul class="detail-people">${people.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}${source?`<a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Programação oficial</a>`:''}</section>`;
+ const suggestion=st.preview&&s.recommendation?`<section class="preview-evidence" aria-label="Curadoria proposta"><strong>Curadoria automática, não é escolha de Flora</strong><p>${proposedSuggestion(s)} · Confiança: ${esc(s.recommendation.confidence||'baixa')}</p><p>${esc(s.recommendation.rationale||'Justificativa: A confirmar')}</p></section>`:'';
+ const sourceLimit=st.preview?'<p class="preview-evidence"><strong>Programação parcial em conferência.</strong> Fonte indexada parcialmente; horário, local, atividades e participantes podem mudar.</p>':'';
+ const peopleHtml=`<h3>Participantes</h3>${people.length?`<ul class="detail-people">${people.map(x=>`<li>${x}</li>`).join('')}</ul>`:'<p class="unknown-field">A confirmar</p>'}`;
+ return `<section class="session-info" aria-label="Informações da sessão"><dl><div><dt>Horário</dt><dd>${esc(s.day.slice(-2))}/10 · ${esc(s.start)}–${esc(s.end)}</dd></div><div><dt>Sala</dt><dd class="${s.stage?'':'unknown-field'}">${esc(stageLabel(s))}</dd></div><div><dt>Trilha</dt><dd>${esc(s.track||'A confirmar')}</dd></div><div><dt>Modalidade</dt><dd>${esc(s.type||'A confirmar')}</dd></div></dl>${suggestion}${s.description?`<p>${esc(s.description)}</p>`:st.preview?'<p>Descrição completa: <strong>A confirmar</strong>.</p>':''}${peopleHtml}${s.accessNote?`<p class="preview-evidence">Inscrição / acesso: ${esc(s.accessNote)}</p>`:st.preview?'<p>Regras de acesso: <strong>A confirmar</strong>.</p>':''}${talkList(s)}${sourceLimit}${source?`<a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Consultar fonte oficial</a>`:''}</section>`;
 }
 function priorityButtons(current){return ['Essencial','Alta','Média','Baixa',''].map(value=>{
  const active=(current||'')===value;
@@ -185,9 +203,40 @@ function bind(){document.addEventListener('click',event=>{const b=event.target.c
  });
  $('exportBackup').onclick=exportBackup;$('backupFile').onchange=event=>loadBackup(event.target.files[0]);$('importBackup').onclick=importBackup;let r;window.addEventListener('resize',()=>{clearTimeout(r);r=setTimeout(render,140)});
 }
-async function init(){bind();let hadUi=false;try{hadUi=!!localStorage.getItem(UI_KEY);getUi();loadPrefs()}catch{warnStorage()}if(!DAYS.includes(st.day))st.day=DAYS[0];if(!hadUi&&DAYS.includes(dateInSaoPaulo().day))st.day=dateInSaoPaulo().day;
- try{const response=await fetch('/schedule.json',{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);const data=await response.json(),audit=auditSchedule(data.sessions||[]);if(data.kind!=='HEMO_2026_PROGRAM'||data.timezone!==TZ||!['pending_b2','verified'].includes(data.status)||JSON.stringify(data.days)!==JSON.stringify(DAYS)||!['sessions','talks','works','exhibitors'].every(k=>Array.isArray(data[k]))||audit.errors.length||(data.status==='pending_b2'&&['sessions','talks','works','exhibitors'].some(k=>data[k].length))||(data.status==='verified'&&(!data.checkedAt||!Number.isFinite(Date.parse(data.checkedAt)))))throw Error('Dataset HEMO inválido: '+audit.errors.join('; '));st.sessions=data.sessions;st.datasetStatus=data.status;
- const tracks=[...new Set(st.sessions.map(s=>s.track).filter(Boolean))].sort(),types=[...new Set(st.sessions.map(s=>s.type).filter(Boolean))].sort();$('trackFilter').innerHTML='<option value="">Todas as trilhas</option>'+tracks.map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join('');$('typeFilter').innerHTML='<option value="">Todas as modalidades</option>'+types.map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join('');$('search').value=st.search;$('sourceNote').textContent=data.status==='pending_b2'?'Programação oficial ainda não carregada · B2 pendente · Horário local do Rio de Janeiro':`${audit.count} sessões verificadas · Fonte ${data.checkedAt||'sem data'} · Horário de Brasília/Rio`;render();}catch(error){note('Falha ao carregar a programação: '+error.message);render();}
- document.documentElement.classList.add('app-loaded');document.body.classList.add('app-loaded');document.getElementById('startup')?.classList.add('is-complete');if('serviceWorker'in navigator)navigator.serviceWorker.register('/service-worker.js').catch(()=>{});
+async function init(){
+ bind();let hadUi=false;
+ try{hadUi=!!localStorage.getItem(UI_KEY);getUi();loadPrefs()}catch{warnStorage()}
+ if(!DAYS.includes(st.day))st.day=DAYS[0];
+ if(!hadUi&&DAYS.includes(dateInSaoPaulo().day))st.day=dateInSaoPaulo().day;
+ const wantsPreview=previewRequested(window.location.search);
+ try{
+  const response=await fetch(schedulePath(window.location.search),{cache:'no-store'});
+  if(!response.ok)throw Error('HTTP '+response.status);
+  const data=await response.json(),errors=auditProgramDataset(data,{preview:wantsPreview});
+  if(errors.length)throw Error('Dataset HEMO inválido: '+errors.join('; '));
+  st.sessions=data.sessions;st.talks=data.talks;st.datasetStatus=data.status;st.preview=wantsPreview;
+  const tracks=[...new Set(st.sessions.map(s=>s.track).filter(Boolean))].sort();
+  const types=[...new Set(st.sessions.map(s=>s.type).filter(Boolean))].sort();
+  $('trackFilter').innerHTML='<option value="">Todas as trilhas</option>'+tracks.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+  $('typeFilter').innerHTML='<option value="">Todas as modalidades</option>'+types.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+  $('search').value=st.search;
+  if(wantsPreview){
+   $('previewBanner').hidden=false;
+   $('previewCounts').textContent=`${data.sessions.length} sessões candidatas disponíveis · ${data.talks.length} palestras subordinadas identificadas · ${data.coverage.missingStage} salas a confirmar. Quantidade total do congresso ainda desconhecida.`;
+   $('sourceNote').textContent='Prévia parcial baseada em fontes oficiais indexadas · consulta '+data.checkedAt+' · fuso do Rio de Janeiro · dados sujeitos a revisão';
+  }else{
+   $('previewBanner').hidden=true;
+   $('sourceNote').textContent=data.status==='pending_b2'?'Programação oficial ainda não carregada · B2 pendente · Horário local do Rio de Janeiro':`${data.sessions.length} sessões verificadas · Fonte ${data.checkedAt} · Horário de Brasília/Rio`;
+  }
+  render();
+ }catch(error){
+  if(wantsPreview){$('previewBanner').hidden=false;$('previewCounts').textContent='Prévia indisponível: falha na validação ou leitura do dataset.'}
+  note('Falha ao carregar a programação: '+error.message);render();
+ }
+ document.documentElement.classList.add('app-loaded');
+ document.body.classList.add('app-loaded');
+ document.getElementById('startup')?.classList.add('is-complete');
+ if('serviceWorker'in navigator)navigator.serviceWorker.register('/service-worker.js').catch(()=>{});
 }
+
 init();
