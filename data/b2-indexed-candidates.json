@@ -8,7 +8,7 @@
     "2026-10-30",
     "2026-10-31"
   ],
-  "checkedAt": "2026-10-24T02:03:02.016Z",
+  "checkedAt": "2026-10-24T20:00:00Z",
   "officialSources": {
     "grade": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
     "list": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista"
@@ -16,71 +16,29 @@
   "coverage": {
     "status": "partial",
     "knownSessions": {
-      "28": 12,
-      "29": 15,
-      "30": 12,
-      "31": 10
+      "28": 28,
+      "29": 34,
+      "30": 23,
+      "31": 20
     },
     "knownTalks": 17,
-    "scope": "Amostra confirmada em trechos indexados do portal oficial, sem acesso direto ao HTML; não corresponde ao universo de sessões. Salas em branco são lacunas reais, não estimativas.",
+    "scope": "REGISTROS PARCIAIS EM ÍNDICES DE GRADE/LISTA + AGENDAS INDIVIDUAIS OFICIAIS; NÃO É O UNIVERSO DA PROGRAMAÇÃO. Reconciliar cada sala, modalidade, subpalestra e papel.",
     "completenessVerified": false
   },
   "sessions": [
     {
-      "id": "h26-28-0900-revisao-de-linfoma-folicular-da-biologia-a-pratica-cli",
+      "id": "h26-28-0900-a-revolucao-do-diagnostico-e-da-gestao-vbhc-inteligenc",
       "day": "2026-10-28",
       "start": "09:00",
       "end": "10:15",
-      "title": "Revisão de Linfoma Folicular: Da Biologia à Prática Clínica",
-      "type": "educacional",
-      "track": "Onco-hematologia",
-      "stage": "Auditório Master",
-      "description": "",
-      "participants": [
-        {
-          "name": "CARLOS CHIATTONE",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "YANA NOVIS",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
-      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
-      "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [],
-        "coverage": "PARTIAL",
-        "participantRolesVerified": false
-      },
-      "recommendation": {
-        "targetProfile": "Flora",
-        "score": 35,
-        "level": "baixa",
-        "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
-      }
-    },
-    {
-      "id": "h26-28-0900-plaquetas-parte-1",
-      "day": "2026-10-28",
-      "start": "09:00",
-      "end": "10:15",
-      "title": "Plaquetas | parte 1",
-      "type": "educacional",
-      "track": "Hemostasia & Trombose",
+      "title": "A Revolução do Diagnóstico e da Gestão: VBHC, Inteligência Artificial e Eficiência na Linha de Cuidado Hematológica",
+      "type": "cientifica",
+      "track": "Ciências Biomédicas",
       "stage": "",
       "description": "",
       "participants": [
         {
-          "name": "BIANCA STEFANELLO",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "CLAUDIA MAXIMO",
+          "name": "SUSAN ELISABETH DOMINGUES COSTA JORGE",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -98,10 +56,112 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 35,
+        "score": 88,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+      }
+    },
+    {
+      "id": "h26-28-0900-apresentacao-treinamento-de-auditores-aabb-abhh-e-entr",
+      "day": "2026-10-28",
+      "start": "09:00",
+      "end": "09:30",
+      "title": "Apresentação Treinamento de Auditores AABB/ABHH e entrega do Padrão",
+      "type": "treinamento",
+      "track": "Acreditação AABB/ABHH",
+      "stage": "",
+      "description": "",
+      "participants": [
+        {
+          "name": "RENATA RIZZO",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 67,
+        "level": "media",
+        "confidence": "media",
+        "rationale": "Conexão com terapia celular, acreditação ou operação assistencial."
+      }
+    },
+    {
+      "id": "h26-28-0900-citometria-para-clinicos",
+      "day": "2026-10-28",
+      "start": "09:00",
+      "end": "10:15",
+      "title": "Citometria para Clínicos",
+      "type": "educacional",
+      "track": "Citometria de Fluxo",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-28-0900-discussao-de-casos-clinicos-anemia-hemolitica",
+      "day": "2026-10-28",
+      "start": "09:00",
+      "end": "10:15",
+      "title": "Discussão de casos clínicos - Anemia Hemolítica",
+      "type": "educacional",
+      "track": "Anemias",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
       }
     },
     {
@@ -145,18 +205,59 @@
       }
     },
     {
-      "id": "h26-28-0900-a-revolucao-do-diagnostico-e-da-gestao-vbhc-inteligenc",
+      "id": "h26-28-0900-infectologia",
       "day": "2026-10-28",
       "start": "09:00",
       "end": "10:15",
-      "title": "A Revolução do Diagnóstico e da Gestão: VBHC, Inteligência Artificial e Eficiência na Linha de Cuidado Hematológica",
-      "type": "cientifica",
-      "track": "Ciências Biomédicas",
+      "title": "Infectologia",
+      "type": "educacional",
+      "track": "Onco-hematologia",
+      "stage": "Sala 204 AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "MARCIA GARNICA",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13317",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-28-0900-plaquetas-parte-1",
+      "day": "2026-10-28",
+      "start": "09:00",
+      "end": "10:15",
+      "title": "Plaquetas | parte 1",
+      "type": "educacional",
+      "track": "Hemostasia & Trombose",
       "stage": "",
       "description": "",
       "participants": [
         {
-          "name": "SUSAN ELISABETH DOMINGUES COSTA JORGE",
+          "name": "BIANCA STEFANELLO",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "CLAUDIA MAXIMO",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -174,10 +275,10 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
       }
     },
     {
@@ -221,58 +322,55 @@
       }
     },
     {
-      "id": "h26-28-0900-apresentacao-treinamento-de-auditores-aabb-abhh-e-entr",
+      "id": "h26-28-0900-programa-educacional-conjunto-licoes-do-tratamento-da",
       "day": "2026-10-28",
       "start": "09:00",
-      "end": "09:30",
-      "title": "Apresentação Treinamento de Auditores AABB/ABHH e entrega do Padrão",
-      "type": "treinamento",
-      "track": "Acreditação AABB/ABHH",
+      "end": "10:15",
+      "title": "Programa educacional Conjunto Lições do tratamento da LLA da criança ao adulto jovem",
+      "type": "educacional",
+      "track": "Onco-hematologia Pediátrica",
       "stage": "",
       "description": "",
-      "participants": [
-        {
-          "name": "RENATA RIZZO",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
+      "participants": [],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "verifiedAt": "2026-10-24T20:00:00Z",
       "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
         "missingFields": [
           "stage"
         ],
-        "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 67,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Conexão com terapia celular, acreditação ou operação assistencial."
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
       }
     },
     {
-      "id": "h26-28-1030-afereses",
+      "id": "h26-28-0900-revisao-de-linfoma-folicular-da-biologia-a-pratica-cli",
       "day": "2026-10-28",
-      "start": "10:30",
-      "end": "11:45",
-      "title": "Aféreses",
+      "start": "09:00",
+      "end": "10:15",
+      "title": "Revisão de Linfoma Folicular: Da Biologia à Prática Clínica",
       "type": "educacional",
-      "track": "Hemoterapia",
-      "stage": "",
+      "track": "Onco-hematologia",
+      "stage": "Auditório Master",
       "description": "",
       "participants": [
         {
-          "name": "MARTA LEMOS",
+          "name": "CARLOS CHIATTONE",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         },
         {
-          "name": "TIAGO ASCENÇÃO BARROS",
+          "name": "YANA NOVIS",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -282,54 +380,16 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
         "coverage": "PARTIAL",
         "participantRolesVerified": false
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
-      }
-    },
-    {
-      "id": "h26-28-1030-imunohematologia-desafios-na-rotina-imunohematologica-",
-      "day": "2026-10-28",
-      "start": "10:30",
-      "end": "11:45",
-      "title": "Imunohematologia: Desafios na Rotina Imunohematológica do Banco de Sangue",
-      "type": "cientifica",
-      "track": "Ciências Biomédicas",
-      "stage": "",
-      "description": "",
-      "participants": [
-        {
-          "name": "HELIO MORAES DE SOUZA",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
-      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
-      "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
-        "coverage": "PARTIAL",
-        "participantRolesVerified": false
-      },
-      "recommendation": {
-        "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
       }
     },
     {
@@ -373,22 +433,22 @@
       }
     },
     {
-      "id": "h26-28-1030-alem-das-crises-controle-de-sintomas-na-doenca-falcifo",
+      "id": "h26-28-1030-afereses",
       "day": "2026-10-28",
       "start": "10:30",
       "end": "11:45",
-      "title": "Além das Crises: Controle de Sintomas na Doença Falciforme",
+      "title": "Aféreses",
       "type": "educacional",
-      "track": "Anemias",
+      "track": "Hemoterapia",
       "stage": "",
       "description": "",
       "participants": [
         {
-          "name": "MARCOS LAÉRCIO",
+          "name": "MARTA LEMOS",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         },
         {
-          "name": "JAMILE NICANOR",
+          "name": "TIAGO ASCENÇÃO BARROS",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -406,29 +466,29 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 35,
-        "level": "baixa",
-        "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "score": 72,
+        "level": "media",
+        "confidence": "media",
+        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
       }
     },
     {
-      "id": "h26-28-1030-desafios-diagnosticos-em-smd",
+      "id": "h26-28-1030-alem-das-crises-controle-de-sintomas-na-doenca-falcifo",
       "day": "2026-10-28",
       "start": "10:30",
       "end": "11:45",
-      "title": "Desafios diagnósticos em SMD",
+      "title": "Além das Crises: Controle de Sintomas na Doença Falciforme",
       "type": "educacional",
-      "track": "Onco-hematologia",
+      "track": "Anemias",
       "stage": "",
       "description": "",
       "participants": [
         {
-          "name": "IRENE LORAND-METZE",
+          "name": "MARCOS LAÉRCIO",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         },
         {
-          "name": "MATHEUS ESTEVES PELICER",
+          "name": "JAMILE NICANOR",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -493,25 +553,534 @@
       }
     },
     {
-      "id": "h26-29-0730-johnson-johnson-o-papel-em-evolucao-dos-inibidores-de-",
-      "day": "2026-10-29",
-      "start": "07:30",
-      "end": "08:30",
-      "title": "JOHNSON & JOHNSON: O Papel em Evolução dos Inibidores de Menin na LMA",
-      "type": "cafe_corporativo",
-      "track": "Atividades Corporativas",
+      "id": "h26-28-1030-desafios-diagnosticos-em-smd",
+      "day": "2026-10-28",
+      "start": "10:30",
+      "end": "11:45",
+      "title": "Desafios diagnósticos em SMD",
+      "type": "educacional",
+      "track": "Onco-hematologia",
       "stage": "",
       "description": "",
       "participants": [
         {
-          "name": "EDUARDO MAGALHÃES REGO",
+          "name": "IRENE LORAND-METZE",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         },
         {
-          "name": "MOHAMMAD MAHER ABDUL HAY",
+          "name": "MATHEUS ESTEVES PELICER",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+      }
+    },
+    {
+      "id": "h26-28-1030-imunohematologia-desafios-na-rotina-imunohematologica-",
+      "day": "2026-10-28",
+      "start": "10:30",
+      "end": "11:45",
+      "title": "Imunohematologia: Desafios na Rotina Imunohematológica do Banco de Sangue",
+      "type": "cientifica",
+      "track": "Ciências Biomédicas",
+      "stage": "",
+      "description": "",
+      "participants": [
+        {
+          "name": "HELIO MORAES DE SOUZA",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 72,
+        "level": "media",
+        "confidence": "media",
+        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+      }
+    },
+    {
+      "id": "h26-28-1030-llc-state-of-the-art-2026",
+      "day": "2026-10-28",
+      "start": "10:30",
+      "end": "11:45",
+      "title": "LLC — State of the Art 2026",
+      "type": "educacional",
+      "track": "Onco-hematologia",
+      "stage": "Auditório Master",
+      "description": "",
+      "participants": [
+        {
+          "name": "CELSO ARRAIS",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16265",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-28-1030-tratamento-da-lla-t-onde-estamos-e-para-onde-vamos",
+      "day": "2026-10-28",
+      "start": "10:30",
+      "end": "11:45",
+      "title": "Tratamento da LLA T: Onde estamos e para onde vamos",
+      "type": "educacional",
+      "track": "Onco-hematologia Pediátrica",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-28-1130-parte-ii-o-programa-de-acreditacao-conhecendo-os-padro",
+      "day": "2026-10-28",
+      "start": "11:30",
+      "end": "13:00",
+      "title": "Parte II: O Programa de Acreditação - Conhecendo os padrões de acreditação, como interpretar os padrões e Modelo de sistema da qualidade",
+      "type": "treinamento",
+      "track": "Acreditação AABB/ABHH",
+      "stage": "Sala 202C",
+      "description": "",
+      "participants": [
+        {
+          "name": "RENATA RIZZO",
+          "role": "Papel não verificado",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      },
+      "accessNote": "Inscrição à parte."
+    },
+    {
+      "id": "h26-28-1215-mundipharma-cada-hora-importa-novos-objetivos-no-manej",
+      "day": "2026-10-28",
+      "start": "12:15",
+      "end": "13:15",
+      "title": "MUNDIPHARMA: Cada hora importa: novos objetivos no manejo da Candidemia e Candidíase Invasiva em Hematologia",
+      "type": "simposio_corporativo",
+      "track": "Atividades Corporativas",
+      "stage": "Sala 205",
+      "description": "",
+      "participants": [
+        {
+          "name": "MARCIA GARNICA",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13317",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      },
+      "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
+    },
+    {
+      "id": "h26-28-1215-novo-nordisk-alem-da-abr-o-que-realmente-define-o-suce",
+      "day": "2026-10-28",
+      "start": "12:15",
+      "end": "13:15",
+      "title": "NOVO NORDISK: ALÉM DA ABR: o que realmente define o sucesso da profilaxia na era do rebalanço hemostático?",
+      "type": "simposio_corporativo",
+      "track": "Atividades Corporativas",
+      "stage": "Arena Hemo Talks Bossa Nova",
+      "description": "",
+      "participants": [
+        {
+          "name": "ALESSANDRA NUNES LOUREIRO PREZZOTI",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13267",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      },
+      "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
+    },
+    {
+      "id": "h26-28-1345-rede-americas-linfoma-folicular",
+      "day": "2026-10-28",
+      "start": "13:45",
+      "end": "14:45",
+      "title": "REDE AMÉRICAS: Linfoma Folicular",
+      "type": "simposio_corporativo",
+      "track": "Atividades Corporativas",
+      "stage": "Sala 204 AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "CELSO ARRAIS",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16265",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      },
+      "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
+    },
+    {
+      "id": "h26-28-1400-parte-iii-o-processo-de-acreditacao-aplicando-o-proces",
+      "day": "2026-10-28",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Parte III: O Processo de Acreditação - Aplicando o processo de qualidade e por onde começar",
+      "type": "treinamento",
+      "track": "Acreditação AABB/ABHH",
+      "stage": "Sala 202C",
+      "description": "",
+      "participants": [
+        {
+          "name": "RENATA RIZZO",
+          "role": "Papel não verificado",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      },
+      "accessNote": "Inscrição à parte."
+    },
+    {
+      "id": "h26-28-1515-lilly-eficacia-seguranca-e-decisao-compartilhada-na-jo",
+      "day": "2026-10-28",
+      "start": "15:15",
+      "end": "16:15",
+      "title": "LILLY: Eficácia, segurança e decisão compartilhada na jornada terapêutica da LLC",
+      "type": "simposio_corporativo",
+      "track": "Atividades Corporativas",
+      "stage": "Sala 207",
+      "description": "",
+      "participants": [
+        {
+          "name": "THIAGO XAVIER CARNEIRO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16342",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      },
+      "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
+    },
+    {
+      "id": "h26-28-1630-sanofi-avancos-no-tratamento-do-mieloma-multiplo-como",
+      "day": "2026-10-28",
+      "start": "16:30",
+      "end": "17:30",
+      "title": "SANOFI: Avanços no Tratamento do Mieloma Múltiplo: Como a Administração Transforma o Cuidado com o Paciente",
+      "type": "meet_the_expert",
+      "track": "Atividades Corporativas",
+      "stage": "Sala 201AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "MARCELO EDUARDO ZANELLA CAPRA",
+          "role": "Papel não verificado",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      },
+      "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
+    },
+    {
+      "id": "h26-28-1630-sessao-plenaria-trabalhos-cientificos-premiados",
+      "day": "2026-10-28",
+      "start": "16:30",
+      "end": "18:00",
+      "title": "Sessão Plenária: Trabalhos científicos premiados",
+      "type": "plenaria",
+      "track": "Trabalhos Científicos",
+      "stage": "Auditório Anexo",
+      "description": "",
+      "participants": [
+        {
+          "name": "EDUARDO MAGALHÃES REGO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13443",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-28-1700-parte-v-avaliacao-do-treinamento",
+      "day": "2026-10-28",
+      "start": "17:00",
+      "end": "18:00",
+      "title": "Parte V: Avaliação do Treinamento",
+      "type": "treinamento",
+      "track": "Acreditação AABB/ABHH",
+      "stage": "Sala 202C",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      },
+      "accessNote": "Inscrição à parte."
+    },
+    {
+      "id": "h26-28-1815-solenidade-de-abertura-e-homenagens",
+      "day": "2026-10-28",
+      "start": "18:15",
+      "end": "19:30",
+      "title": "Solenidade de Abertura e Homenagens",
+      "type": "abertura",
+      "track": "Destaques do Congresso",
+      "stage": "Auditório Master",
+      "description": "",
+      "participants": [
+        {
+          "name": "EDUARDO MAGALHÃES REGO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13443",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-29-0730-beone-pesquisa-clinica-e-o-futuro-das-doencas-linfopro",
+      "day": "2026-10-29",
+      "start": "07:30",
+      "end": "08:30",
+      "title": "BeOne: Pesquisa Clínica e o Futuro das Doenças Linfoproliferativas",
+      "type": "cafe_corporativo",
+      "track": "Atividades Corporativas",
+      "stage": "",
+      "description": "",
+      "participants": [],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
       "verifiedAt": "2026-10-24T02:03:02.016Z",
       "evidence": {
@@ -575,54 +1144,22 @@
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
     {
-      "id": "h26-29-0730-beone-pesquisa-clinica-e-o-futuro-das-doencas-linfopro",
+      "id": "h26-29-0730-johnson-johnson-o-papel-em-evolucao-dos-inibidores-de-",
       "day": "2026-10-29",
       "start": "07:30",
       "end": "08:30",
-      "title": "BeOne: Pesquisa Clínica e o Futuro das Doenças Linfoproliferativas",
-      "type": "cafe_corporativo",
-      "track": "Atividades Corporativas",
-      "stage": "",
-      "description": "",
-      "participants": [],
-      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
-      "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
-        "coverage": "PARTIAL",
-        "participantRolesVerified": false
-      },
-      "recommendation": {
-        "targetProfile": "Flora",
-        "score": 35,
-        "level": "baixa",
-        "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
-      },
-      "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
-    },
-    {
-      "id": "h26-29-0730-sanofi-reds-flags-hematologicas-ampliando-o-diagnostic",
-      "day": "2026-10-29",
-      "start": "07:30",
-      "end": "08:30",
-      "title": "SANOFI: Reds Flags Hematológicas: ampliando o diagnóstico diferencial das citopenias inexplicadas",
+      "title": "JOHNSON & JOHNSON: O Papel em Evolução dos Inibidores de Menin na LMA",
       "type": "cafe_corporativo",
       "track": "Atividades Corporativas",
       "stage": "",
       "description": "",
       "participants": [
         {
-          "name": "DANIELLE LEÃO CORDEIRO DE FARIAS",
+          "name": "EDUARDO MAGALHÃES REGO",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         },
         {
-          "name": "RENATA DE SOUZA CRAVO",
+          "name": "MOHAMMAD MAHER ABDUL HAY",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -689,22 +1226,167 @@
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
     {
-      "id": "h26-29-0845-mds-mpn-na-era-molecular-diagnostico-risco-e-modificac",
+      "id": "h26-29-0730-sanofi-reds-flags-hematologicas-ampliando-o-diagnostic",
       "day": "2026-10-29",
-      "start": "08:45",
-      "end": "10:15",
-      "title": "MDS/MPN na Era Molecular: Diagnóstico, Risco e Modificação da Doença",
-      "type": "cientifica",
-      "track": "Onco-hematologia",
+      "start": "07:30",
+      "end": "08:30",
+      "title": "SANOFI: Reds Flags Hematológicas: ampliando o diagnóstico diferencial das citopenias inexplicadas",
+      "type": "cafe_corporativo",
+      "track": "Atividades Corporativas",
       "stage": "",
       "description": "",
       "participants": [
         {
-          "name": "ALEXANDRE NONINO",
+          "name": "DANIELLE LEÃO CORDEIRO DE FARIAS",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         },
         {
-          "name": "VANEUZA ARAÚJO MOREIRA FUNKE",
+          "name": "RENATA DE SOUZA CRAVO",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+      },
+      "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
+    },
+    {
+      "id": "h26-29-0845-ambulatorio-de-transicao-em-hematologia-e-em-oncologia",
+      "day": "2026-10-29",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "Ambulatório de transição em hematologia e em oncologia: além da transferência do paciente",
+      "type": "cientifica",
+      "track": "Hematologia Pediátrica",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-29-0845-automacao-como-estrategia-para-reducao-de-erros-labora",
+      "day": "2026-10-29",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "Automação como estratégia para redução de erros laboratoriais",
+      "type": "cientifica",
+      "track": "Gerenciamento de Qualidade: Hemoterapia e Terapia Celular",
+      "stage": "Sala 202 AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "LUIZ AUGUSTO SILVA NANI",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "RICARDO HADDAD",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 88,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+      }
+    },
+    {
+      "id": "h26-29-0845-farmacia-industrial-interfaces-hemo",
+      "day": "2026-10-29",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "Farmácia Industrial: interfaces HEMO",
+      "type": "cientifica",
+      "track": "Farmácia em Hematologia e Hemoterapia",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      }
+    },
+    {
+      "id": "h26-29-0845-hemostasia-de-precisao-na-era-das-omicas",
+      "day": "2026-10-29",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "Hemostasia de Precisão: na era das ômicas",
+      "type": "cientifica",
+      "track": "Hemostasia & Trombose",
+      "stage": "",
+      "description": "",
+      "participants": [
+        {
+          "name": "PEDRO HENRIQUE JARDIM SANTOS",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "MARGARETH CASTRO OZELO",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -729,22 +1411,22 @@
       }
     },
     {
-      "id": "h26-29-0845-hemostasia-de-precisao-na-era-das-omicas",
+      "id": "h26-29-0845-mds-mpn-na-era-molecular-diagnostico-risco-e-modificac",
       "day": "2026-10-29",
       "start": "08:45",
       "end": "10:15",
-      "title": "Hemostasia de Precisão: na era das ômicas",
+      "title": "MDS/MPN na Era Molecular: Diagnóstico, Risco e Modificação da Doença",
       "type": "cientifica",
-      "track": "Hemostasia & Trombose",
+      "track": "Onco-hematologia",
       "stage": "",
       "description": "",
       "participants": [
         {
-          "name": "PEDRO HENRIQUE JARDIM SANTOS",
+          "name": "ALEXANDRE NONINO",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         },
         {
-          "name": "MARGARETH CASTRO OZELO",
+          "name": "VANEUZA ARAÚJO MOREIRA FUNKE",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -805,41 +1487,73 @@
       }
     },
     {
-      "id": "h26-29-0845-automacao-como-estrategia-para-reducao-de-erros-labora",
+      "id": "h26-29-0845-parte-1-neutrofilos-na-inflamacao-do-dano-tecidual-a-h",
       "day": "2026-10-29",
       "start": "08:45",
       "end": "10:15",
-      "title": "Automação como estratégia para redução de erros laboratoriais",
+      "title": "PARTE 1: Neutrófilos na inflamação: do dano tecidual à hematopoiese clonal",
       "type": "cientifica",
-      "track": "Gerenciamento de Qualidade: Hemoterapia e Terapia Celular",
-      "stage": "Sala 202 AB",
+      "track": "Simpósio de Neutrófilos / Hemoterapia",
+      "stage": "",
       "description": "",
-      "participants": [
-        {
-          "name": "LUIZ AUGUSTO SILVA NANI",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "RICARDO HADDAD",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
+      "participants": [],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "verifiedAt": "2026-10-24T20:00:00Z",
       "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [],
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
+        "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      }
+    },
+    {
+      "id": "h26-29-0900-debate-depois-do-sim-da-conitec-a-af-onco-e-as-estrate",
+      "day": "2026-10-29",
+      "start": "09:00",
+      "end": "10:30",
+      "title": "Debate: Depois do sim da CONITEC: a AF-Onco e as estratégias para diminuir a fila de espera",
+      "type": "cientifica",
+      "track": "Acesso e Equidade",
+      "stage": "Arena Hemo Talks Samba",
+      "description": "",
+      "participants": [
+        {
+          "name": "ANGELO MAIOLINO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13441",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
       }
     },
     {
@@ -883,43 +1597,69 @@
       }
     },
     {
-      "id": "h26-29-1030-um-seculo-de-avancos-e-novos-desafios-em-hemostasia",
+      "id": "h26-29-1030-debate-saude-suplementar-depois-da-adi-7265-o-que-muda",
       "day": "2026-10-29",
       "start": "10:30",
       "end": "12:00",
-      "title": "Um Século de Avanços e Novos Desafios em Hemostasia",
+      "title": "Debate: Saúde suplementar depois da ADI 7265 — o que muda no acesso do paciente a terapias extrarrol",
       "type": "cientifica",
-      "track": "Hemostasia & Trombose",
+      "track": "Fórum de Acesso e Equidade",
       "stage": "",
       "description": "",
-      "participants": [
-        {
-          "name": "PAULA RIBEIRO VILLAÇA",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "MARGARETH CASTRO OZELO",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
+      "participants": [],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "verifiedAt": "2026-10-24T20:00:00Z",
       "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
         "missingFields": [
           "stage"
         ],
-        "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 35,
+        "score": 39,
         "level": "baixa",
         "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-29-1030-estatuto-dos-direitos-do-paciente",
+      "day": "2026-10-29",
+      "start": "10:30",
+      "end": "12:00",
+      "title": "Estatuto dos direitos do paciente",
+      "type": "cientifica",
+      "track": "Cuidados Paliativos",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
       }
     },
     {
@@ -963,6 +1703,331 @@
       }
     },
     {
+      "id": "h26-29-1030-parte-2-neutropenias-imunes-e-congenitas-investigacao",
+      "day": "2026-10-29",
+      "start": "10:30",
+      "end": "12:00",
+      "title": "PARTE 2: Neutropenias imunes e congênitas: investigação e manejo",
+      "type": "cientifica",
+      "track": "Simpósio de Neutrófilos / Hemoterapia",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      }
+    },
+    {
+      "id": "h26-29-1030-sessao-conjunta-european-hematology-association-eha-ab",
+      "day": "2026-10-29",
+      "start": "10:30",
+      "end": "12:00",
+      "title": "Sessão Conjunta European Hematology Association (EHA) & ABHH: Domínio da Doença Falciforme: Da Cura Pediátrica às Complexidades do Paciente em Envelhecimento",
+      "type": "cientifica",
+      "track": "Hematologia Pediátrica / Anemias",
+      "stage": "Sala 204 AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "EDUARDO MAGALHÃES REGO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13443",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-29-1030-um-seculo-de-avancos-e-novos-desafios-em-hemostasia",
+      "day": "2026-10-29",
+      "start": "10:30",
+      "end": "12:00",
+      "title": "Um Século de Avanços e Novos Desafios em Hemostasia",
+      "type": "cientifica",
+      "track": "Hemostasia & Trombose",
+      "stage": "",
+      "description": "",
+      "participants": [
+        {
+          "name": "PAULA RIBEIRO VILLAÇA",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "MARGARETH CASTRO OZELO",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+      }
+    },
+    {
+      "id": "h26-29-1230-astrazeneca-duas-perspectivas-uma-diretriz-decisoes-pe",
+      "day": "2026-10-29",
+      "start": "12:30",
+      "end": "13:30",
+      "title": "ASTRAZENECA: Duas perspectivas, uma diretriz: decisões personalizadas na LLC",
+      "type": "simposio_corporativo",
+      "track": "Atividades Corporativas",
+      "stage": "Sala 207",
+      "description": "",
+      "participants": [
+        {
+          "name": "CELSO ARRAIS",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16265",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      },
+      "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
+    },
+    {
+      "id": "h26-29-1230-grifols-medicina-transfusional",
+      "day": "2026-10-29",
+      "start": "12:30",
+      "end": "13:30",
+      "title": "GRIFOLS: Medicina Transfusional",
+      "type": "simposio_corporativo",
+      "track": "Atividades Corporativas",
+      "stage": "Sala 203 AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "CARLA LUANA DINARDO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13520",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      },
+      "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
+    },
+    {
+      "id": "h26-29-1230-gsk-entendendo-o-papel-do-adc-no-tratamento-da-primeir",
+      "day": "2026-10-29",
+      "start": "12:30",
+      "end": "13:30",
+      "title": "GSK: Entendendo o papel do ADC no tratamento da primeira recaída do MM",
+      "type": "simposio_corporativo",
+      "track": "Atividades Corporativas",
+      "stage": "Sala 201AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "ANGELO MAIOLINO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13441",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      },
+      "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
+    },
+    {
+      "id": "h26-29-1400-emergencias-hematologicas-diagnostico-e-manejo",
+      "day": "2026-10-29",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Emergências Hematológicas: diagnóstico e manejo",
+      "type": "cientifica",
+      "track": "Ligas Acadêmicas | Sangue Jovem",
+      "stage": "Sala 201AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "MARCIA GARNICA",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13317",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-29-1400-estacoes-de-discussoes-praticas-1-turno",
+      "day": "2026-10-29",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Estações de discussões práticas | 1° turno",
+      "type": "atividade_pratica",
+      "track": "Hemostasia & Trombose",
+      "stage": "Sala 204 C",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13267",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-29-1400-farmacia-hospitalar-e-clinica",
+      "day": "2026-10-29",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Farmácia Hospitalar e Clínica",
+      "type": "cientifica",
+      "track": "Farmácia em Hematologia e Hemoterapia",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      }
+    },
+    {
       "id": "h26-29-1400-gestao-da-qualidade-riscos-e-legislacao",
       "day": "2026-10-29",
       "start": "14:00",
@@ -998,6 +2063,138 @@
         "level": "alta",
         "confidence": "media",
         "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+      }
+    },
+    {
+      "id": "h26-29-1400-otimizando-o-cuidado-da-alfa-talassemia-do-diagnostico",
+      "day": "2026-10-29",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Otimizando o cuidado da alfa talassemia: do diagnóstico à hemoglobina funcional",
+      "type": "cientifica",
+      "track": "Hematologia Pediátrica / Anemias",
+      "stage": "Sala 210",
+      "description": "",
+      "participants": [
+        {
+          "name": "KLEBER YOTSUMOTO FERTRIN",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/15831",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-29-1400-parte-3-neutropenia-alem-da-sorologia-genetica-fenotip",
+      "day": "2026-10-29",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "PARTE 3: Neutropenia além da sorologia: genética, fenótipo e casos clínicos",
+      "type": "cientifica",
+      "track": "Simpósio de Neutrófilos / Hemoterapia",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      }
+    },
+    {
+      "id": "h26-29-1545-encontro-sinasan-em-acao-seguranca-sustentabilidade-e-",
+      "day": "2026-10-29",
+      "start": "15:45",
+      "end": "16:45",
+      "title": "Encontro SINASAN em Ação: Segurança, Sustentabilidade e Integração do Cuidado | Sala Ministério da Saúde",
+      "type": "cientifica",
+      "track": "CGSH",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 72,
+        "level": "media",
+        "confidence": "media",
+        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+      }
+    },
+    {
+      "id": "h26-29-1545-estacoes-de-discussoes-praticas-2-turno",
+      "day": "2026-10-29",
+      "start": "15:45",
+      "end": "17:15",
+      "title": "Estações de discussões práticas 2° turno",
+      "type": "atividade_pratica",
+      "track": "Hemostasia & Trombose",
+      "stage": "Sala 204 C",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13267",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
       }
     },
     {
@@ -1039,16 +2236,99 @@
       }
     },
     {
-      "id": "h26-29-1545-encontro-sinasan-em-acao-seguranca-sustentabilidade-e-",
+      "id": "h26-29-1545-setor-eritroide-revisao-de-temas-importantes",
       "day": "2026-10-29",
       "start": "15:45",
-      "end": "16:45",
-      "title": "Encontro SINASAN em Ação: Segurança, Sustentabilidade e Integração do Cuidado | Sala Ministério da Saúde",
+      "end": "17:20",
+      "title": "Setor Eritróide: Revisão de temas importantes",
       "type": "cientifica",
-      "track": "CGSH",
+      "track": "Hematologia Laboratorial",
+      "stage": "Auditório Anexo",
+      "description": "",
+      "participants": [
+        {
+          "name": "KLEBER YOTSUMOTO FERTRIN",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/15831",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-29-1730-hemo-reconhece-agradecimento-aos-patrocinadores-e-home",
+      "day": "2026-10-29",
+      "start": "17:30",
+      "end": "18:30",
+      "title": "HEMO RECONHECE: Agradecimento aos patrocinadores e homenagem",
+      "type": "homenagem",
+      "track": "Destaques do Congresso",
+      "stage": "Arena Hemo Talks Samba",
+      "description": "",
+      "participants": [
+        {
+          "name": "NELSON HAMERSCHLAK",
+          "role": "Papel não verificado",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-30-0730-johnson-johnson-amiloidose-al-no-brasil-da-identificac",
+      "day": "2026-10-30",
+      "start": "07:30",
+      "end": "08:30",
+      "title": "JOHNSON & JOHNSON: Amiloidose AL no Brasil: da identificação precoce à mudança de prognóstico",
+      "type": "cafe_corporativo",
+      "track": "Atividades Corporativas",
       "stage": "",
       "description": "",
-      "participants": [],
+      "participants": [
+        {
+          "name": "VANIA HUNGRIA",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "PEDRO MANOEL MARQUES GARIBALDI",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
       "verifiedAt": "2026-10-24T02:03:02.016Z",
       "evidence": {
@@ -1063,11 +2343,12 @@
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
-      }
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+      },
+      "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
     {
       "id": "h26-30-0730-knight-conexao-pti-experiencias-reais-e-estrategias-te",
@@ -1139,84 +2420,40 @@
       "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
     },
     {
-      "id": "h26-30-0730-johnson-johnson-amiloidose-al-no-brasil-da-identificac",
-      "day": "2026-10-30",
-      "start": "07:30",
-      "end": "08:30",
-      "title": "JOHNSON & JOHNSON: Amiloidose AL no Brasil: da identificação precoce à mudança de prognóstico",
-      "type": "cafe_corporativo",
-      "track": "Atividades Corporativas",
-      "stage": "",
-      "description": "",
-      "participants": [
-        {
-          "name": "VANIA HUNGRIA",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "PEDRO MANOEL MARQUES GARIBALDI",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
-      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
-      "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
-        "coverage": "PARTIAL",
-        "participantRolesVerified": false
-      },
-      "recommendation": {
-        "targetProfile": "Flora",
-        "score": 35,
-        "level": "baixa",
-        "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
-      },
-      "accessNote": "Atividade corporativa; regras específicas de inscrição e acesso ainda não verificadas."
-    },
-    {
-      "id": "h26-30-0845-tratamento-de-mieloma-multiplo-no-brasil-onde-estamos-",
+      "id": "h26-30-0845-anemia-quando-tratar",
       "day": "2026-10-30",
       "start": "08:45",
       "end": "10:15",
-      "title": "Tratamento de Mieloma Múltiplo no Brasil: Onde estamos e para onde vamos",
+      "title": "Anemia: Quando tratar?",
       "type": "cientifica",
-      "track": "Onco-hematologia",
-      "stage": "",
+      "track": "Hemoterapia",
+      "stage": "Sala 202 AB",
       "description": "",
       "participants": [
         {
-          "name": "VANIA HUNGRIA",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "ROSANE ISABEL BITTENCOURT",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+          "name": "DENISE MENEZES BRUNETTA",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
         }
       ],
-      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13525",
+      "verifiedAt": "2026-10-24T20:00:00Z",
       "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 35,
-        "level": "baixa",
-        "confidence": "baixa",
-        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
       }
     },
     {
@@ -1260,60 +2497,55 @@
       }
     },
     {
-      "id": "h26-30-1400-transfusao-de-plaquetas",
+      "id": "h26-30-0845-ia-comunicacao-digital-e-novos-caminhos-para-engajar-d",
       "day": "2026-10-30",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "Transfusão de Plaquetas",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "IA, comunicação digital e novos caminhos para engajar doadores",
       "type": "cientifica",
-      "track": "Hemoterapia",
-      "stage": "Sala 201AB",
+      "track": "Captação de Doadores de Sangue",
+      "stage": "",
       "description": "",
-      "participants": [
-        {
-          "name": "ALFREDO MENDRONE JR.",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "CAROLINA BONET BUB",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
+      "participants": [],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "verifiedAt": "2026-10-24T20:00:00Z",
       "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [],
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
       }
     },
     {
-      "id": "h26-30-1400-gestao-estrategica-da-captacao-transformando-dados-em-",
+      "id": "h26-30-0845-tratamento-de-mieloma-multiplo-no-brasil-onde-estamos-",
       "day": "2026-10-30",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "Gestão estratégica da captação: transformando dados em resultados",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "Tratamento de Mieloma Múltiplo no Brasil: Onde estamos e para onde vamos",
       "type": "cientifica",
-      "track": "Captação de Doadores de Sangue",
-      "stage": "Sala 210",
+      "track": "Onco-hematologia",
+      "stage": "",
       "description": "",
       "participants": [
         {
-          "name": "PATRICIA CARSTEN",
+          "name": "VANIA HUNGRIA",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         },
         {
-          "name": "FRANKLIN JOSE CÂNDIDO SANTOS",
+          "name": "ROSANE ISABEL BITTENCOURT",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -1323,17 +2555,131 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [],
+        "missingFields": [
+          "stage"
+        ],
         "coverage": "PARTIAL",
         "participantRolesVerified": false
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 88,
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+      }
+    },
+    {
+      "id": "h26-30-1030-apresentacao-melhores-trabalhos-cientificos-de-onco-he",
+      "day": "2026-10-30",
+      "start": "10:30",
+      "end": "12:00",
+      "title": "Apresentação Melhores Trabalhos Científicos de Onco-hematologia",
+      "type": "trabalhos_orais",
+      "track": "Trabalhos Científicos",
+      "stage": "Sala 206",
+      "description": "",
+      "participants": [
+        {
+          "name": "CELSO ARRAIS",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16265",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-30-1030-registros-de-doadores-raros-na-america-latina",
+      "day": "2026-10-30",
+      "start": "10:30",
+      "end": "12:00",
+      "title": "Registros de doadores raros na América Latina",
+      "type": "cientifica",
+      "track": "Hemoterapia",
+      "stage": "Sala 202 AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "LILIAN MARIA DE CASTILHO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13541",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
         "level": "alta",
         "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
       }
+    },
+    {
+      "id": "h26-30-1230-astrazeneca-evoluindo-os-objetivos-terapeuticos-na-hpn",
+      "day": "2026-10-30",
+      "start": "12:30",
+      "end": "13:30",
+      "title": "ASTRAZENECA: Evoluindo os objetivos terapêuticos na HPN: Da proteção sustentada à otimização do controle da doença",
+      "type": "simposio_corporativo",
+      "track": "Atividades Corporativas",
+      "stage": "Sala 203 C",
+      "description": "",
+      "participants": [
+        {
+          "name": "CELSO ARRAIS",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16265",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      },
+      "accessNote": "Atividade corporativa; conferir critérios de elegibilidade/credenciamento."
     },
     {
       "id": "h26-30-1400-atualizacoes-em-tmo-alogenico",
@@ -1376,22 +2722,59 @@
       }
     },
     {
-      "id": "h26-30-1545-suporte-hemoterapico-ao-tmo",
+      "id": "h26-30-1400-doencas-infecciosas-em-hematologia-quando-as-diretrize",
       "day": "2026-10-30",
-      "start": "15:45",
-      "end": "17:15",
-      "title": "Suporte hemoterápico ao TMO",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Doenças Infecciosas em Hematologia: Quando as Diretrizes Não São Suficientes",
       "type": "cientifica",
-      "track": "Hemoterapia",
-      "stage": "",
+      "track": "Onco-hematologia",
+      "stage": "Sala 204 AB",
       "description": "",
       "participants": [
         {
-          "name": "JOAO CARLOS PINA SARAIVA FILHO",
+          "name": "MARCIA GARNICA",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13317",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-30-1400-gestao-estrategica-da-captacao-transformando-dados-em-",
+      "day": "2026-10-30",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Gestão estratégica da captação: transformando dados em resultados",
+      "type": "cientifica",
+      "track": "Captação de Doadores de Sangue",
+      "stage": "Sala 210",
+      "description": "",
+      "participants": [
+        {
+          "name": "PATRICIA CARSTEN",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         },
         {
-          "name": "LORENA COSTA CORRÊA",
+          "name": "FRANKLIN JOSE CÂNDIDO SANTOS",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -1401,9 +2784,156 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 88,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+      }
+    },
+    {
+      "id": "h26-30-1400-hemostasia-e-trombose-na-saude-da-mulher",
+      "day": "2026-10-30",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Hemostasia e Trombose na Saúde da Mulher",
+      "type": "cientifica",
+      "track": "Hemostasia & Trombose",
+      "stage": "Auditório Anexo",
+      "description": "",
+      "participants": [
+        {
+          "name": "ALESSANDRA NUNES LOUREIRO PREZZOTI",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13267",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-30-1400-imuno-hematologia-o-classico-e-o-futuro",
+      "day": "2026-10-30",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Imuno-hematologia: o clássico e o futuro",
+      "type": "cientifica",
+      "track": "Hemoterapia",
+      "stage": "Sala 202 AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "LILIAN MARIA DE CASTILHO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13541",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
+      }
+    },
+    {
+      "id": "h26-30-1400-mao-na-massa-casos-clinicos-com-especialistas",
+      "day": "2026-10-30",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Mão na Massa: Casos Clínicos com Especialistas",
+      "type": "cientifica",
+      "track": "Ligas Acadêmicas | Sangue Jovem",
+      "stage": "Sala 204 C",
+      "description": "",
+      "participants": [
+        {
+          "name": "CELSO ARRAIS",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16265",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-30-1400-transfusao-de-plaquetas",
+      "day": "2026-10-30",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Transfusão de Plaquetas",
+      "type": "cientifica",
+      "track": "Hemoterapia",
+      "stage": "Sala 201AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "ALFREDO MENDRONE JR.",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "CAROLINA BONET BUB",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [],
         "coverage": "PARTIAL",
         "participantRolesVerified": false
       },
@@ -1456,46 +2986,6 @@
       }
     },
     {
-      "id": "h26-30-1545-desafios-e-oportunidades-da-terapia-celular-avancada",
-      "day": "2026-10-30",
-      "start": "15:45",
-      "end": "17:15",
-      "title": "Desafios e Oportunidades da Terapia Celular Avançada",
-      "type": "cientifica",
-      "track": "Terapia Celular",
-      "stage": "",
-      "description": "",
-      "participants": [
-        {
-          "name": "JAYR SCHMIDT FILHO",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "FLÁVIA ZATTAR PIAZERA",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
-      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
-      "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
-        "coverage": "PARTIAL",
-        "participantRolesVerified": false
-      },
-      "recommendation": {
-        "targetProfile": "Flora",
-        "score": 67,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Conexão com terapia celular, acreditação ou operação assistencial."
-      }
-    },
-    {
       "id": "h26-30-1545-comunicacao-pbm-e-cultura-do-sangue-construindo-novas-",
       "day": "2026-10-30",
       "start": "15:45",
@@ -1536,6 +3026,160 @@
       }
     },
     {
+      "id": "h26-30-1545-desafios-e-oportunidades-da-terapia-celular-avancada",
+      "day": "2026-10-30",
+      "start": "15:45",
+      "end": "17:15",
+      "title": "Desafios e Oportunidades da Terapia Celular Avançada",
+      "type": "cientifica",
+      "track": "Terapia Celular",
+      "stage": "",
+      "description": "",
+      "participants": [
+        {
+          "name": "JAYR SCHMIDT FILHO",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "FLÁVIA ZATTAR PIAZERA",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 67,
+        "level": "media",
+        "confidence": "media",
+        "rationale": "Conexão com terapia celular, acreditação ou operação assistencial."
+      }
+    },
+    {
+      "id": "h26-30-1545-hemoglobinopatia-sc",
+      "day": "2026-10-30",
+      "start": "15:45",
+      "end": "17:15",
+      "title": "Hemoglobinopatia SC",
+      "type": "cientifica",
+      "track": "Hematologia Pediátrica",
+      "stage": "Sala 205",
+      "description": "",
+      "participants": [
+        {
+          "name": "KLEBER YOTSUMOTO FERTRIN",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/15831",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-30-1545-sessao-movimento-abhh-mulheres",
+      "day": "2026-10-30",
+      "start": "15:45",
+      "end": "17:15",
+      "title": "Sessão Movimento ABHH Mulheres",
+      "type": "cientifica",
+      "track": "Acesso e Equidade",
+      "stage": "Arena Hemo Talks Samba",
+      "description": "",
+      "participants": [
+        {
+          "name": "DENISE MENEZES BRUNETTA",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13525",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-30-1545-suporte-hemoterapico-ao-tmo",
+      "day": "2026-10-30",
+      "start": "15:45",
+      "end": "17:15",
+      "title": "Suporte hemoterápico ao TMO",
+      "type": "cientifica",
+      "track": "Hemoterapia",
+      "stage": "",
+      "description": "",
+      "participants": [
+        {
+          "name": "JOAO CARLOS PINA SARAIVA FILHO",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "LORENA COSTA CORRÊA",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 72,
+        "level": "media",
+        "confidence": "media",
+        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+      }
+    },
+    {
       "id": "h26-31-0900-100-anos-da-doenca-de-von-willebrand-evolucao-diagnost",
       "day": "2026-10-31",
       "start": "09:00",
@@ -1567,112 +3211,69 @@
       }
     },
     {
-      "id": "h26-31-0900-hemovigilancia-e-seguranca-transfusional",
+      "id": "h26-31-0900-casos-clinicos-em-hematologia-pediatrica",
       "day": "2026-10-31",
       "start": "09:00",
       "end": "10:30",
-      "title": "Hemovigilância e segurança transfusional",
+      "title": "Casos clínicos em hematologia pediátrica",
       "type": "cientifica",
-      "track": "Hemoterapia",
+      "track": "Hematologia Pediátrica",
       "stage": "",
-      "description": "",
-      "participants": [
-        {
-          "name": "JOSÉ FRANCISCO COMENALLI MARQUES JR.",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "CÉSAR DE ALMEIDA NETO",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
-      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
-      "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
-        "coverage": "PARTIAL",
-        "participantRolesVerified": false
-      },
-      "recommendation": {
-        "targetProfile": "Flora",
-        "score": 88,
-        "level": "alta",
-        "confidence": "media",
-        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
-      }
-    },
-    {
-      "id": "h26-31-0900-medicina-transfusional",
-      "day": "2026-10-31",
-      "start": "09:00",
-      "end": "10:30",
-      "title": "Medicina transfusional",
-      "type": "cientifica",
-      "track": "Hemoterapia",
-      "stage": "",
-      "description": "",
-      "participants": [
-        {
-          "name": "CYNTIA ARRAIS",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "HELIO MORAES DE SOUZA",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
-      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
-      "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
-        "coverage": "PARTIAL",
-        "participantRolesVerified": false
-      },
-      "recommendation": {
-        "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
-      }
-    },
-    {
-      "id": "h26-31-0900-vamos-discutir-imuno-hematologia",
-      "day": "2026-10-31",
-      "start": "09:00",
-      "end": "11:00",
-      "title": "Vamos discutir imuno-hematologia?",
-      "type": "atividade_pratica",
-      "track": "Hemoterapia",
-      "stage": "Sala 202C",
       "description": "",
       "participants": [],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "verifiedAt": "2026-10-24T20:00:00Z",
       "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [],
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
         "coverage": "PARTIAL",
-        "participantRolesVerified": false
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
       },
       "recommendation": {
         "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-31-0900-discussao-de-casos-dificeis-em-linfomas",
+      "day": "2026-10-31",
+      "start": "09:00",
+      "end": "10:30",
+      "title": "Discussão de casos difíceis em linfomas",
+      "type": "cientifica",
+      "track": "Onco-hematologia",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
       }
     },
     {
@@ -1716,6 +3317,182 @@
       }
     },
     {
+      "id": "h26-31-0900-forum-sinasan-25-anos-do-sus-para-o-sus-sala-ministeri",
+      "day": "2026-10-31",
+      "start": "09:00",
+      "end": "10:40",
+      "title": "Fórum SINASAN – 25 anos – Do SUS para o SUS | Sala Ministério da Saúde (Atividade fechada)",
+      "type": "forum_restrito",
+      "track": "CGSH",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 72,
+        "level": "media",
+        "confidence": "media",
+        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+      },
+      "accessNote": "Atividade fechada, conforme grade oficial."
+    },
+    {
+      "id": "h26-31-0900-hemovigilancia-e-seguranca-transfusional",
+      "day": "2026-10-31",
+      "start": "09:00",
+      "end": "10:30",
+      "title": "Hemovigilância e segurança transfusional",
+      "type": "cientifica",
+      "track": "Hemoterapia",
+      "stage": "",
+      "description": "",
+      "participants": [
+        {
+          "name": "JOSÉ FRANCISCO COMENALLI MARQUES JR.",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "CÉSAR DE ALMEIDA NETO",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 88,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Relação direta com qualidade, segurança, PBM, gestão ou indicadores."
+      }
+    },
+    {
+      "id": "h26-31-0900-homenagem-clube-do-sangue-15-anos",
+      "day": "2026-10-31",
+      "start": "09:00",
+      "end": "10:30",
+      "title": "Homenagem: Clube do Sangue 15 anos",
+      "type": "homenagem",
+      "track": "Destaques do Congresso",
+      "stage": "Arena Hemo Talks Samba",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-31-0900-medicina-transfusional",
+      "day": "2026-10-31",
+      "start": "09:00",
+      "end": "10:30",
+      "title": "Medicina transfusional",
+      "type": "cientifica",
+      "track": "Hemoterapia",
+      "stage": "",
+      "description": "",
+      "participants": [
+        {
+          "name": "CYNTIA ARRAIS",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "HELIO MORAES DE SOUZA",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 72,
+        "level": "media",
+        "confidence": "media",
+        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+      }
+    },
+    {
+      "id": "h26-31-0900-neoplasias-linfoproliferativas-raras-como-a-citometria",
+      "day": "2026-10-31",
+      "start": "09:00",
+      "end": "10:30",
+      "title": "Neoplasias Linfoproliferativas Raras - como a citometria de fluxo pode auxiliar o anatomo-patologista no diagnóstico final",
+      "type": "cientifica",
+      "track": "Citometria de Fluxo",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
       "id": "h26-31-0900-sessao-inovacao-o-que-ha-de-novo-sobre-terapias-avanca",
       "day": "2026-10-31",
       "start": "09:00",
@@ -1756,14 +3533,47 @@
       }
     },
     {
-      "id": "h26-31-0900-forum-sinasan-25-anos-do-sus-para-o-sus-sala-ministeri",
+      "id": "h26-31-0900-terapias-hematologicas-para-doencas-nao-hematologicas",
       "day": "2026-10-31",
       "start": "09:00",
-      "end": "10:40",
-      "title": "Fórum SINASAN – 25 anos – Do SUS para o SUS | Sala Ministério da Saúde (Atividade fechada)",
-      "type": "forum_restrito",
-      "track": "CGSH",
+      "end": "10:30",
+      "title": "Terapias hematológicas para doenças não hematológicas: novas fronteiras",
+      "type": "cientifica",
+      "track": "Onco-hematologia Pediátrica",
       "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-31-0900-vamos-discutir-imuno-hematologia",
+      "day": "2026-10-31",
+      "start": "09:00",
+      "end": "11:00",
+      "title": "Vamos discutir imuno-hematologia?",
+      "type": "atividade_pratica",
+      "track": "Hemoterapia",
+      "stage": "Sala 202C",
       "description": "",
       "participants": [],
       "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
@@ -1772,9 +3582,7 @@
         "status": "INDEXED_OFFICIAL_GRADE",
         "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
         "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
+        "missingFields": [],
         "coverage": "PARTIAL",
         "participantRolesVerified": false
       },
@@ -1784,8 +3592,81 @@
         "level": "media",
         "confidence": "media",
         "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+      }
+    },
+    {
+      "id": "h26-31-1100-conferencia-magna-mieloma-multiplo-o-caminho-para-a-cu",
+      "day": "2026-10-31",
+      "start": "11:00",
+      "end": "12:00",
+      "title": "Conferência Magna: Mieloma Múltiplo: O Caminho para a Cura",
+      "type": "conferencia",
+      "track": "Destaques do Congresso / Onco-hematologia",
+      "stage": "Auditório Master",
+      "description": "",
+      "participants": [
+        {
+          "name": "ANGELO MAIOLINO",
+          "role": "Papel não verificado",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
       },
-      "accessNote": "Atividade fechada, conforme grade oficial."
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-31-1345-alem-do-eastern-cooperative-oncology-group-ecog-aplica",
+      "day": "2026-10-31",
+      "start": "13:45",
+      "end": "15:15",
+      "title": "Além do Eastern Cooperative Oncology Group - ECOG: aplicando HematoGeriatria na prática",
+      "type": "cientifica",
+      "track": "Onco-hematologia",
+      "stage": "Sala 204 AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "THIAGO XAVIER CARNEIRO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/16342",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
     },
     {
       "id": "h26-31-1345-armazenamento-de-hemocomponentes",
@@ -1804,46 +3685,6 @@
         },
         {
           "name": "MARIA DO SOCORRO SAMPAIO CARVALHO",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        }
-      ],
-      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
-      "verifiedAt": "2026-10-24T02:03:02.016Z",
-      "evidence": {
-        "status": "INDEXED_OFFICIAL_GRADE",
-        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
-        "checkedAt": "2026-10-24T02:03:02.016Z",
-        "missingFields": [
-          "stage"
-        ],
-        "coverage": "PARTIAL",
-        "participantRolesVerified": false
-      },
-      "recommendation": {
-        "targetProfile": "Flora",
-        "score": 72,
-        "level": "media",
-        "confidence": "media",
-        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
-      }
-    },
-    {
-      "id": "h26-31-1345-uso-nao-terapeutico-de-componentes-sanguineos",
-      "day": "2026-10-31",
-      "start": "13:45",
-      "end": "15:15",
-      "title": "Uso não terapêutico de componentes sanguíneos",
-      "type": "cientifica",
-      "track": "Hemoterapia",
-      "stage": "",
-      "description": "",
-      "participants": [
-        {
-          "name": "JOSÉ FRANCISCO COMENALLI MARQUES JR.",
-          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
-        },
-        {
-          "name": "HELIO MORAES DE SOUZA",
           "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
         }
       ],
@@ -1905,6 +3746,149 @@
         "level": "baixa",
         "confidence": "baixa",
         "rationale": "Título/trilha não demonstram aderência prioritária aos temas informados; confirmar na descrição oficial."
+      }
+    },
+    {
+      "id": "h26-31-1345-neoplasias-mieloproliferativas",
+      "day": "2026-10-31",
+      "start": "13:45",
+      "end": "15:15",
+      "title": "Neoplasias Mieloproliferativas",
+      "type": "cientifica",
+      "track": "Citometria de Fluxo",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-31-1345-trombose-e-cancer",
+      "day": "2026-10-31",
+      "start": "13:45",
+      "end": "15:15",
+      "title": "Trombose e Câncer",
+      "type": "cientifica",
+      "track": "Hemostasia & Trombose",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PROGRAM_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 39,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Sem ligação direta demonstrada com prioridades de hemoterapia, qualidade ou gestão; descrição detalhada ainda não examinada."
+      }
+    },
+    {
+      "id": "h26-31-1345-uso-nao-terapeutico-de-componentes-sanguineos",
+      "day": "2026-10-31",
+      "start": "13:45",
+      "end": "15:15",
+      "title": "Uso não terapêutico de componentes sanguíneos",
+      "type": "cientifica",
+      "track": "Hemoterapia",
+      "stage": "",
+      "description": "",
+      "participants": [
+        {
+          "name": "JOSÉ FRANCISCO COMENALLI MARQUES JR.",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        },
+        {
+          "name": "HELIO MORAES DE SOUZA",
+          "role": "Moderador(a) - papel a confirmar para cada pessoa na lista"
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T02:03:02.016Z",
+      "evidence": {
+        "status": "INDEXED_OFFICIAL_GRADE",
+        "listUrl": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T02:03:02.016Z",
+        "missingFields": [
+          "stage"
+        ],
+        "coverage": "PARTIAL",
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 72,
+        "level": "media",
+        "confidence": "media",
+        "rationale": "Aplicação relevante em hemoterapia ou integração da hemorrede."
+      }
+    },
+    {
+      "id": "h26-31-1530-imuno-hematologia-plaquetaria",
+      "day": "2026-10-31",
+      "start": "15:30",
+      "end": "17:00",
+      "title": "Imuno-hematologia plaquetária",
+      "type": "cientifica",
+      "track": "Hemoterapia",
+      "stage": "Sala 201AB",
+      "description": "",
+      "participants": [
+        {
+          "name": "CARLA LUANA DINARDO",
+          "role": "Papel exibido na agenda individual; conferir função exata por evento",
+          "institution": ""
+        }
+      ],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/programacao/agenda/13520",
+      "verifiedAt": "2026-10-24T20:00:00Z",
+      "evidence": {
+        "status": "OFFICIAL_PARTICIPANT_AGENDA_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "gradeUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+        "checkedAt": "2026-10-24T20:00:00Z",
+        "coverage": "PARTIAL",
+        "missingFields": [],
+        "participantRolesVerified": false,
+        "sourceAccess": "indexed_search"
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 82,
+        "level": "alta",
+        "confidence": "media",
+        "rationale": "Tema relacionado à hemoterapia, acreditação, qualidade, tecnologia ou eficiência; avaliação preliminar baseada em título/trilha."
       }
     }
   ],
