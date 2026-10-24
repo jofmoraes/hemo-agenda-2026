@@ -1,5 +1,5 @@
 import {conflictIds, layoutDay, minutes, normalize} from './schedule-utils.js';
-import {auditProgramDataset,previewRequested,schedulePath} from './schedule-mode.js';
+import {auditProgramDataset,previewRequested,schedulePath,stageLabel,uncertainRole,talksForSession} from './schedule-mode.js';
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const DAYS=['2026-10-28','2026-10-29','2026-10-30','2026-10-31'];
@@ -62,8 +62,6 @@ function interestButtons(id,current,mode='list'){
   return `<button type="button" class="interest-choice ${cls} ${active?'selected':''}" ${action}="${esc(value)}" ${mode==='list'?`data-session-id="${esc(id)}"`:''} aria-pressed="${active}" aria-label="${esc(interestLabel(value))}${active?' (selecionado)':''}"><span aria-hidden="true" class="check-mark">${active?'✓ ':''}</span>${esc(interestLabel(value))}</button>`;
  }).join('');
 }
-function stageLabel(s){return String(s.stage||'').trim()||'A confirmar';}
-function uncertainRole(role){return !role||/a confirmar|Papel exibido|não verificado/i.test(role);}
 function proposedSuggestion(s,short=false){
  if(!st.preview||!s.recommendation)return '';
  const r=s.recommendation,level=r.level==='alta'?'Alta':r.level==='media'?'Média':'Baixa',
@@ -72,7 +70,7 @@ function proposedSuggestion(s,short=false){
 }
 function talkList(s){
  if(!st.preview)return '';
- const talks=st.talks.filter(t=>t.parentSessionId===s.id).sort((a,b)=>a.start.localeCompare(b.start));
+ const talks=talksForSession(st.talks,s.id);
  if(!talks.length)return '<p class="muted">Palestras subordinadas: A confirmar.</p>';
  return `<h3>Palestras desta sessão (${talks.length} identificadas)</h3><ol class="talks-list">${talks.map(t=>`<li><strong>${esc(t.start)}–${esc(t.end)}</strong> · ${esc(t.title)}<div class="muted">${esc((t.participants||[]).map(p=>p.name+' · '+(uncertainRole(p.role)?'Papel: A confirmar':p.role)).join('; ')||'Palestrantes: A confirmar')}</div></li>`).join('')}</ol><p class="muted">A lista de falas pode estar incompleta.</p>`;
 }
