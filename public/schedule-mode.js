@@ -65,3 +65,13 @@ export function uncertainRole(role){return !role||/a confirmar|Papel exibido|nã
 export function talksForSession(talks,id){
  return talks.filter(t=>t.parentSessionId===id).sort((a,b)=>a.start.localeCompare(b.start));
 }
+
+
+export const SESSION_TYPES={
+ cientifica:'Sessão científica',educacional:'Programa educacional',treinamento:'Treinamento',
+ cafe_corporativo:'Café corporativo',simposio_corporativo:'Simpósio corporativo',
+ meet_the_expert:'Meet the Expert',plenaria:'Plenária',abertura:'Abertura',
+ atividade_pratica:'Atividade prática',homenagem:'Homenagem',trabalhos_orais:'Trabalhos orais',
+ forum_restrito:'Fórum restrito',conferencia:'Conferência',service:'Intervalo / serviço'
+};
+export function typeLabel(type){return SESSION_TYPES[type]||type||'A confirmar';}
