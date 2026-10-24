@@ -65,3 +65,25 @@ NO_PR; NO_AUTO_CODE_REVIEW; NO_CODEX_WITHOUT_APPROVAL; NO_DEPLOY_WITHOUT_APPROVA
 - **Comandos adicionados** ao `package.json` de B2: `npm test` inclui testes B1+B2, `npm run test:b2` isola B2, `npm run check` faz parse JS e testes.
 - **Gate restante:** conseguir fontes completas de forma autorizada, reconciliar 42 salas e a totalidade de sessões/talks/atividades e regras de acesso, validar contagem oficial por dia/tipo, executar Node e navegador nativos. Só depois transformar `public/schedule.json` em dataset `verified` e submeter B2 completa à auditoria. Sem merge/deploy.
 - **Status:** `HEMO_B2_PARTIAL_SOURCE_BLOCKED`. O marcador `HEMO_B2_READY_FOR_AUDIT` **não é aplicável** ainda, porque a completude exigida na Issue #2 não foi demonstrada.
+
+
+## HEMO B2-W1 - WEB_PARTIAL_WITH_EXACT_RESIDUAL (24/10/2026)
+
+**Execução exclusivamente GPT Web com pesquisa pública, conector GitHub e conector Google Drive/Sheets.** Branch `feat/hemo-b2-programa` originada de `76ff694c1570a8415c6bdf9ccd5454afe1139a2d`, sem PR, Codex, Work, deploy, merge ou alterações em CONAHP/`main`.
+
+### Registros e rastreabilidade
+- Inventário `data/b2-indexed-candidates.json` ampliado de **49 sessões/17 falas** para **121 sessões/42 falas**, por dia 28/10=33/11, 29/10=34/12, 30/10=34/11, 31/10=20/8. Mantidos **49 IDs de sessão e 17 IDs de subpalestra** anteriores, protegidos em `tests/fixtures/b2-baseline-ids.json`.
+- **66 salas faltantes** (14/20/19/13 por dia) e **67 relações participantes/sessões** com papel pendente. **Total oficial de sessões e falas do congresso desconhecido**. `coverage.completenessVerified=false`; todos os dados extraídos de páginas oficiais indexadas sem materializar grade/lista completas. **Não representa programação integral.**
+- Tarde de 28/10 complementada com simpósios, treinamento AABB/ABHH, plenária 16h30–18h e abertura 18h15–19h30. Diferencia `cientifica`, `educacional`, `treinamento`, `cafe_corporativo`, `simposio_corporativo`, `meet_the_expert`, `atividade_pratica`, `forum_restrito`, `abertura`, `homenagem`, `conferencia`, `plenaria` e `trabalhos_orais`. Fontes e amostras: `docs/B2_SOURCE_AUDIT.md`.
+- Página pública oficial de PDF científico identificada, mas arquivo iframe **não obtido/verificado**; possibilidade de PDF de traslado indexado, portanto nenhum PDF tratado como cronograma científico.
+- Curadoria individualizada: **28 recomendações altas, 9 médias, 84 baixas**, apenas proposta, justificativa e confiança (média/baixa); `data/b2-flora-conflicts.json` contém **6 grupos de alternativas simultâneas**, sem marcar presença/interesse de Flora. Explicação em `docs/B2_FLORA_CURATION.md`.
+- Planilha existente atualizada **in-place**, preservando 7 abas originais e criando **Palestras B2** e **Conflitos Flora**: `Sessoes!A1:O122` (121 registros); `Palestras B2!A1:L43` (42 registros); `Conflitos Flora!A1:L7` (6 grupos); 7/8 `Destaques` com ID/dia reconciliados, 1 ABHH PBM segue sem data; `Fontes!A8:E12`; `Backlog!A10:E11`. Readback valores e nomes de abas PASS, inspeção visual em navegador NOT_RUN.
+- **Frontend e produção não integrados:** `public/schedule.json` `pending_b2`, 0 sessões. O contrato público não foi falsamente elevado a `verified`.
+- Testes novos `tests/hemo-b2-web.test.mjs` (7) e `tests/fixtures/b2-baseline-ids.json`, com `npm test` e `npm run test:b2` ajustados. Runner **V8 com callbacks reais dos arquivos versionados + adaptador de FS**: 6/6 testes B2 prévios PASS e 7/7 testes B2-W1 PASS após correção do teste de URL para aceitar domínio oficial com e sem `www`. Sem casos FAIL finais. **Não equivale a execução Node nativa.**
+- **NOT_RUN:** `npm test`, `npm run check`, `npm run test:b2` executados nativamente; servidor HTTP, DOM, Chromium desktop/mobile, PWA instalado, cold/warm/offline, persistência e backup reais; pasta Windows inacessível, `git clone` bloqueado por DNS no runtime Linux. Histórico QA B1 Issue #1 continua `STATIC_ACCEPTED_RUNTIME_QA_PENDING`.
+- Isolamento reauditar via HEADs GitHub. Sem alterações no CONAHP, PR, Code Review, deploy, OAuth, Sheets privados em público ou promoção da `main`.
+
+### Próximo desbloqueio mínimo
+Obter via navegação normalmente autorizada **HTML/DOM/MHTML completos da grade e lista 28–31/10, ou PDF científico HEMO 2026 com identidade/ano/conteúdo auditados**, permitindo determinar o universo, reconciliar **66 salas, 67 papéis ainda pendentes**, palestras filhas, inscrições, dias e trilhas. Fontes brutas ficam privadas no Drive, não no repo público. Após conciliação, rever e executar suites Node nativas, smoke visual, trocar para `verified` na branch e solicitar auditoria; publicação ainda terá gate separado.
+
+**Marcador executor: `HEMO_B2_WEB_PARTIAL_WITH_EXACT_RESIDUAL`. Não é `HEMO_B2_WEB_READY_FOR_AUDIT`.**
