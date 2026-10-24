@@ -45,7 +45,7 @@ Cada sessão mantém ID `h26-*`, `sourceUrl`, `verifiedAt`, `evidence.status`, `
 - 49 IDs de sessões e 17 IDs de falas originais preservados, congelados em `tests/fixtures/b2-baseline-ids.json`.
 
 ### Planilha de curadoria Google Sheets
-Atualizada **no mesmo arquivo**, sem apagar abas: `Sessoes!A1:O122` com 121 candidatos e classificação; `Destaques` sete referências reconciliadas (um destaque ABHH/PBM corporativo permanece sem ID/data), `Fontes!A8:E12` e `Backlog!A10:E11` atualizados. Campo Validação exibe explicitamente `CANDIDATO - PARCIAL`. Checagem de leitura de células realizada; inspeção visual nativa indisponível.
+Atualizada **no mesmo arquivo**, sem apagar abas: `Sessoes!A1:O122` com 121 candidatos e classificação; `Palestras B2!A1:L43` com 42 falas vinculadas; `Conflitos Flora!A1:L7` com seis grupos de simultaneidade entre sugestões; `Destaques` sete referências reconciliadas (um destaque ABHH/PBM corporativo permanece sem ID/data), `Fontes!A8:E12` e `Backlog!A10:E11` atualizados. Campo Validação exibe explicitamente `CANDIDATO - PARCIAL`. Checagem de leitura de células realizada; inspeção visual nativa indisponível.
 
 ### Bloqueios reais (não ocultar)
 1. **Completude de fonte:** nenhum HTML/MHTML/DOM de lista e grade completos, nem PDF 2026 identificado e auditado. **Desconhecemos a cardinalidade oficial total por dia/sala e quantas sessões/falas ainda faltam.**
