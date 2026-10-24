@@ -8,7 +8,7 @@
     "2026-10-30",
     "2026-10-31"
   ],
-  "checkedAt": "2026-10-24T20:09:21.196Z",
+  "checkedAt": "2026-10-24T20:14:32.852Z",
   "officialSources": {
     "grade": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
     "list": "https://www.hemo.org.br/evento/hemo2026/pt/programacao/lista"
@@ -18,7 +18,7 @@
     "knownSessions": {
       "28": 33,
       "29": 34,
-      "30": 23,
+      "30": 34,
       "31": 20
     },
     "knownTalks": 42,
@@ -37,7 +37,7 @@
     "curationCounts": {
       "alta": 28,
       "media": 9,
-      "baixa": 73
+      "baixa": 84
     }
   },
   "sessions": [
@@ -2780,6 +2780,72 @@
       }
     },
     {
+      "id": "h26-30-0845-anticoagulacao-e-intervencao-odontologica",
+      "day": "2026-10-30",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "Anticoagulação e Intervenção Odontológica",
+      "type": "cientifica",
+      "track": "Odontologia em Hematologia",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
+      "id": "h26-30-0845-car-t-cell-quando-indicar-ou-nao",
+      "day": "2026-10-30",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "CAR-T Cell; Quando indicar ou não?",
+      "type": "cientifica",
+      "track": "Terapia Celular",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
       "id": "h26-30-0845-doencas-infecciosas-transmissiveis-pela-transfusao",
       "day": "2026-10-30",
       "start": "08:45",
@@ -2822,6 +2888,105 @@
       }
     },
     {
+      "id": "h26-30-0845-doencas-mieloides-pediatricas-na-era-molecular-risco-m",
+      "day": "2026-10-30",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "Doenças mieloides pediátricas na era molecular: risco, MRD e predisposição",
+      "type": "cientifica",
+      "track": "Onco-hematologia Pediátrica",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
+      "id": "h26-30-0845-falencia-medular",
+      "day": "2026-10-30",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "Falência Medular",
+      "type": "cientifica",
+      "track": "Anemias",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
+      "id": "h26-30-0845-hemostasia-e-inflamacao",
+      "day": "2026-10-30",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "Hemostasia e Inflamação",
+      "type": "cientifica",
+      "track": "Hemostasia & Trombose",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
       "id": "h26-30-0845-ia-comunicacao-digital-e-novos-caminhos-para-engajar-d",
       "day": "2026-10-30",
       "start": "08:45",
@@ -2852,6 +3017,105 @@
         "level": "media",
         "confidence": "media",
         "rationale": "Aplicação ou debate de IA/tecnologia na saúde; aderência específica à operação ainda não detalhada.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
+      "id": "h26-30-0845-llc",
+      "day": "2026-10-30",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "LLC",
+      "type": "cientifica",
+      "track": "Onco-hematologia",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
+      "id": "h26-30-0845-roda-de-conversa-com-o-gestor-a-consolidacao-do-fazer-",
+      "day": "2026-10-30",
+      "start": "08:45",
+      "end": "12:00",
+      "title": "RODA DE CONVERSA COM O GESTOR – A consolidação do fazer interprofissional em Hematologia – Experiências, desafios e estratégias",
+      "type": "cientifica",
+      "track": "Psicologia Hospitalar em Hematologia",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
+      "id": "h26-30-0845-rumo-a-cura-das-doencas-hematologicas-classicas-quao-p",
+      "day": "2026-10-30",
+      "start": "08:45",
+      "end": "10:15",
+      "title": "Rumo à cura das doenças hematológicas clássicas: quão perto estamos?",
+      "type": "cientifica",
+      "track": "Hematologia Pediátrica",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
         "evidenceBasis": "titulo_e_trilha",
         "personalChoice": false
       }
@@ -3298,6 +3562,39 @@
       }
     },
     {
+      "id": "h26-30-1545-anemias-hemoliticas",
+      "day": "2026-10-30",
+      "start": "15:45",
+      "end": "17:15",
+      "title": "Anemias Hemolíticas",
+      "type": "cientifica",
+      "track": "Anemias",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
       "id": "h26-30-1545-atualizacao-em-aferese-terapeutica",
       "day": "2026-10-30",
       "start": "15:45",
@@ -3419,6 +3716,72 @@
         "level": "baixa",
         "confidence": "baixa",
         "rationale": "A pauta explicitada concentra-se na prática clínica especializada, sem relação prioritária direta com os temas de gestão/hemoterapia documentados.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
+      "id": "h26-30-1545-fronteiras-em-trombose-e-anticoagulacao",
+      "day": "2026-10-30",
+      "start": "15:45",
+      "end": "17:15",
+      "title": "Fronteiras em Trombose e Anticoagulação",
+      "type": "cientifica",
+      "track": "Hemostasia & Trombose",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
+        "evidenceBasis": "titulo_e_trilha",
+        "personalChoice": false
+      }
+    },
+    {
+      "id": "h26-30-1545-fronteiras-nas-neoplasias-mielodisplasicas-smd",
+      "day": "2026-10-30",
+      "start": "15:45",
+      "end": "17:15",
+      "title": "Fronteiras nas Neoplasias Mielodisplásicas (SMD)",
+      "type": "cientifica",
+      "track": "Onco-hematologia",
+      "stage": "",
+      "description": "",
+      "participants": [],
+      "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/gradeatividades/todas",
+      "verifiedAt": "2026-10-24T20:14:32.852Z",
+      "evidence": {
+        "status": "OFFICIAL_GRADE_INDEXED",
+        "listUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+        "checkedAt": "2026-10-24T20:14:32.852Z",
+        "coverage": "PARTIAL",
+        "missingFields": [
+          "stage"
+        ],
+        "participantRolesVerified": false
+      },
+      "recommendation": {
+        "targetProfile": "Flora",
+        "score": 35,
+        "level": "baixa",
+        "confidence": "baixa",
+        "rationale": "Foco clínico científico sem conexão operacional prioritária demonstrada no título.",
         "evidenceBasis": "titulo_e_trilha",
         "personalChoice": false
       }
