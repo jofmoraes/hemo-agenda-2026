@@ -61,7 +61,7 @@ test('HEMO storage parsing and backup reject other event IDs',()=>{
 });
 test('PWA identity, HTML first paint, manifest, icons and cache isolation',()=>{
  for(const name of ['index.html','b18.js','b18.css','schedule-utils.js','schedule.json','manifest.webmanifest','service-worker.js']){
-  assert.doesNotMatch(read(name).toString('utf8'),/conahp|riw2026|c26-s\\d|2026-10-14|2026-10-15/i,name);
+  assert.doesNotMatch(read(name).toString('utf8'),/conahp|riw2026|c26-s\d|2026-10-14|2026-10-15/i,name);
  }
  const html=read('index.html').toString('utf8');
  for(const d of ['2026-10-28','2026-10-29','2026-10-30','2026-10-31'])assert.ok(html.includes(d));
@@ -71,5 +71,5 @@ test('PWA identity, HTML first paint, manifest, icons and cache isolation',()=>{
  for(const [size,icon] of [[192,m.icons[0]],[512,m.icons[1]]]){
   const png=read(icon.src.slice(1));assert.equal(png.subarray(0,8).toString('hex'),'89504e470d0a1a0a');assert.equal(png.readUInt32BE(16),size);assert.equal(png.readUInt32BE(20),size);
  }
- const worker=read('service-worker.js').toString('utf8');assert.match(worker,/startsWith\\('hemo2026:'\\)/);assert.doesNotMatch(worker,/names\\.filter\\(n=>n!==CACHE\\)/);
+ const worker=read('service-worker.js').toString('utf8');assert.match(worker,/startsWith\('hemo2026:'\)/);assert.doesNotMatch(worker,/names\.filter\(n=>n!==CACHE\)/);
 });
