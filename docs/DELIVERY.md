@@ -25,3 +25,29 @@ Atualizado: 2026-10-23, após auditoria B0 por GPT Web.
 
 ## Controles
 NO_PR; NO_AUTO_CODE_REVIEW; NO_CODEX_WITHOUT_APPROVAL; NO_DEPLOY_WITHOUT_APPROVAL; CONAHP_READ_ONLY. Status HEMO B1/B2: PLANNED, não executados.
+
+
+## HEMO B1 - READY_FOR_AUDIT (23/10/2026)
+
+**Escopo remoto implementado:** branch `feat/hemo-b1-frontend`, baseada em `main`, usando a referência **exclusivamente em leitura** CONAHP `feat/b18-flora-ux` no SHA `5aae37ea87783d43546a6351d04ffa1b6bdc2697`. O último commit funcional antes deste registro foi `030114057cde11ec28cb5355a0e4db3bbe1b946b`; consultar o HEAD final da branch e o registro da Issue #1.
+
+### Arquivos e mudanças
+- `public/index.html`, `public/b18.css`, `public/b18.js`: UX B18 Flora adaptada, datas 28-31/10, identidade HEMO, grade de simultâneas, lista, filtros (inclusive modalidade), Minha Agenda, interesses, prioridade, comentários, perguntas, detalhes e backup JSON isolado.
+- `public/schedule-utils.js`: conflitos apenas entre escolhas selecionadas; validação de IDs `h26-*`, quatro datas e proveniência verificada; filtros, ordenação e layout cronológico.
+- `public/schedule.json`: **0 sessões**, status `pending_b2`, arrays `sessions/talks/works/exhibitors` vazios. Nenhuma programação HEMO inventada e nenhum dado CONAHP importado.
+- `public/manifest.webmanifest`, `public/service-worker.js`, `public/logo-hemo.svg`, `public/icon-192.png`, `public/icon-512.png`: marca tipográfica independente, manifesto, ícones PNG originais, cache somente público com namespace `hemo2026:`. O SW não apaga caches de outros aplicativos.
+- `tests/hemo-b1.test.mjs`, `package.json`, `docs/DATA_CONTRACT.md`, `README.md`: testes reproduzíveis, contrato B2 e instruções de execução local.
+
+### Evidência dos testes nesta execução
+- **PASS 6/6** grupos executados no runtime V8 com o próprio código e fixtures sintéticas em memória: datas/fuso/dataset vazio, schema/proveniência, simultaneidade/conflitos, filtros, armazenamento/backup e identidade/cache PWA. No primeiro runner, o teste do backup falhou por incompatibilidade do adaptador de `vm.runInNewContext`; foi reexecutado diretamente com o helper real e **PASS**. Não foi falha da aplicação.
+- **PASS:** análise sintática de `b18.js`, `schedule-utils.js`, `service-worker.js` por compilação JavaScript no runtime V8; varredura de conteúdo público sem referências visíveis/keys CONAHP, datas anteriores ou dados RIW.
+- **PASS:** PNG 192×192 e 512×512 verificados quanto à assinatura, IHDR, lista de chunks e CRC.
+- **NOT_RUN:** `npm test`, `npm run check`, `node --check` nativos, servidor HTTP local, Chromium real, teste responsivo 320-1280px, interação DOM, smoke Android/iOS instalado, cold/warm/offline real, acessibilidade assistiva. O conector GitHub não executa comandos no workspace Windows.
+- **NOT_RUN:** sincronização com a pasta local `D:\\JUCA\\AI Lab\\hemo-2026\\hemo-2026-app`. Os commits estão no repositório remoto. Fazer `git fetch` e checkout da branch no workspace antes de executar localmente.
+
+### Isolamento e bloqueios
+- **NO_PR / NO_CODE_REVIEW / NO_DEPLOY** preservados. Nenhuma alteração no repositório CONAHP, no RIW ou em produção; nenhum serviço/integração externa criado.
+- Inspeção somente leitura: sem arquivos `.github/workflows` na árvore HEMO; consulta Vercel por repositório retornou 0 projetos conectados. Triggers externos/webhooks que não aparecem nesses inventários permanecem **não comprovados**.
+- A marca SVG é criação tipográfica original inspirada na identidade cromática pública do HEMO, **não é um arquivo oficial licenciado/importado**. Aprovar fidelidade visual/uso da marca antes de publicar.
+- B2 deve reconciliar fonte oficial, horários, salas, ID e contagem real antes de marcar `verified`. Preferências ficam exclusivamente neste navegador, com exportação/importação; não há login, Sheets nem sincronização multiaparelho.
+- Próximo gate: auditoria independente pela Issue #1, rodar testes e smoke local antes de aceitar. **Status: `HEMO_B1_READY_FOR_AUDIT`; sem publicação ou aceite.**
