@@ -1,0 +1,1 @@
+{"name":"hemo-agenda-2026","private":true,"type":"module","scripts":{"test":"node --test tests/hemo-b1.test.mjs","check":"node --check public/b18.js && node --check public/schedule-utils.js && node --check public/service-worker.js && node --test tests/hemo-b1.test.mjs"}}
