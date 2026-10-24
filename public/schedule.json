@@ -1,0 +1,17 @@
+{
+  "kind": "HEMO_2026_PROGRAM",
+  "status": "pending_b2",
+  "timezone": "America/Sao_Paulo",
+  "days": [
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30",
+    "2026-10-31"
+  ],
+  "sourceUrl": "https://hemo.org.br/evento/hemo2026/pt/programacao/lista",
+  "checkedAt": null,
+  "sessions": [],
+  "talks": [],
+  "works": [],
+  "exhibitors": []
+}
