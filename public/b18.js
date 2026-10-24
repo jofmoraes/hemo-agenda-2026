@@ -1,5 +1,5 @@
 import {conflictIds, layoutDay, minutes, normalize} from './schedule-utils.js';
-import {auditProgramDataset,previewRequested,schedulePath,stageLabel,uncertainRole,talksForSession} from './schedule-mode.js';
+import {auditProgramDataset,previewRequested,schedulePath,stageLabel,uncertainRole,talksForSession,typeLabel} from './schedule-mode.js';
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const DAYS=['2026-10-28','2026-10-29','2026-10-30','2026-10-31'];
@@ -66,7 +66,7 @@ function proposedSuggestion(s,short=false){
  if(!st.preview||!s.recommendation)return '';
  const r=s.recommendation,level=r.level==='alta'?'Alta':r.level==='media'?'Média':'Baixa',
  cls=r.level==='alta'?'suggestion-high':r.level==='media'?'suggestion-medium':'suggestion-low';
- return `<span class="suggestion ${cls}" title="Recomendação automática, não é decisão pessoal de Flora">Sugestão Flora: ${esc(level)}${short?'':` · confiança ${esc(r.confidence||'baixa')}`}</span>`;
+ return `<span class="suggestion ${cls}" title="Recomendação automática, não é decisão pessoal de Flora">Sugestão Flora: ${esc(level)}${short?'':` · confiança ${esc(r.confidence==='media'?'média':r.confidence||'baixa')}`}</span>`;
 }
 function talkList(s){
  if(!st.preview)return '';
@@ -115,7 +115,7 @@ function detailsHtml(s){
  const suggestion=st.preview&&s.recommendation?`<section class="preview-evidence" aria-label="Curadoria proposta"><strong>Curadoria automática, não é escolha de Flora</strong><p>${proposedSuggestion(s)}</p><p>${esc(s.recommendation.rationale||'Justificativa: A confirmar')}</p></section>`:'';
  const sourceLimit=st.preview?'<p class="preview-evidence"><strong>Programação parcial em conferência.</strong> Fonte indexada parcialmente; horário, local, atividades e participantes podem mudar.</p>':'';
  const peopleHtml=`<h3>Participantes</h3>${people.length?`<ul class="detail-people">${people.map(x=>`<li>${x}</li>`).join('')}</ul>`:'<p class="unknown-field">A confirmar</p>'}`;
- return `<section class="session-info" aria-label="Informações da sessão"><dl><div><dt>Horário</dt><dd>${esc(s.day.slice(-2))}/10 · ${esc(s.start)}–${esc(s.end)}</dd></div><div><dt>Sala</dt><dd class="${s.stage?'':'unknown-field'}">${esc(stageLabel(s))}</dd></div><div><dt>Trilha</dt><dd>${esc(s.track||'A confirmar')}</dd></div><div><dt>Modalidade</dt><dd>${esc(s.type||'A confirmar')}</dd></div></dl>${suggestion}${s.description?`<p>${esc(s.description)}</p>`:st.preview?'<p>Descrição completa: <strong>A confirmar</strong>.</p>':''}${peopleHtml}${s.accessNote?`<p class="preview-evidence">Inscrição / acesso: ${esc(s.accessNote)}</p>`:st.preview?'<p>Regras de acesso: <strong>A confirmar</strong>.</p>':''}${talkList(s)}${sourceLimit}${source?`<a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Consultar fonte oficial</a>`:''}</section>`;
+ return `<section class="session-info" aria-label="Informações da sessão"><dl><div><dt>Horário</dt><dd>${esc(s.day.slice(-2))}/10 · ${esc(s.start)}–${esc(s.end)}</dd></div><div><dt>Sala</dt><dd class="${s.stage?'':'unknown-field'}">${esc(stageLabel(s))}</dd></div><div><dt>Trilha</dt><dd>${esc(s.track||'A confirmar')}</dd></div><div><dt>Modalidade</dt><dd>${esc(typeLabel(s.type))}</dd></div></dl>${suggestion}${s.description?`<p>${esc(s.description)}</p>`:st.preview?'<p>Descrição completa: <strong>A confirmar</strong>.</p>':''}${peopleHtml}${s.accessNote?`<p class="preview-evidence">Inscrição / acesso: ${esc(s.accessNote)}</p>`:st.preview?'<p>Regras de acesso: <strong>A confirmar</strong>.</p>':''}${talkList(s)}${sourceLimit}${source?`<a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Consultar fonte oficial</a>`:''}</section>`;
 }
 function priorityButtons(current){return ['Essencial','Alta','Média','Baixa',''].map(value=>{
  const active=(current||'')===value;
@@ -216,7 +216,7 @@ async function init(){
   const tracks=[...new Set(st.sessions.map(s=>s.track).filter(Boolean))].sort();
   const types=[...new Set(st.sessions.map(s=>s.type).filter(Boolean))].sort();
   $('trackFilter').innerHTML='<option value="">Todas as trilhas</option>'+tracks.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
-  $('typeFilter').innerHTML='<option value="">Todas as modalidades</option>'+types.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+  $('typeFilter').innerHTML='<option value="">Todas as modalidades</option>'+types.map(x=>`<option value="${esc(x)}">${esc(typeLabel(x))}</option>`).join('');
   $('search').value=st.search;
   if(wantsPreview){
    $('previewBanner').hidden=false;
