@@ -113,3 +113,26 @@ No checkout isolado da branch, rodar servidor HTTP para a pasta `public` (e.g. `
 - **Restrições cumpridas:** sem Codex/Work, PR, Code Review, merge na main, deployment, infraestrutura, serviços externos, OAuth, alteração CONAHP ou escrita de preferências privadas em GitHub.
 
 **Próximo gate:** orquestrador auditar arquivos/testes/contrato de prévia e decidir QA browser/deploy em rodada específica; B2 integral ainda depende de fonte oficial completa.
+
+## HEMO B2-UX1 - Sugestão Flora e legibilidade mobile (25/10/2026)
+
+**Status:** `HEMO_B2_UX1_READY_FOR_ORCHESTRATOR_REVIEW`. Branch isolada `feat/hemo-b2-ux-sugestao-flora`, baseada no commit autorizado `224a27527682d7daec58ad6a0b05d8e8dfbf0422`. Escopo limitado a UX, filtros e testes; sem alteração da curadoria, dos dados oficiais, da `main`, do CONAHP ou da Vercel.
+
+### Alterações
+
+- `public/schedule-utils.js` separa `recommendation.level` dos campos pessoais de `prefs`; `Recomendadas` é Alta + Média, sem qualquer escrita de interesse, prioridade ou presença.
+- `public/index.html` e `public/b18.js` adicionam o filtro principal **Sugestão Flora**, preservam **Meu interesse** e renomeiam a prioridade avançada para **Minha prioridade**. A UI migra estado antigo sem converter `priority` em recomendação, preserva a seleção válida, abre Lista no primeiro acesso mobile e respeita visualização explicitamente salva.
+- `public/b18.js` mostra a recomendação nos cartões e na grade, contagens do dia/período e vazio acionável. `public/b18.css` garante largura mínima calculada e rolagem interna na grade mobile, sem overflow horizontal da página.
+- `scripts/build-preview.mjs` normaliza CRLF somente durante a comparação, tornando `check:preview` determinístico no checkout Windows sem alterar o snapshot.
+- `tests/hemo-b2-preview-ui.test.mjs` e `tests/hemo-b2-ux1.test.mjs` cobrem separação, 37 recomendadas, dia 31 com 6, migração/persistência, Lista/Agenda, segurança/namespace e prévia opt-in.
+
+### Evidências UX1
+
+- `npm test`: **PASS, 36/36**.
+- `npm run check`: **PASS**, incluindo `npm run check:preview` com 121 sessões e 42 falas.
+- Chromium local: **PASS** em 390x844 e 1280x900; prévia `?preview=1`, Lista mobile, Recomendadas com 37 no período, dia 31 com 6, persistência após recarga, filtro sem resultados com ações, detalhes e grade desktop/mobile. Em 390px, a página ficou sem overflow horizontal e a grade usou rolagem interna (811px de conteúdo em 359px visíveis).
+- QA Vercel não foi repetido nem alterado; não houve deployment/redeploy.
+
+### Pendências
+
+PWA offline/instalação, backup real em navegador, autenticação/proteção Vercel e nova publicação permanecem fora desta rodada e dependem do orquestrador. O snapshot continua parcial: 121 sessões candidatas, 42 falas e 66 salas a confirmar; a programação oficial continua `pending_b2` com zero sessões.

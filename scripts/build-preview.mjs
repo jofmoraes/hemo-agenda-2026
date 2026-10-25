@@ -34,7 +34,8 @@ const preview={
 const output=JSON.stringify(preview,null,2)+'\n';
 const target=new URL('../public/preview-schedule.json',import.meta.url);
 if(process.argv.includes('--check')){
- const current=readFileSync(target,'utf8');
+  // Git may materialize the tracked JSON with CRLF on Windows; compare content, not checkout line endings.
+  const current=readFileSync(target,'utf8').replace(/\r\n?/g,'\n');
  if(current!==output){console.error('FAIL: prévia não corresponde ao inventário e às justificativas');process.exitCode=1}
  else console.log('PASS: preview-schedule.json reproduzível; '+sessions.length+' sessões, '+talks.length+' falas');
 }else{

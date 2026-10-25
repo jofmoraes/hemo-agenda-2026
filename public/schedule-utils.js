@@ -4,13 +4,20 @@ export function conflictIds(sessions,prefs){const selected=sessions.filter(s=>pr
 export function normalize(v){return String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();}
 function participantText(session){return Array.isArray(session?.participants)?session.participants.flatMap(p=>[p?.name,p?.role,p?.institution]):[];}
 export function sessionSearchText(session){return [session?.title,session?.track,session?.type,session?.stage,session?.speakers,session?.description,session?.summary,session?.organization,session?.institution,session?.status,...participantText(session)].filter(Boolean).join(' ');}
+export const RECOMMENDATION_FILTERS=Object.freeze(['','recommended','alta','media','baixa']);
+export function recommendationLevel(session){return String(session?.recommendation?.level||'').toLowerCase();}
+export function recommendationMatches(session,filter=''){
+ if(!RECOMMENDATION_FILTERS.includes(filter))return false;
+ const level=recommendationLevel(session);
+ return !filter||(filter==='recommended'?level==='alta'||level==='media':level===filter);
+}
 export function filterSessions(sessions,opts={},prefs=new Map()){
  const q=normalize(opts.search).trim();
  const interests=opts.interests===undefined?null:new Set([...opts.interests].map(String));
  return sessions.filter(s=>{
   const preference=prefs.get(s.id)||{};
   const interest=preference.interest||'Não analisado';
-  return (!opts.day||s.day===opts.day)&&(!opts.track||s.track===opts.track)&&(!opts.type||s.type===opts.type)&&(!opts.priority||preference.priority===opts.priority)&&(!opts.attending||preference.attending)&&(!interests||interests.has(interest))&&(!opts.timeFrom||s.end>opts.timeFrom)&&(!opts.timeTo||s.start<opts.timeTo)&&(!q||normalize(sessionSearchText(s)).includes(q));
+   return (!opts.day||s.day===opts.day)&&(!opts.track||s.track===opts.track)&&(!opts.type||s.type===opts.type)&&(!opts.recommendation||recommendationMatches(s,opts.recommendation))&&(!opts.priority||preference.priority===opts.priority)&&(!opts.attending||preference.attending)&&(!interests||interests.has(interest))&&(!opts.timeFrom||s.end>opts.timeFrom)&&(!opts.timeTo||s.start<opts.timeTo)&&(!q||normalize(sessionSearchText(s)).includes(q));
  }).sort((a,b)=>a.day.localeCompare(b.day)||a.start.localeCompare(b.start)||a.stage.localeCompare(b.stage));
 }
 export function auditSchedule(sessions){const ids=new Set(),errors=[];const counts={};for(const s of sessions){counts[s.day]=(counts[s.day]||0)+1;if(!/^h26-[a-z0-9][a-z0-9._-]{2,90}$/i.test(s.id))errors.push('ID inválido '+s.id);if(ids.has(s.id))errors.push('ID duplicado '+s.id);ids.add(s.id);if(!['2026-10-28','2026-10-29','2026-10-30','2026-10-31'].includes(s.day)||minutes(s.start)===null||minutes(s.end)===null||minutes(s.end)<=minutes(s.start))errors.push('Horário inválido '+s.id);if(!s.sourceUrl||!/^https:\/\//.test(s.sourceUrl)||!s.verifiedAt||!Number.isFinite(Date.parse(s.verifiedAt)))errors.push('Sem fonte verificada '+s.id);if(typeof s.title!=='string'||!s.title.trim()||typeof s.type!=='string'||!s.type.trim()||typeof s.track!=='string'||typeof s.stage!=='string')errors.push('Metadados incompletos '+s.id);if(s.participants!==undefined&&(!Array.isArray(s.participants)||s.participants.some(p=>!p||typeof p.name!=='string')))errors.push('Participantes inválidos '+s.id);}return {count:sessions.length,byDay:counts,errors,overlapPairs:sessions.reduce((n,s,i)=>n+sessions.slice(i+1).filter(t=>overlap(s,t)).length,0)};}

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
-import {conflictIds,layoutDay,minutes,normalize} from '../public/schedule-utils.js';
+import {conflictIds,layoutDay,minutes,normalize,recommendationMatches,RECOMMENDATION_FILTERS} from '../public/schedule-utils.js';
 import {auditProgramDataset,previewRequested,schedulePath,stageLabel,uncertainRole,talksForSession,typeLabel} from '../public/schedule-mode.js';
 
 const text=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
@@ -22,11 +22,11 @@ function storage(){
  const data=new Map();
  return {data,getItem:k=>data.has(k)?data.get(k):null,setItem:(k,v)=>data.set(k,v)};
 }
-async function start(search,store=storage()){
+async function start(search,store=storage(),width=390){
  const f=fakeDocument(),requests=[];
  const fetch=async(url,{cache}={})=>{requests.push({url,cache});return {ok:true,json:async()=>search.includes('preview=1')?preview:production}};
- const context={document:f.document,window:{location:{search},innerWidth:390,addEventListener(){}},
-   navigator:{},localStorage:store,fetch,URL,conflictIds,layoutDay,minutes,normalize,
+ const context={document:f.document,window:{location:{search},innerWidth:width,addEventListener(){}},
+   navigator:{},localStorage:store,fetch,URL,conflictIds,layoutDay,minutes,normalize,recommendationMatches,RECOMMENDATION_FILTERS,
    auditProgramDataset,previewRequested,schedulePath,stageLabel,uncertainRole,talksForSession,typeLabel};
  const api=await vm.runInNewContext(js,context,{timeout:5000});
  return {...api,requests,get:f.get,store};
@@ -66,4 +66,31 @@ test('simulated DOM: normal startup ignores preview data even after storing prev
  assert.equal(app.st.datasetStatus,'pending_b2');
  assert.equal(app.get('previewBanner').hidden,true);
  assert.match(app.get('sessions').innerHTML,/Programação em preparação/);
+});
+test('UX1: mobile starts in list, desktop keeps agenda, and explicit view persists',async()=>{
+ const mobile=await start('?preview=1',storage(),390);
+ assert.equal(mobile.st.view,'list');
+ const desktop=await start('?preview=1',storage(),1280);
+ assert.equal(desktop.st.view,'grid');
+ mobile.st.view='grid';mobile.st.viewExplicit=true;mobile.render();
+ const again=await start('?preview=1',mobile.store,390);
+ assert.equal(again.st.view,'grid');
+ assert.equal(again.st.viewExplicit,true);
+});
+test('UX1: old priority UI state migrates without becoming Flora recommendation',async()=>{
+ const store=storage();
+ store.setItem('hemo2026:flora:ui:v1',JSON.stringify({b18ViewChoice:'grid',priority:'Alta',interest:'Talvez'}));
+ const app=await start('?preview=1',store,390);
+ assert.equal(app.st.priority,'Alta');
+ assert.equal(app.st.interest,'Talvez');
+ assert.equal(app.st.recommendation,'recommended');
+ assert.equal(app.st.view,'list');
+ assert.ok(app.get('sessions').innerHTML.length>0);
+ app.st.recommendation='baixa';app.render();
+ const persisted=JSON.parse(store.data.get('hemo2026:flora:ui:v1'));
+ assert.equal(persisted.recommendation,'baixa');
+ assert.equal(persisted.priority,'Alta');
+ const restored=await start('?preview=1',store,390);
+ assert.equal(restored.st.recommendation,'baixa');
+ assert.equal(restored.st.priority,'Alta');
 });
