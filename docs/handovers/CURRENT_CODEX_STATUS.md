@@ -25,3 +25,14 @@
 - Evidências: `npm test` 36/36 PASS; `npm run check` PASS; Chromium local PASS em 390x844 e 1280x900.
 - Restrições: sem PR, Code Review, deployment/redeploy, Vercel, `main`, CONAHP, dados oficiais ou preferências privadas externas.
 - Pendências: auditoria do orquestrador; PWA offline/instalação e backup real em navegador não homologados nesta rodada; prévia continua parcial (`pending_b2` na rota normal).
+
+## HEMO B2-UX1-R1 — Correções finais dos filtros
+
+- Status: correção implementada e pronta para revisão do orquestrador; sem publicação.
+- Branch: `feat/hemo-b2-ux-sugestao-flora`.
+- Base auditada: `45a7473743a665364a786eaeb192db8aeed7a4ba`.
+- Escopo: migração segura do filtro legado de prioridade, Minha Agenda independente da Sugestão Flora automática e feedback de filtros/estado vazio.
+- Testes: `npm test` 37/37 PASS; `npm run check` PASS; `npm run check:preview` PASS.
+- Smoke: Chromium local em 390x844 com Lista inicial, recomendadas 37 no período, dia 31 com 6, sessão Baixa salva em Minha Agenda, retorno/limpeza de filtros e persistência após recarga.
+- Restrições preservadas: sem alteração de preferências privadas externas, dados de programação, `main`, CONAHP, Vercel, deployment/redeploy, PR ou Code Review.
+- Próximo passo: auditoria independente do orquestrador; somente depois decidir publicação.

@@ -77,20 +77,52 @@ test('UX1: mobile starts in list, desktop keeps agenda, and explicit view persis
  assert.equal(again.st.view,'grid');
  assert.equal(again.st.viewExplicit,true);
 });
-test('UX1: old priority UI state migrates without becoming Flora recommendation',async()=>{
- const store=storage();
- store.setItem('hemo2026:flora:ui:v1',JSON.stringify({b18ViewChoice:'grid',priority:'Alta',interest:'Talvez'}));
- const app=await start('?preview=1',store,390);
- assert.equal(app.st.priority,'Alta');
- assert.equal(app.st.interest,'Talvez');
- assert.equal(app.st.recommendation,'recommended');
- assert.equal(app.st.view,'list');
- assert.ok(app.get('sessions').innerHTML.length>0);
- app.st.recommendation='baixa';app.render();
- const persisted=JSON.parse(store.data.get('hemo2026:flora:ui:v1'));
- assert.equal(persisted.recommendation,'baixa');
- assert.equal(persisted.priority,'Alta');
- const restored=await start('?preview=1',store,390);
- assert.equal(restored.st.recommendation,'baixa');
- assert.equal(restored.st.priority,'Alta');
-});
+test('UX1-R1: old Alta and Essencial UI filters migrate without losing personal preferences',async()=>{
+  const preserved=preview.sessions.find(s=>s.type!=='service');
+  for(const legacyPriority of ['Alta','Essencial']){
+    const store=storage();
+    store.setItem('hemo2026:flora:ui:v1',JSON.stringify({b18ViewChoice:'grid',priority:legacyPriority}));
+    store.setItem('hemo2026:flora:preferences:v1',JSON.stringify({version:1,items:[{sessionId:preserved.id,priority:'Essencial',interest:'Alto interesse',attending:true}]}));
+    const app=await start('?preview=1',store,390);
+    assert.equal(app.st.priority,'','legacy interface priority is cleared');
+    assert.equal(app.st.interest,'');
+    assert.equal(app.st.recommendation,'recommended');
+    assert.equal(app.st.view,'list');
+    assert.equal(app.st.prefs.get(preserved.id).priority,'Essencial');
+    assert.equal(app.st.prefs.get(preserved.id).attending,true);
+    assert.match(app.get('eventCount').textContent,/11 sessões em quarta/);
+    app.st.recommendation='baixa';app.render();
+    const persisted=JSON.parse(store.data.get('hemo2026:flora:ui:v1'));
+    assert.equal(persisted.recommendation,'baixa');
+    assert.equal(persisted.priority,'');
+    const restored=await start('?preview=1',store,390);
+    assert.equal(restored.st.recommendation,'baixa');
+    assert.equal(restored.st.priority,'');
+    assert.equal(restored.st.prefs.get(preserved.id).priority,'Essencial');
+    restored.st.priority='Alta';restored.render();
+    const intentionallyChosen=await start('?preview=1',store,390);
+    assert.equal(intentionallyChosen.st.priority,'Alta');
+  }
+ });
+
+test('UX1-R1: Minha agenda shows saved Baixa sessions and preserves Flora filter on return',async()=>{
+  const low=preview.sessions.find(s=>s.day==='2026-10-31'&&s.recommendation?.level==='baixa'&&s.type!=='service');
+  assert.ok(low,'preview must contain a day 31 Baixa session');
+  const store=storage();
+  store.setItem('hemo2026:flora:preferences:v1',JSON.stringify({version:1,items:[{sessionId:low.id,attending:true,interest:'Talvez'}]}));
+  const app=await start('?preview=1',store,390);
+  app.st.day='2026-10-31';app.render();
+  assert.equal(app.st.recommendation,'recommended');
+  assert.match(app.get('eventCount').textContent,/6 sessões em sábado/);
+  app.st.tab='mine';app.render();
+  assert.match(app.get('sessions').innerHTML,new RegExp(low.title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
+  assert.match(app.get('eventCount').textContent,/1 sessão em sábado/);
+  assert.equal(app.st.prefs.get(low.id).attending,true);
+  app.st.tab='program';app.render();
+  assert.equal(app.st.recommendation,'recommended');
+  assert.doesNotMatch(app.get('sessions').innerHTML,new RegExp(low.title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
+  const restored=await start('?preview=1',store,390);
+  assert.equal(restored.st.day,'2026-10-31');
+  assert.equal(restored.st.recommendation,'recommended');
+  assert.equal(restored.st.prefs.get(low.id).attending,true);
+ });

@@ -136,3 +136,25 @@ No checkout isolado da branch, rodar servidor HTTP para a pasta `public` (e.g. `
 ### Pendências
 
 PWA offline/instalação, backup real em navegador, autenticação/proteção Vercel e nova publicação permanecem fora desta rodada e dependem do orquestrador. O snapshot continua parcial: 121 sessões candidatas, 42 falas e 66 salas a confirmar; a programação oficial continua `pending_b2` com zero sessões.
+
+## HEMO B2-UX1-R1 - Correções finais dos filtros (25/10/2026)
+
+**Status:** `HEMO_B2_UX1_R1_READY_FOR_ORCHESTRATOR_REVIEW`. Correção limitada à mesma branch UX1, sem deployment/redeploy, PR, Code Review, alteração de dados, `main`, CONAHP ou Vercel.
+
+### Correções
+
+- `public/b18.js` reconhece a presença do campo `recommendation` como estado UX1. Estados anteriores têm somente o filtro de prioridade da interface limpo na primeira leitura; preferências por sessão e backups permanecem intactos. Estados UX1 preservam filtros avançados escolhidos depois da migração.
+- Minha Agenda não aplica o filtro automático Sugestão Flora. O seletor fica desativado nessa aba com indicação explícita, enquanto a seleção escolhida é preservada para o retorno à Programação.
+- O estado vazio identifica filtros de horário, período, conflito, presença, interesse, prioridade, busca e modalidade. A ação parcial passou a dizer `Remover filtro Flora`; a ação completa diz `Limpar todos os filtros`.
+- `tests/hemo-b2-preview-ui.test.mjs` cobre migração `Alta`/`Essencial`, preservação de preferência pessoal, sessão Baixa incluída, retorno de aba e persistência.
+
+### Evidências R1
+
+- `npm test`: **PASS, 37/37**.
+- `npm run check`: **PASS**, incluindo `npm run check:preview` (`121` sessões, `42` falas).
+- Smoke Chromium local em viewport `390x844`: Lista no primeiro acesso; `11` recomendadas no dia 28 e `37` no período; `6` recomendadas no dia 31; Minha Agenda exibiu a sessão Baixa salva (`1 sessão em sábado`), com Sugestão Flora não aplicada e seleção preservada ao retornar; limpeza retornou à Programação.
+- Screenshot/DOM confirmaram banner parcial (`121/42/66`), layout mobile legível, sem overflow horizontal da página e indicação explícita de Minha Agenda.
+
+### Limites
+
+O smoke é local e não comprova login/proteção Vercel, PWA instalado/offline, backup em navegador real ou publicação. A prévia continua parcial e a rota normal permanece `pending_b2` com zero sessões. Aguardar auditoria do orquestrador antes de qualquer publicação.
