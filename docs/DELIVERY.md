@@ -211,4 +211,4 @@ As evidências são locais e não comprovam login/proteção Vercel, publicaçã
 
 ### Limitações
 
-Não foi feito deployment/redeploy nem alterada a Vercel. A migração foi validada por testes nativos e navegador local; PWA instalado/offline em dispositivo real, autenticação/proteção Vercel e backup/restore real continuam não homologados. O SHA final será acrescentado após push e readback remoto.
+Não foi feito deployment/redeploy nem alterada a Vercel. A migração foi validada por testes nativos e navegador local; PWA instalado/offline em dispositivo real, autenticação/proteção Vercel e backup/restore real continuam não homologados. SHA R1 publicado: `d35ee3c1c9950bc30b59a6e802c51f18f6c6812b`.

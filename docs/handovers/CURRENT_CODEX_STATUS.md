@@ -58,6 +58,7 @@
 - Status: correções concluídas e prontas para reauditoria independente; sem deployment/redeploy.
 - Branch: `feat/hemo-b2-ux2-visual`.
 - Base auditada: `86a2eceea31008038e437ec79d05737428b07f32`.
+- Commit R1 publicado: `d35ee3c1c9950bc30b59a6e802c51f18f6c6812b`.
 - Contraste: controles ativos com texto branco usam `#AD5D2D`, contraste WCAG calculado `4,79:1`; `#D9823D` permanece em detalhes sem texto branco.
 - Service Worker: fallback `/index.html` limitado à navegação; código sem rede usa seu próprio cache ou retorna `503 text/plain`, sem substituir JS/CSS/manifest por HTML e sem cachear erro.
 - Testes: `npm test` 43/43 PASS; `npm run check` PASS; `npm run check:preview` PASS com 121 sessões e 42 falas.
