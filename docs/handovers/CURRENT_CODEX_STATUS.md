@@ -31,6 +31,7 @@
 - Status: correção implementada e pronta para revisão do orquestrador; sem publicação.
 - Branch: `feat/hemo-b2-ux-sugestao-flora`.
 - Base auditada: `45a7473743a665364a786eaeb192db8aeed7a4ba`.
+- Commit R1 publicado: `5ae114a8b8609dbb0f5070c0b7e8ca63d1cf69ee`.
 - Escopo: migração segura do filtro legado de prioridade, Minha Agenda independente da Sugestão Flora automática e feedback de filtros/estado vazio.
 - Testes: `npm test` 37/37 PASS; `npm run check` PASS; `npm run check:preview` PASS.
 - Smoke: Chromium local em 390x844 com Lista inicial, recomendadas 37 no período, dia 31 com 6, sessão Baixa salva em Minha Agenda, retorno/limpeza de filtros e persistência após recarga.
