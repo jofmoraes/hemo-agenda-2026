@@ -252,7 +252,7 @@ async function init(){
  document.documentElement.classList.add('app-loaded');
  document.body.classList.add('app-loaded');
  document.getElementById('startup')?.classList.add('is-complete');
- if('serviceWorker'in navigator)navigator.serviceWorker.register('/service-worker.js').catch(()=>{});
+  if('serviceWorker'in navigator)navigator.serviceWorker.register('/service-worker.js',{updateViaCache:'none'}).catch(()=>{});
 }
 
 init();

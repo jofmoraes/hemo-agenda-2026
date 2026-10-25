@@ -37,3 +37,17 @@
 - Smoke: Chromium local em 390x844 com Lista inicial, recomendadas 37 no período, dia 31 com 6, sessão Baixa salva em Minha Agenda, retorno/limpeza de filtros e persistência após recarga.
 - Restrições preservadas: sem alteração de preferências privadas externas, dados de programação, `main`, CONAHP, Vercel, deployment/redeploy, PR ou Code Review.
 - Próximo passo: auditoria independente do orquestrador; somente depois decidir publicação.
+
+## HEMO B2-UX2 — Identidade visual e atualização segura do PWA
+
+- Status: implementação concluída e pronta para revisão independente; sem deployment/redeploy.
+- Branch: `feat/hemo-b2-ux2-visual`.
+- Base autorizada: `550c71cfffa6673f7a148a160c100e872f8977ba`.
+- Workspace isolado: `D:\JUCA\AI Lab\hemo-2026\hemo-2026-app-b2-ux1`.
+- Escopo visual: aproximação fundamentada no cartaz público HEMO 2026, sem alegar manual oficial de marca ou códigos HEX oficiais; preservados filtros UX1-R1, Lista mobile, Grade com rolagem interna, Minha Agenda e preferências.
+- Escopo PWA: cache `hemo2026:public:b2ux2-v1`, código network-first com fallback, `updateViaCache: none`, remoção apenas de caches `hemo2026:` antigos e nenhum acesso a `localStorage` pelo Service Worker.
+- Evidência visual versionada: `docs/evidence/hemo-b2-ux2/` com captura anterior e capturas posteriores em 390, 430 e 1280 px.
+- Testes: `npm test` 39/39 PASS; `npm run check` PASS; `npm run check:preview` PASS com 121 sessões e 42 falas.
+- Smoke Chromium: migração real `b2w2-v1` → `b2ux2-v1`; 37 recomendadas no período; dia 31 com 6; Minha Agenda exibiu sessão Baixa salva; filtros persistiram após recarga; Lista mobile; Grade com conteúdo interno de 811px em viewport 390px, sem overflow da página; rota normal com 0 sessões e banner parcial oculto.
+- Restrições: sem alteração de dados/curadoria, `main`, CONAHP, Vercel, serviços externos, PR, Code Review ou deployment. PWA instalado/offline em dispositivo real permanece não homologado.
+- Próximo passo: auditoria do orquestrador antes de qualquer publicação QA.

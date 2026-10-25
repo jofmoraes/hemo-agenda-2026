@@ -158,3 +158,34 @@ PWA offline/instalação, backup real em navegador, autenticação/proteção Ve
 ### Limites
 
 O smoke é local e não comprova login/proteção Vercel, PWA instalado/offline, backup em navegador real ou publicação. A prévia continua parcial e a rota normal permanece `pending_b2` com zero sessões. Aguardar auditoria do orquestrador antes de qualquer publicação.
+
+## HEMO B2-UX2 — Identidade visual e atualização segura do PWA (25/10/2026)
+
+**Status:** `HEMO_B2_UX2_READY_FOR_ORCHESTRATOR_REVIEW`. Branch independente `feat/hemo-b2-ux2-visual`, baseada no commit aprovado `550c71cfffa6673f7a148a160c100e872f8977ba`. Nenhuma publicação foi executada.
+
+### Referências visuais e limites
+
+- Referências consultadas: [site HEMO 2026](https://hemo.org.br/) e [notícia do CRF-RJ sobre o HEMO 2026](https://portal.crf-rj.org.br/noticias/eventos/6481-vem-ai-o-congresso-brasileiro-de-hematologia-hemoterapia-e-terapia-celular-hemo-2026-de-28-a-31-de-outubro-no-riocentro.html), incluindo o [cartaz público do evento](https://portal.crf-rj.org.br/images/post-dez-hemo2026.jpg).
+- O acesso direto ao site HEMO retornou HTTP 403 neste ambiente; a referência visual efetivamente inspecionada foi o cartaz publicado pelo CRF-RJ. Não foi encontrado manual digital público com HEX oficial.
+- Paleta aproximada, não oficial: off-white `#f3eadc`, grafite `#3f4145`, ocre/laranja `#d9823d`, laranja profundo `#ad5d2d`, roxo residual `#4f2c6b` e teal `#286d70`. O roxo foi reduzido ao papel de acento, sem substituir a identidade HEMO por CONAHP/RIW.
+
+### Alterações
+
+- `public/b18.css`, `public/index.html` e `public/manifest.webmanifest`: hierarquia visual, tema, cabeçalho, abas, seletores, botões, legenda, cartões, modais e espaçamento mobile refinados; preservados os contratos UX1-R1 e o banner persistente `121/42/66`.
+- `public/service-worker.js`: cache exclusivo `hemo2026:public:b2ux2-v1`; navegação e código usam network-first com fallback seguro; ativação remove somente caches anteriores do namespace HEMO e mantém caches de outros produtos intocados.
+- `public/b18.js`: registro do SW usa `updateViaCache: 'none'` para não reutilizar o script antigo do navegador.
+- `tests/hemo-b2-sw.test.mjs`: rotação do SW a partir de navegador controlado pelo cache anterior, isolamento de namespaces, fallback de código e prévia opt-in.
+- Capturas: [antes mobile 390](evidence/hemo-b2-ux2/before-mobile-390.png), [depois mobile 390](evidence/hemo-b2-ux2/after-mobile-390.png), [depois mobile 430](evidence/hemo-b2-ux2/after-mobile-430.png) e [depois desktop 1280](evidence/hemo-b2-ux2/after-desktop-1280.png).
+
+### Evidências
+
+- `npm test`: **PASS, 39/39**.
+- `npm run check`: **PASS**, incluindo sintaxe, `npm run check:preview` e a suíte nativa.
+- `npm run check:preview`: **PASS**, snapshot reproduzível com 121 sessões e 42 falas.
+- Chromium local: **PASS** em 360, 390, 430 e 1280 px. Primeiro acesso móvel abriu Lista; 37 sessões Recomendadas no período; dia 31 exibiu 6; uma sessão Baixa incluída apareceu em Minha Agenda; retorno à Programação preservou Sugestão Flora; filtro vazio informou os filtros ativos e permitiu limpeza; modal de filtros avançados abriu; Grade usou rolagem interna (`811px` em viewport `390px`) sem overflow horizontal da página.
+- Migração real do navegador: antes do reload havia controle pelo SW com cache `hemo2026:public:b2w2-v1`; após atualização explícita e reload, ficou `hemo2026:public:b2ux2-v1`. O teste nativo também confirmou preservação de `localStorage` e não remoção de caches de outros namespaces.
+- Rota normal `/`: permaneceu `pending_b2`, com `0` sessões; o aviso de prévia ficou oculto. A prévia continuou disponível somente em `/?preview=1`.
+
+### Limitações e restrições
+
+As evidências são locais e não comprovam login/proteção Vercel, publicação, PWA instalado/offline em dispositivo real ou backup/restore em navegador real. Não houve deployment, redeploy, alteração na Vercel, modificação de dados, curadoria, preferências privadas, `main`, CONAHP, PR ou Code Review. O SHA final será registrado na Issue #2 após o commit e push desta branch.

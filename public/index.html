@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="pt-BR"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#47234d"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="/icon-192.png"><meta name="color-scheme" content="light"><style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#d9823d"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="/icon-192.png"><meta name="color-scheme" content="light"><style>
 /* B18-K: first paint is complete even when the external CSS has not arrived. */
-html,body{background:#47234d}
-#startup{position:fixed;inset:0;z-index:9999;box-sizing:border-box;background:#47234d;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;min-height:100vh;min-height:100dvh}
+html,body{background:#f3eadc}
+#startup{position:fixed;inset:0;z-index:9999;box-sizing:border-box;background:#3f4145;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;min-height:100vh;min-height:100dvh}
 #startup .loading-inner{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;width:100%;max-width:350px}
 #startup .loading-logo{display:block;width:min(240px,72vw);height:auto;max-height:158px;object-fit:contain}
-#startup .loading-line{width:65px;height:2px;background:#e99c40;margin:5px auto 14px;border-radius:3px}
+#startup .loading-line{width:65px;height:3px;background:#d9823d;margin:5px auto 14px;border-radius:3px}
 #startup h2{font:750 clamp(19px,4vw,24px)/1.25 system-ui,-apple-system,'Segoe UI',sans-serif;letter-spacing:.015em;color:#fff;margin:0}
 #startup p{font:400 13px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif;color:#f3e9dc;margin:0 0 12px}
-#startup .loading-spinner{display:block;width:23px;height:23px;box-sizing:border-box;border:2px solid #a2c9d855;border-top-color:#e9fbff;border-radius:50%;animation:b18k-spin .8s linear infinite}
+#startup .loading-spinner{display:block;width:23px;height:23px;box-sizing:border-box;border:2px solid #ffffff55;border-top-color:#f4c34c;border-radius:50%;animation:b18k-spin .8s linear infinite}
 @keyframes b18k-spin{to{transform:rotate(360deg)}}
 #startup.is-complete{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .17s ease,visibility 0s .17s}
 @media(prefers-reduced-motion:reduce){#startup .loading-spinner{animation:none}#startup.is-complete{transition:none}}

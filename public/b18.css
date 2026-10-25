@@ -246,4 +246,60 @@ html.app-loaded,body.app-loaded{background:#fbf6ef}
  .calendar-main>.hours{position:sticky;left:0;z-index:3;min-width:43px}
  .day-track{min-width:var(--calendar-min-width,760px)}
  .event-suggestion{font-size:10px}
+ }
+
+/* HEMO B2-UX2: visual approximation from the public HEMO 2026 poster.
+   No official digital color guide/HEX values were found; keep this palette
+   deliberately small and high-contrast. */
+:root{--navy:#3f4145;--text:#3f4145;--line:#ddd4c8;--danger:#9d3d3d;--paper:#f3eadc;--orange:#d9823d;--orange-deep:#ad5d2d;--plum:#4f2c6b;--teal:#286d70}
+html,body,html.app-loaded,body.app-loaded{background:var(--paper);color:var(--text)}
+body{background:var(--paper)}
+.header{background:linear-gradient(110deg,#3f4145,#626368);border-top-color:var(--orange);box-shadow:0 5px 18px #61452b18}
+.logo{background:#fffaf3}
+.local-note{border-color:#f0c489;color:#fff8ed}
+.tabs{border-color:var(--line);background:#fffdf9}
+.tab{color:#3f4145;background:#fffdf9}
+.tab.active,.day.active,.view.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+.tab:not(.active):hover,.day:not(.active):hover,.view:not(.active):hover{background:#fff0df;color:var(--orange-deep)}
+.day-picker,.view-picker,.calendar{border-color:var(--line);background:#fffdf9}
+.day,.view{color:#3f4145}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:var(--orange)}
+.controls input,.controls select,.filter-body input:not([type=checkbox]),.filter-body select,.modal input:not([type=checkbox]):not([type=file]),.modal textarea,.modal select{border-color:#cdbba9;background:#fffefa;color:#3f4145}
+.recommendation-field select{border-color:var(--orange);box-shadow:inset 0 0 0 1px #f4d4ad}
+.secondary,.primary{border-color:#cdbba9;color:#3f4145}
+.primary{background:var(--navy);border-color:var(--navy);color:#fff}
+.primary:hover{background:#292b2f;border-color:#292b2f}
+.secondary:hover{background:#fff0df;color:var(--orange-deep)}
+.notice:not(:empty){background:#fff1d9;border-left-color:var(--orange-deep);color:#4d3b2d}
+.source,.footer,.calendar-hint{color:#4f6268}
+.preview-banner{background:#fff1d9;color:#4e3d2e;border-left-color:var(--orange);border-right-color:#e5c69d;border-bottom-color:#e5c69d}
+.preview-banner a{color:var(--plum)}
+.suggestion-high{border-color:#d76b58;background:#fff0e5;color:#8a392e}
+.suggestion-medium{border-color:#74aebe;background:#e9f4f7;color:#24586b}
+.suggestion-low{border-color:#8bb58d;background:#edf6ec;color:#286046}
+.event-suggestion{color:var(--orange-deep)}
+.scope-note{background:#edf5f1;color:#24545a;border-left-color:var(--orange)}
+.list-card{border-color:#e0d7cb;box-shadow:0 2px 8px #61452b0b}
+.empty{border-color:#d7b88f;background:#fffdf9;color:#4f6268}
+.filter-chip{border-color:#cdbba9;background:#fffaf2;color:#3f4145}
+.filter-chip.active{background:#fff0df;border-color:var(--orange);color:#70401f;box-shadow:inset 0 0 0 1px var(--orange)}
+.filter-chip.active .chip-indicator{background:var(--orange-deep);border-color:var(--orange-deep)}
+.filter-segments button.selected{background:var(--orange);border-color:var(--orange);box-shadow:inset 0 0 0 1px #fff}
+.priority-choice.selected{background:var(--navy);border-color:var(--navy)}
+.modal{box-shadow:0 20px 90px #3f414555}
+.modal::backdrop{background:#3f414599}
+.modal-body dl>div{background:#f6f1e9}
+.alignment{border-color:#c9ddd4;background:#edf6f0}
+#backupBtn.clear-filters-active{background:var(--orange)!important;border-color:var(--orange)!important;color:#fff!important}
+#backupBtn.clear-filters-active:hover{background:var(--orange-deep)!important}
+#backupBtn.clear-filters-inactive{border-color:#cdbba9!important;color:#3f4145!important}
+.summary strong,.day-title,.empty strong{color:var(--navy)}
+.legend{margin-top:5px}
+@media(max-width:680px){
+ .shell{padding-top:6px}
+ .header{padding:12px 11px 11px}
+ .preview-banner{padding:10px 12px}
+ .toolbar{margin:11px 0 10px}
+ .controls{gap:8px}
+ .summary{margin-top:12px}
 }
