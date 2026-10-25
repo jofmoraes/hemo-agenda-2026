@@ -188,4 +188,4 @@ O smoke é local e não comprova login/proteção Vercel, PWA instalado/offline,
 
 ### Limitações e restrições
 
-As evidências são locais e não comprovam login/proteção Vercel, publicação, PWA instalado/offline em dispositivo real ou backup/restore em navegador real. Não houve deployment, redeploy, alteração na Vercel, modificação de dados, curadoria, preferências privadas, `main`, CONAHP, PR ou Code Review. O SHA final será registrado na Issue #2 após o commit e push desta branch.
+As evidências são locais e não comprovam login/proteção Vercel, publicação, PWA instalado/offline em dispositivo real ou backup/restore em navegador real. Não houve deployment, redeploy, alteração na Vercel, modificação de dados, curadoria, preferências privadas, `main`, CONAHP, PR ou Code Review. SHA publicado: `2290084e61237127c644273fda0c9f54c3619f6c`.

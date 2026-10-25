@@ -43,6 +43,7 @@
 - Status: implementação concluída e pronta para revisão independente; sem deployment/redeploy.
 - Branch: `feat/hemo-b2-ux2-visual`.
 - Base autorizada: `550c71cfffa6673f7a148a160c100e872f8977ba`.
+- Commit publicado: `2290084e61237127c644273fda0c9f54c3619f6c`.
 - Workspace isolado: `D:\JUCA\AI Lab\hemo-2026\hemo-2026-app-b2-ux1`.
 - Escopo visual: aproximação fundamentada no cartaz público HEMO 2026, sem alegar manual oficial de marca ou códigos HEX oficiais; preservados filtros UX1-R1, Lista mobile, Grade com rolagem interna, Minha Agenda e preferências.
 - Escopo PWA: cache `hemo2026:public:b2ux2-v1`, código network-first com fallback, `updateViaCache: none`, remoção apenas de caches `hemo2026:` antigos e nenhum acesso a `localStorage` pelo Service Worker.
