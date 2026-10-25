@@ -303,3 +303,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
  .controls{gap:8px}
  .summary{margin-top:12px}
 }
+
+/* HEMO B2-UX2-R1: selected controls need readable white text. */
+.tab.active,.day.active,.view.active,
+.filter-segments button.selected,
+#backupBtn.clear-filters-active{
+ background:var(--orange-deep)!important;
+ border-color:var(--orange-deep)!important;
+ color:#fff!important;
+}
+#backupBtn.clear-filters-active:hover{background:#8f4824!important;border-color:#8f4824!important}

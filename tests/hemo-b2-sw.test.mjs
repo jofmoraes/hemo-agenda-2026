@@ -5,7 +5,7 @@ import vm from 'node:vm';
 
 const sw=readFileSync(new URL('../public/service-worker.js',import.meta.url),'utf8');
 
-function harness(){
+function harness({fetchImpl=async request=>new Response(`network:${request.url||request}`,{status:200})}={}){
  const listeners=new Map(),deleted=[],cacheData=new Map();
  const makeCache=name=>({
   name,
@@ -20,7 +20,7 @@ function harness(){
   match:async request=>{for(const name of await caches.keys()){const hit=cacheData.get(`${name}:${request.url||request}`);if(hit)return hit}return undefined}
  };
  const self={location:{origin:'https://hemo.test'},clients:{claim:async()=>{}},skipWaiting:async()=>{},addEventListener:(type,handler)=>listeners.set(type,handler)};
- vm.runInNewContext(sw,{self,caches,fetch:async request=>new Response(`network:${request.url||request}`,{status:200}),Response,URL,console});
+ vm.runInNewContext(sw,{self,caches,fetch:fetchImpl,Response,URL,console});
  const dispatch=async(type,extra={})=>{let pending;listeners.get(type)({...extra,waitUntil:promise=>{pending=promise},respondWith:promise=>{pending=promise}});return pending};
  return {caches,cacheData,deleted,dispatch};
 }
@@ -50,4 +50,34 @@ test('UX2: code assets are network-first with safe cached fallback and preview s
  const request={method:'GET',mode:'cors',url:'https://hemo.test/b18.js'};
  const response=await h.dispatch('fetch',{request});
  assert.match(await response.text(),/network:https:\/\/hemo\.test\/b18\.js/);
+});
+
+test('UX2-R1: offline code uses its own cache and never falls back to HTML',async()=>{
+ const h=harness({fetchImpl:async()=>{throw new Error('offline')}});
+ const cache=await h.caches.open('hemo2026:public:b2ux2-v1');
+ await cache.put({url:'https://hemo.test/b18.js'},new Response('cached-js',{status:200,headers:{'Content-Type':'text/javascript'}}));
+ const response=await h.dispatch('fetch',{request:{method:'GET',mode:'cors',url:'https://hemo.test/b18.js'}});
+ assert.equal(response.status,200);
+ assert.equal(await response.text(),'cached-js');
+ assert.match(response.headers.get('Content-Type'),/javascript/);
+});
+
+test('UX2-R1: offline code cache miss returns 503 and is not cached',async()=>{
+ const h=harness({fetchImpl:async()=>{throw new Error('offline')}});
+ const response=await h.dispatch('fetch',{request:{method:'GET',mode:'cors',url:'https://hemo.test/b18.css'}});
+ assert.equal(response.status,503);
+ assert.match(response.headers.get('Content-Type'),/text\/plain/);
+ assert.doesNotMatch(await response.text(),/<html/i);
+ const cache=await h.caches.open('hemo2026:public:b2ux2-v1');
+ assert.equal(await cache.match({url:'https://hemo.test/b18.css'}),undefined);
+});
+
+test('UX2-R1: offline navigation may use the cached HTML shell',async()=>{
+ const h=harness({fetchImpl:async()=>{throw new Error('offline')}});
+ const cache=await h.caches.open('hemo2026:public:b2ux2-v1');
+ await cache.put('/index.html',new Response('<!doctype html><title>cached shell</title>',{status:200,headers:{'Content-Type':'text/html'}}));
+ const response=await h.dispatch('fetch',{request:{method:'GET',mode:'navigate',url:'https://hemo.test/?preview=1'}});
+ assert.equal(response.status,200);
+ assert.match(response.headers.get('Content-Type'),/text\/html/);
+ assert.match(await response.text(),/cached shell/);
 });

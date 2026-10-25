@@ -12,13 +12,20 @@ self.addEventListener('activate',event=>event.waitUntil(
     .then(()=>self.clients.claim())
 ));
 
-async function networkFirst(request,fallback='/index.html'){
+function unavailableResponse(){
+  return new Response('Offline resource unavailable',{status:503,statusText:'Service Unavailable',headers:{'Content-Type':'text/plain; charset=utf-8','Cache-Control':'no-store'}});
+}
+
+async function networkFirst(request,fallback=''){
   try{
     const response=await fetch(request);
     if(response.ok){const cache=await caches.open(CACHE);await cache.put(request,response.clone());}
     return response;
   }catch{
-    return (await caches.match(request))||(await caches.match(fallback));
+    const cached=await caches.match(request);
+    if(cached)return cached;
+    if(fallback){const fallbackResponse=await caches.match(fallback);if(fallbackResponse)return fallbackResponse;}
+    return unavailableResponse();
   }
 }
 

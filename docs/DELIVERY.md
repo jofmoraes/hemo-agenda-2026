@@ -189,3 +189,26 @@ O smoke é local e não comprova login/proteção Vercel, PWA instalado/offline,
 ### Limitações e restrições
 
 As evidências são locais e não comprovam login/proteção Vercel, publicação, PWA instalado/offline em dispositivo real ou backup/restore em navegador real. Não houve deployment, redeploy, alteração na Vercel, modificação de dados, curadoria, preferências privadas, `main`, CONAHP, PR ou Code Review. SHA publicado: `2290084e61237127c644273fda0c9f54c3619f6c`.
+
+## HEMO B2-UX2-R1 — Contraste e fallback do PWA (25/10/2026)
+
+**Status:** `HEMO_B2_UX2_R1_READY_FOR_ORCHESTRATOR_REVIEW`. Correção limitada à branch `feat/hemo-b2-ux2-visual`, baseada no HEAD auditado `86a2eceea31008038e437ec79d05737428b07f32`. Sem publicação.
+
+### Correções
+
+- `public/b18.css`: controles ativos com texto branco — abas, dias, Agenda/Lista, segmentos de filtros e limpeza de filtros — passaram a usar `#AD5D2D` (`--orange-deep`) com `!important` para vencer regras anteriores. O contraste calculado é `4,79:1` contra `#FFFFFF`; `#D9823D` mantém uso decorativo.
+- `public/service-worker.js`: `networkFirst(request, fallback)` não usa mais `/index.html` por padrão. Navegação passa explicitamente o fallback HTML; JS, CSS e manifest recebem somente resposta previamente cacheada do próprio recurso ou `503 text/plain` com `Cache-Control: no-store`.
+- Respostas HTTP não-OK nunca são armazenadas; limpeza continua limitada a caches `hemo2026:`; não há acesso a `localStorage`; `?preview=1` permanece opt-in.
+
+### Testes e evidências
+
+- `npm test`: **PASS, 43/43**.
+- `npm run check`: **PASS**.
+- `npm run check:preview`: **PASS**, snapshot reproduzível com 121 sessões e 42 falas.
+- `tests/hemo-b2-sw.test.mjs`: offline com JS cacheado retorna o próprio JS; offline sem cache retorna 503 sem HTML e sem gravar erro; navegação offline pode usar `/index.html` cacheado.
+- `tests/hemo-b2-ux2-r1.test.mjs`: verifica contraste WCAG dos pares principais e presença das regras nos controles ativos.
+- Chromium local: viewport móvel 390 e desktop 1280; estilos computados dos controles ativos retornaram `rgb(173, 93, 45)`; 37 Recomendadas no período; dia 31 com 6; Minha Agenda persistiu após recarga; banner parcial 121/42/66; rota normal `/` ficou `pending_b2`, com 0 sessões e aviso de prévia oculto.
+
+### Limitações
+
+Não foi feito deployment/redeploy nem alterada a Vercel. A migração foi validada por testes nativos e navegador local; PWA instalado/offline em dispositivo real, autenticação/proteção Vercel e backup/restore real continuam não homologados. O SHA final será acrescentado após push e readback remoto.

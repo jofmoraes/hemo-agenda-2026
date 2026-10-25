@@ -52,3 +52,15 @@
 - Smoke Chromium: migração real `b2w2-v1` → `b2ux2-v1`; 37 recomendadas no período; dia 31 com 6; Minha Agenda exibiu sessão Baixa salva; filtros persistiram após recarga; Lista mobile; Grade com conteúdo interno de 811px em viewport 390px, sem overflow da página; rota normal com 0 sessões e banner parcial oculto.
 - Restrições: sem alteração de dados/curadoria, `main`, CONAHP, Vercel, serviços externos, PR, Code Review ou deployment. PWA instalado/offline em dispositivo real permanece não homologado.
 - Próximo passo: auditoria do orquestrador antes de qualquer publicação QA.
+
+## HEMO B2-UX2-R1 — Contraste e fallback do PWA
+
+- Status: correções concluídas e prontas para reauditoria independente; sem deployment/redeploy.
+- Branch: `feat/hemo-b2-ux2-visual`.
+- Base auditada: `86a2eceea31008038e437ec79d05737428b07f32`.
+- Contraste: controles ativos com texto branco usam `#AD5D2D`, contraste WCAG calculado `4,79:1`; `#D9823D` permanece em detalhes sem texto branco.
+- Service Worker: fallback `/index.html` limitado à navegação; código sem rede usa seu próprio cache ou retorna `503 text/plain`, sem substituir JS/CSS/manifest por HTML e sem cachear erro.
+- Testes: `npm test` 43/43 PASS; `npm run check` PASS; `npm run check:preview` PASS com 121 sessões e 42 falas.
+- Chromium local: contraste computado confirmado em 390 e desktop 1280; 37 recomendadas; dia 31 com 6; Minha Agenda persistiu após recarga; banner 121/42/66; rota normal `pending_b2` com 0 sessões e aviso oculto.
+- Restrições: sem alteração de dados, curadoria, preferências privadas, `main`, CONAHP, Vercel, PR, Code Review ou deployment.
+- Próximo passo: reauditoria do orquestrador; PWA instalado/offline e proteção Vercel continuam não homologados.

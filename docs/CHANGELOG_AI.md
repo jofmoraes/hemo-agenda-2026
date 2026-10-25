@@ -20,3 +20,10 @@
 - Versionado o cache para `hemo2026:public:b2ux2-v1`; recursos de código passaram a usar network-first com fallback seguro, `updateViaCache: none` e limpeza somente do namespace HEMO obsoleto.
 - Adicionados testes de rotação do Service Worker a partir de navegador controlado pelo cache anterior, preservando caches externos e armazenamento local.
 - `npm test` 39/39, `npm run check` e `npm run check:preview` passaram; QA Chromium local realizado em 360, 390, 430 e 1280 px.
+
+## 2026-10-25 — HEMO B2-UX2-R1
+
+- Corrigido o contraste dos controles ativos com texto branco: abas, dias, Agenda/Lista, segmentos selecionados e limpeza de filtros usam `#AD5D2D`, com contraste calculado de 4,79:1 contra branco; `#D9823D` permanece disponível para detalhes decorativos.
+- Corrigido o fallback do Service Worker: somente navegação pode usar `/index.html`; JS, CSS e manifest usam apenas seu próprio cache e retornam 503 texto quando indisponíveis.
+- Adicionados testes para cache de código presente/ausente, navegação offline, não armazenamento de erros e contraste automatizado.
+- `npm test` 43/43, `npm run check` e `npm run check:preview` passaram; smoke Chromium local móvel/desktop concluído.
