@@ -17,6 +17,15 @@ Atualizado: 2026-10-23, após auditoria B0 por GPT Web.
 - B4: integração, login e persistência multiaparelho HEMO, apenas se aprovada; evitar reutilizar clientes OAuth/segredos CONAHP.
 - B5: publicação controlada após gate, com smoke remoto e plano de rollback.
 
+## HEMO B3-WORKS1 — Pesquisa GSH (26/10/2026)
+
+- Branch independente: `feat/hemo-b3-works-gsh`, baseada na release pública existente; sem alteração de `main`, CONAHP, Vercel ou aplicativo público.
+- Inventário: `data/b3-works-gsh-research.json`; relatório: `docs/B3_WORKS_GSH_RESEARCH.md`.
+- Resultado: `BLOCKED_EXTERNAL`; a lista oficial retornou HTTP 403 no navegador Windows com verificação de segurança.
+- Trabalhos individuais confirmados: `0`. Candidatos individuais publicados: `0`. A referência agregada de 117 (100 painel, 17 visita guiada) ficou restrita à reconciliação futura.
+- Próximo desbloqueio: exportação legitimamente acessível da lista oficial, seguida de reconciliação de ID, título, autores, instituições, modalidade, área, data, horário, local e painel.
+- Validação específica: `node --test tests/hemo-b3-works-gsh.test.mjs`.
+
 ## Fontes
 - https://hemo.org.br/site/hemo2026/sobre-o-evento
 - https://hemo.org.br/evento/hemo2026/pt/programacao/lista

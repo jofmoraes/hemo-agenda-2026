@@ -1,0 +1,137 @@
+{
+  "kind": "HEMO_B3_WORKS_GSH_RESEARCH",
+  "event": "HEMO 2026",
+  "status": "BLOCKED_EXTERNAL",
+  "consultedOn": "2026-10-26",
+  "timezone": "America/Sao_Paulo",
+  "scope": {
+    "singleConcept": "Trabalho GSH",
+    "identificationRules": [
+      "afiliacao explicita ao Grupo GSH ou unidade comprovadamente integrante",
+      "Leandro Felipe Figueiredo Dalmazzo e variacoes documentadas",
+      "Eduardo Ferro de Carvalho e variacoes documentadas",
+      "outro autor ou funcionario com vinculo GSH comprovado"
+    ],
+    "falsePositiveControl": "Nome de pessoa ou tema isolado nao confirma autoria; cada trabalho precisa de ID oficial e evidencia de afiliacao/autoria na fonte do HEMO 2026."
+  },
+  "officialListAccess": {
+    "url": "https://www.hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+    "method": "navegador Windows Chromium, acesso normal",
+    "httpStatus": 403,
+    "pageTitle": "Um momento...",
+    "observedMessage": "Executando verificacao de seguranca",
+    "bypassAttempted": false,
+    "result": "registros individuais nao obtidos",
+    "note": "A pesquisa foi encerrada no bloqueio da camada de seguranca. Nao houve tentativa de CAPTCHA, cookies, endpoint alternativo ou contorno de autenticacao."
+  },
+  "confirmedWorks": [],
+  "candidateWorks": [],
+  "aggregateReconciliationReferences": [
+    {
+      "recordType": "aggregate_reference",
+      "referenceId": "GSH-HEMO-2026-AGGREGATE-117",
+      "title": null,
+      "status": "aggregate_only",
+      "count": 117,
+      "modalities": { "painel": 100, "visita_guiada": 17 },
+      "sourceUrl": "https://br.linkedin.com/company/grupogsh",
+      "evidence": "Publicacao institucional do Grupo GSH informa 117 trabalhos aprovados no HEMO 2026, sendo 100 em painel e 17 em visita guiada. A publicacao menciona Sandra Loggetto e Edyla Almeida apenas como pistas de trabalhos, sem ID, titulo oficial completo ou afiliacao verificavel por registro.",
+      "confidence": "medium",
+      "promotionRule": "Nao promover esta referencia ao filtro Trabalhos GSH nem a works[]; serve somente para reconciliacao futura."
+    }
+  ],
+  "namedCandidateLeads": [
+    {
+      "name": "Sandra Loggetto",
+      "lead": "Publicacao institucional menciona dois trabalhos orais sobre eventos tromboembolicos em criancas/adolescentes e transicao do cuidado hematologico pediatrico para adulto.",
+      "officialHemoId": null,
+      "status": "pending_official_id_affiliation",
+      "confidence": "low",
+      "isIndividualWork": false,
+      "sourceUrl": "https://br.linkedin.com/company/grupogsh"
+    },
+    {
+      "name": "Edyla Almeida",
+      "lead": "Publicacao institucional menciona participacao em trabalho reconhecido como Melhor Trabalho em Hemoterapia, sobre prevalencia/incidencia de hepatites B/C entre doadores no Brasil.",
+      "officialHemoId": null,
+      "status": "pending_official_id_affiliation",
+      "confidence": "low",
+      "isIndividualWork": false,
+      "sourceUrl": "https://br.linkedin.com/company/grupogsh"
+    }
+  ],
+  "identityEvidence": [
+    {
+      "name": "Leandro Felipe Figueiredo Dalmazzo",
+      "knownVariants": ["Leandro Dalmazzo", "Dalmazzo LFF"],
+      "gshEvidence": "Diretor medico da Companhia desde marco de 2017, conforme governanca corporativa do Grupo GSH.",
+      "sourceUrl": "https://ri.gshcorp.com.br/governanca-corporativa/conselho-comite-e-diretoria/",
+      "provesGshAffiliation": true,
+      "provesHemo2026Authorship": false
+    },
+    {
+      "name": "Eduardo Ferro de Carvalho",
+      "knownVariants": ["Eduardo Ferro", "Ferro de Carvalho EF"],
+      "gshEvidence": "Diretor Presidente; a pagina institucional registra sua participacao no grupo desde 2016.",
+      "sourceUrl": "https://ri.gshcorp.com.br/governanca-corporativa/conselho-comite-e-diretoria/",
+      "provesGshAffiliation": true,
+      "provesHemo2026Authorship": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "role": "lista oficial de trabalhos aprovados",
+      "observation": "Fonte prioritária; bloqueada por HTTP 403 na navegacao normal desta rodada."
+    },
+    {
+      "url": "https://hemo.org.br/site/hemo2026/trabalhos",
+      "role": "contexto oficial do processo",
+      "observation": "Pagina institucional informa a publicacao dos resultados de trabalhos aprovados e posterior publicacao de resumos em HTCT; nao fornece nesta pesquisa os registros GSH individuais."
+    },
+    {
+      "url": "https://www.hemo.org.br/site/hemo2026/orientacoes-para-apresentacao-dos-trabalhos",
+      "role": "campos e modalidades esperados",
+      "observation": "Orientacoes oficiais mencionam poster, visita guiada e apresentacao oral, alem de data, local e posicao quando aplicavel."
+    },
+    {
+      "url": "https://br.linkedin.com/company/grupogsh",
+      "role": "reconciliacao institucional agregada",
+      "observation": "Referencia publica do Grupo GSH com total agregado 117, sem IDs individuais."
+    },
+    {
+      "url": "https://ri.gshcorp.com.br/governanca-corporativa/conselho-comite-e-diretoria/",
+      "role": "prova de vinculo institucional",
+      "observation": "Confirma o vinculo de Leandro e Eduardo com o Grupo GSH; nao confirma autoria em HEMO 2026."
+    }
+  ],
+  "searchAudit": [
+    {
+      "engine": "Bing",
+      "query": "site:hemo.org.br/evento/hemo2026/pt/trabalhosaprovados GSH",
+      "result": "Nenhum registro individual HEMO 2026 com nome, ID ou afiliacao GSH foi localizado no indice consultado."
+    },
+    {
+      "engine": "Bing",
+      "query": "\"Leandro Felipe Figueiredo Dalmazzo\" HEMO 2026",
+      "result": "Nenhum registro oficial individual HEMO 2026 foi localizado no indice consultado."
+    },
+    {
+      "engine": "Bing",
+      "query": "\"Eduardo Ferro de Carvalho\" HEMO 2026",
+      "result": "Nenhum registro oficial individual HEMO 2026 foi localizado no indice consultado."
+    }
+  ],
+  "futureInterface": {
+    "tab": "Trabalhos cientificos",
+    "search": "pesquisa geral por ID, titulo, autor, instituicao e area, quando os registros oficiais estiverem disponiveis",
+    "singleFilter": "Trabalhos GSH",
+    "filterRule": "Retornar somente trabalhos individuais confirmados pela fonte oficial e pela evidencia de vinculo GSH; nao incluir o agregado de 117 nem candidatos sem ID."
+  },
+  "requiredFieldsForNextPass": [
+    "officialId", "title", "authorsAndInstitutions", "modality", "thematicArea",
+    "day", "time", "venue", "panelId", "gshEvidence", "sourceUrl", "consultedOn", "confidence"
+  ],
+  "nextSafeStep": "Obter do organizador ou do usuario uma exportacao legitimamente acessivel da lista oficial (HTML, MHTML, PDF ou exportacao autorizada), sem contornar o 403; entao reconciliar IDs, autores, instituicoes, modalidades, horarios e locais antes de qualquer publicacao no aplicativo.",
+  "publicAppImpact": { "changed": false, "scheduleJsonStatus": "pending_b2", "scheduleSessionCount": 0, "worksPublished": false }
+}

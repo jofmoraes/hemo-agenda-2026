@@ -42,3 +42,12 @@
 - Único deployment: `dpl_Dn74sZA131JKLdbQXUosAkkXhhnU`, `READY`, `production`, publicado a partir de `0e9c360e70d2eb9fd9051b991becf84387bc8c1b`.
 - URL HTTPS anônima verificada: `https://hemo-flora-2026.vercel.app/`; raiz redireciona para `/?preview=1`, enquanto `/?preview=0` mantém o modo normal vazio.
 - Chromium anônimo confirmou banner 121/42/66, Recomendadas 37, dia 31 com 6, Lista mobile, Minha Agenda persistente e ausência de erros de console. Instalação física Android/iPhone e offline físico permanecem NOT_RUN.
+
+## 2026-10-26 — HEMO B3-WORKS1
+
+- Criado inventário independente `data/b3-works-gsh-research.json` e relatório `docs/B3_WORKS_GSH_RESEARCH.md` para o conceito único `Trabalhos GSH`.
+- A lista oficial de trabalhos aprovados retornou HTTP 403 no navegador Windows com verificação de segurança. A pesquisa encerrou sem bypass, CAPTCHA, cookies artificiais ou endpoints alternativos.
+- `confirmedWorks` e `candidateWorks` permanecem vazios: nenhum trabalho individual recebeu ID/título oficial e evidência suficiente nesta rodada.
+- A divulgação institucional de 117 trabalhos (100 painéis e 17 visitas guiadas) foi registrada somente como referência agregada de reconciliação; não foi promovida ao filtro nem a `works[]`.
+- Evidências institucionais de Leandro Dalmazzo e Eduardo Ferro foram registradas como vínculo GSH, sem inferir autoria no HEMO 2026.
+- Adicionado teste nativo `tests/hemo-b3-works-gsh.test.mjs`; o aplicativo público, `public/schedule.json`, curadoria, Vercel, QA, `main` e CONAHP permaneceram inalterados.

@@ -82,3 +82,16 @@
 - Proteção pública: `ssoProtection=null`; acesso HTTPS anônimo verificado sem login. O QA continua `ssoProtection=all`, `paused=false`, com os deployments históricos preservados.
 - QA online: raiz redireciona para `/?preview=1`; HTTP e Chromium confirmaram 121/42/66, Recomendadas 37, dia 31 com 6, Lista mobile, Minha Agenda persistente, modo normal vazio e cache `hemo2026:public:b2public1-v1`.
 - NOT_RUN: instalação real em Android/iPhone e teste offline em dispositivo físico; não foram apresentados como homologados.
+
+## HEMO B3-WORKS1 — Pesquisa de trabalhos GSH
+
+- Status: inventário auditável pronto para revisão, com bloqueio externo documentado; nenhum trabalho individual confirmado nesta rodada.
+- Branch: `feat/hemo-b3-works-gsh`.
+- Workspace isolado: `D:\JUCA\AI Lab\hemo-2026\hemo-2026-app-b3-works-gsh`.
+- Artefatos: `data/b3-works-gsh-research.json`, `docs/B3_WORKS_GSH_RESEARCH.md`, `tests/hemo-b3-works-gsh.test.mjs`.
+- Fonte oficial prioritária retornou HTTP 403 no navegador Windows, com verificação de segurança. Não houve contorno, CAPTCHA, cookies artificiais ou endpoints alternativos.
+- `confirmedWorks=[]` e `candidateWorks=[]`; o agregado institucional de 117 trabalhos (100 painel, 17 visita guiada) está separado e não alimenta o filtro.
+- Evidência de vínculo GSH de Leandro Dalmazzo e Eduardo Ferro foi registrada sem inferir autoria no HEMO 2026.
+- Proposta futura: aba `Trabalhos científicos` e único filtro `Trabalhos GSH`, somente sobre registros individuais confirmados.
+- Teste específico: `node --test tests/hemo-b3-works-gsh.test.mjs`.
+- Pendência: obter exportação legitimamente acessível da lista oficial para reconciliar IDs e metadados. Não modificar a agenda pública até esse gate.
