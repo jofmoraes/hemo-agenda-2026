@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/?preview=1",
+      "permanent": false,
+      "missing": [
+        {
+          "type": "query",
+          "key": "preview"
+        }
+      ]
+    }
+  ]
+}

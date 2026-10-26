@@ -27,3 +27,11 @@
 - Corrigido o fallback do Service Worker: somente navegação pode usar `/index.html`; JS, CSS e manifest usam apenas seu próprio cache e retornam 503 texto quando indisponíveis.
 - Adicionados testes para cache de código presente/ausente, navegação offline, não armazenamento de erros e contraste automatizado.
 - `npm test` 43/43, `npm run check` e `npm run check:preview` passaram; smoke Chromium local móvel/desktop concluído.
+
+## 2026-10-26 — HEMO B2-PUBLIC1
+
+- Criada a branch de release `feat/hemo-b2-public1` a partir do SHA imutável UX2-R1 `21198a76fb5a3fc09fd3c47b18acfe300f5c2de7`.
+- Substituídos os ícones PWA roxos herdados por arte própria do aplicativo, versão `HEMO-PUBLIC1-ICON-1`, em 192/512 px, com margens seguras para máscara e referências grafite/off-white/laranja/ocre/verde; sem alegar que é logotipo oficial.
+- Atualizados manifesto, theme/background color, atalho `/?preview=1`, tela HTML de primeira pintura e redirect condicional da raiz exclusivamente para o projeto público.
+- Versionado o cache para `hemo2026:public:b2public1-v1`; `schedule.json` permanece `pending_b2` e a prévia permanece parcial.
+- Testes locais: `npm test` 46/46, `npm run check` e `npm run check:preview` passaram; smoke Chromium HTTP em 390x844 e 1280x900, incluindo captura com CSS/JS atrasados e cache vazio simulado.

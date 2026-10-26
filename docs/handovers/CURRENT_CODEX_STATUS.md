@@ -65,3 +65,15 @@
 - Chromium local: contraste computado confirmado em 390 e desktop 1280; 37 recomendadas; dia 31 com 6; Minha Agenda persistiu após recarga; banner 121/42/66; rota normal `pending_b2` com 0 sessões e aviso oculto.
 - Restrições: sem alteração de dados, curadoria, preferências privadas, `main`, CONAHP, Vercel, PR, Code Review ou deployment.
 - Próximo passo: reauditoria do orquestrador; PWA instalado/offline e proteção Vercel continuam não homologados.
+
+## HEMO B2-PUBLIC1 — Publicação pública da prévia PWA
+
+- Status: implementação local concluída; branch pronta para commit/push e preflight do único deployment público autorizado.
+- Branch: `feat/hemo-b2-public1`.
+- Base imutável: `21198a76fb5a3fc09fd3c47b18acfe300f5c2de7`.
+- Workspace isolado: `D:\JUCA\AI Lab\hemo-2026\hemo-2026-app-b2-public1`.
+- Projeto público planejado: `hemo-flora-2026`; o projeto QA `hemo-preview-qa-2026` permaneceu sem alterações.
+- Escopo: ícones próprios PWA 192/512 e evidência SVG, manifesto com `start_url=/?preview=1`, redirect condicional da raiz, splash HTML crítico e cache `hemo2026:public:b2public1-v1`.
+- Dados preservados: `schedule.json` continua `pending_b2`/0; prévia continua 121 sessões, 42 falas e 66 salas a confirmar.
+- Testes: `npm test` 46/46 PASS; `npm run check` PASS; `npm run check:preview` PASS; smoke Chromium local PASS em 390x844 e 1280x900; splash com assets CSS/JS atrasados capturado.
+- Pendente: commit/push, único deployment público, QA anônimo online e testes de instalação real Android/iPhone; marcar NOT_RUN quando dispositivo não estiver disponível.

@@ -212,3 +212,29 @@ As evidências são locais e não comprovam login/proteção Vercel, publicaçã
 ### Limitações
 
 Não foi feito deployment/redeploy nem alterada a Vercel. A migração foi validada por testes nativos e navegador local; PWA instalado/offline em dispositivo real, autenticação/proteção Vercel e backup/restore real continuam não homologados. SHA R1 publicado: `d35ee3c1c9950bc30b59a6e802c51f18f6c6812b`.
+
+## HEMO B2-PUBLIC1 — Publicação pública da prévia PWA (26/10/2026)
+
+**Status:** implementação local concluída na branch `feat/hemo-b2-public1`, baseada exatamente em `21198a76fb5a3fc09fd3c47b18acfe300f5c2de7`. O deployment público ainda depende do preflight final; o projeto QA protegido não foi alterado.
+
+### Alterações
+
+- `docs/evidence/hemo-b2-public1/icon-source.svg`: arte gráfica própria do aplicativo, versão `HEMO-PUBLIC1-ICON-1`, construída com grafite `#3f4145`, off-white `#f3eadc`, laranja profundo `#ad5d2d`, ocre `#e3aa3a`, laranja `#d9823d` e verde `#14865b`. Não é apresentada como logotipo oficial.
+- `public/icon-192.png` e `public/icon-512.png`: PNGs 192/512 com margens seguras para máscara Android, recorte circular e ícone da tela inicial do iPhone; o fundo roxo herdado foi removido.
+- `public/manifest.webmanifest`: nome explícito de prévia parcial, `start_url` `/?preview=1`, tema/background grafite, ícones `any maskable` e identidade independente `hemo2026-public1`.
+- `public/index.html`: theme/status bar grafite, título parcial, splash HTML crítico com logo, texto, período/local e indicador; link explícito para o modo normal vazio `/?preview=0`.
+- `vercel.json`: redirect 307 apenas quando a raiz não possui o parâmetro `preview`; `/?preview=1` não entra em loop e `public/schedule.json` não é alterado.
+- `public/service-worker.js`: cache exclusivo `hemo2026:public:b2public1-v1`; nenhuma preferência local é removida.
+
+### Evidências locais
+
+- `npm test`: **PASS, 46/46**.
+- `npm run check`: **PASS**, incluindo `npm run check:preview`.
+- `npm run check:preview`: **PASS**, 121 sessões e 42 falas.
+- Chromium HTTP local: **PASS** em 390x844 e 1280x900; banner 121/42/66, Recomendadas 37, Lista mobile e Agenda desktop.
+- Primeira pintura: captura `evidence/hemo-b2-public1/splash-390-slow-assets.png` com CSS/JS atrasados artificialmente e cache limpo simulado; o conteúdo inline exibiu fundo grafite, HEMO, “Carregando agenda”, período/local e indicador antes dos assets externos.
+- Capturas adicionais: `icon-192.png`, `icon-512.png`, `mobile-390-preview.png` e `desktop-1280-preview.png`.
+
+### Limitações e próximo gate
+
+Ainda não há URL pública verificada, instalação Android/iPhone, offline real ou confirmação de custo pós-deployment. O modo é deliberadamente parcial e não representa a programação científica completa. O próximo passo autorizado é um único deployment no projeto Vercel público isolado, seguido de leitura anônima da URL e confirmação de que `hemo-preview-qa-2026` continua intacto.
