@@ -68,7 +68,7 @@
 
 ## HEMO B2-PUBLIC1 — Publicação pública da prévia PWA
 
-- Status: implementação local concluída; branch pronta para commit/push e preflight do único deployment público autorizado.
+- Status: deployment público concluído e verificado anonimamente; aguardando auditoria independente do orquestrador antes de encaminhar o link para Flora.
 - Branch: `feat/hemo-b2-public1`.
 - Base imutável: `21198a76fb5a3fc09fd3c47b18acfe300f5c2de7`.
 - Workspace isolado: `D:\JUCA\AI Lab\hemo-2026\hemo-2026-app-b2-public1`.
@@ -76,4 +76,9 @@
 - Escopo: ícones próprios PWA 192/512 e evidência SVG, manifesto com `start_url=/?preview=1`, redirect condicional da raiz, splash HTML crítico e cache `hemo2026:public:b2public1-v1`.
 - Dados preservados: `schedule.json` continua `pending_b2`/0; prévia continua 121 sessões, 42 falas e 66 salas a confirmar.
 - Testes: `npm test` 46/46 PASS; `npm run check` PASS; `npm run check:preview` PASS; smoke Chromium local PASS em 390x844 e 1280x900; splash com assets CSS/JS atrasados capturado.
-- Pendente: commit/push, único deployment público, QA anônimo online e testes de instalação real Android/iPhone; marcar NOT_RUN quando dispositivo não estiver disponível.
+- Código publicado: `0e9c360e70d2eb9fd9051b991becf84387bc8c1b`.
+- Projeto público: `hemo-flora-2026` / `prj_3oTPmcroB9IeJZ4FAxSoyW8yEmsC`, equipe `team_Wqr8VqX0PftIKdW6x5jZciqo`, plano Hobby, sem link Git.
+- Deployment: `dpl_Dn74sZA131JKLdbQXUosAkkXhhnU`, `READY`, target `production`, aliases `hemo-flora-2026.vercel.app` e hostname de deployment.
+- Proteção pública: `ssoProtection=null`; acesso HTTPS anônimo verificado sem login. O QA continua `ssoProtection=all`, `paused=false`, com os deployments históricos preservados.
+- QA online: raiz redireciona para `/?preview=1`; HTTP e Chromium confirmaram 121/42/66, Recomendadas 37, dia 31 com 6, Lista mobile, Minha Agenda persistente, modo normal vazio e cache `hemo2026:public:b2public1-v1`.
+- NOT_RUN: instalação real em Android/iPhone e teste offline em dispositivo físico; não foram apresentados como homologados.

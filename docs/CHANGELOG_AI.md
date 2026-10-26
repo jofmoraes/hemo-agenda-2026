@@ -35,3 +35,10 @@
 - Atualizados manifesto, theme/background color, atalho `/?preview=1`, tela HTML de primeira pintura e redirect condicional da raiz exclusivamente para o projeto público.
 - Versionado o cache para `hemo2026:public:b2public1-v1`; `schedule.json` permanece `pending_b2` e a prévia permanece parcial.
 - Testes locais: `npm test` 46/46, `npm run check` e `npm run check:preview` passaram; smoke Chromium HTTP em 390x844 e 1280x900, incluindo captura com CSS/JS atrasados e cache vazio simulado.
+
+### Fechamento PUBLIC1
+
+- Preflight confirmou conta/equipe corretas, plano Hobby, projeto público independente sem integração Git e proteção SSO removida apenas de `hemo-flora-2026`; o QA `hemo-preview-qa-2026` permaneceu protegido.
+- Único deployment: `dpl_Dn74sZA131JKLdbQXUosAkkXhhnU`, `READY`, `production`, publicado a partir de `0e9c360e70d2eb9fd9051b991becf84387bc8c1b`.
+- URL HTTPS anônima verificada: `https://hemo-flora-2026.vercel.app/`; raiz redireciona para `/?preview=1`, enquanto `/?preview=0` mantém o modo normal vazio.
+- Chromium anônimo confirmou banner 121/42/66, Recomendadas 37, dia 31 com 6, Lista mobile, Minha Agenda persistente e ausência de erros de console. Instalação física Android/iPhone e offline físico permanecem NOT_RUN.

@@ -215,7 +215,7 @@ Não foi feito deployment/redeploy nem alterada a Vercel. A migração foi valid
 
 ## HEMO B2-PUBLIC1 — Publicação pública da prévia PWA (26/10/2026)
 
-**Status:** implementação local concluída na branch `feat/hemo-b2-public1`, baseada exatamente em `21198a76fb5a3fc09fd3c47b18acfe300f5c2de7`. O deployment público ainda depende do preflight final; o projeto QA protegido não foi alterado.
+**Status:** publicação concluída na branch `feat/hemo-b2-public1`. O código publicado é `0e9c360e70d2eb9fd9051b991becf84387bc8c1b`, baseado exatamente em `21198a76fb5a3fc09fd3c47b18acfe300f5c2de7`; o projeto QA protegido não foi alterado.
 
 ### Alterações
 
@@ -237,4 +237,13 @@ Não foi feito deployment/redeploy nem alterada a Vercel. A migração foi valid
 
 ### Limitações e próximo gate
 
-Ainda não há URL pública verificada, instalação Android/iPhone, offline real ou confirmação de custo pós-deployment. O modo é deliberadamente parcial e não representa a programação científica completa. O próximo passo autorizado é um único deployment no projeto Vercel público isolado, seguido de leitura anônima da URL e confirmação de que `hemo-preview-qa-2026` continua intacto.
+### Fechamento operacional
+
+- Projeto Vercel público: `hemo-flora-2026` (`prj_3oTPmcroB9IeJZ4FAxSoyW8yEmsC`), equipe `team_Wqr8VqX0PftIKdW6x5jZciqo`, plano Hobby, sem integração Git.
+- Deployment único: `dpl_Dn74sZA131JKLdbQXUosAkkXhhnU`, `READY`, `production`; URL pública verificada: https://hemo-flora-2026.vercel.app/.
+- Proteção: o projeto público está sem SSO Vercel (`ssoProtection=null`); a URL foi aberta em contexto anônimo sem tela de login. O projeto QA `hemo-preview-qa-2026` permanece protegido com `deploymentType=all`, `paused=false`, aliases e deployments anteriores intactos.
+- Verificação pública: `/` retorna redirect 307 para `/?preview=1`; a prévia mostra o banner parcial, 121 sessões, 42 palestras, 66 salas a confirmar e 37 Recomendadas. `/?preview=0` mantém o modo normal `pending_b2` sem sessões.
+- Chromium anônimo: PASS em 390x844 e 1280x900; Lista mobile, Agenda desktop, Minha Agenda após recarga, filtro Recomendadas e dia 31 com 6 sessões; sem erros de console observados.
+- PWA: manifesto, ícones PNG, splash HTML e cache `hemo2026:public:b2public1-v1` verificados; instalação Android/iPhone e offline em dispositivo físico permanecem **NOT_RUN**.
+- Rollback: não foi necessário; como o projeto público tem um único deployment, qualquer reversão futura deve ser decidida pelo orquestrador e executada como operação separada. Não reenviar nesta missão.
+- O conteúdo continua deliberadamente parcial e não representa a programação científica completa. A URL não deve ser encaminhada a Flora antes da auditoria independente.
