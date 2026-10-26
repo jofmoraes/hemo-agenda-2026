@@ -26,6 +26,15 @@ Atualizado: 2026-10-23, após auditoria B0 por GPT Web.
 - Próximo desbloqueio: exportação legitimamente acessível da lista oficial, seguida de reconciliação de ID, título, autores, instituições, modalidade, área, data, horário, local e painel.
 - Validação específica: `node --test tests/hemo-b3-works-gsh.test.mjs`.
 
+## HEMO B3-WORKS2 — Extração interativa (26/10/2026)
+
+- Resultado: `SOURCE_ACCESS_BLOCKED`; a tentativa única no navegador integrado retornou HTTP 403 antes do conteúdo da lista.
+- Cobertura: 0 áreas acessadas, 0 trabalhos carregados, 0 trabalhos individualmente validados; total oficial e assuntos não obtidos.
+- Sessão Chrome autorizada verificada somente por abas abertas; não havia aba da fonte oficial. Nenhum cookie, token, credencial ou armazenamento foi acessado.
+- Catálogo estruturado permanece vazio e `confirmedWorks=[]`; não houve alteração de `public/*` ou da agenda.
+- Ação manual mínima: abrir a URL oficial no Opera/Chrome com acesso normal e disponibilizar a aba ao navegador conectado ou fornecer exportação autorizada HTML/MHTML/PDF.
+- Testes: `npm test` deve incluir a suíte B3; executar após o commit desta atualização.
+
 ## Fontes
 - https://hemo.org.br/site/hemo2026/sobre-o-evento
 - https://hemo.org.br/evento/hemo2026/pt/programacao/lista

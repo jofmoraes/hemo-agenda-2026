@@ -51,3 +51,11 @@
 - A divulgação institucional de 117 trabalhos (100 painéis e 17 visitas guiadas) foi registrada somente como referência agregada de reconciliação; não foi promovida ao filtro nem a `works[]`.
 - Evidências institucionais de Leandro Dalmazzo e Eduardo Ferro foram registradas como vínculo GSH, sem inferir autoria no HEMO 2026.
 - Adicionado teste nativo `tests/hemo-b3-works-gsh.test.mjs`; o aplicativo público, `public/schedule.json`, curadoria, Vercel, QA, `main` e CONAHP permaneceram inalterados.
+
+## 2026-10-26 — HEMO B3-WORKS2
+
+- Tentativa única de extração interativa no navegador integrado do Codex: fonte oficial retornou HTTP 403 antes de exibir assuntos ou trabalhos.
+- Verificada a sessão Chrome autorizada somente por abas abertas; não havia aba oficial disponível para reivindicar. Não foram lidos cookies, tokens, armazenamento ou credenciais.
+- Inventário atualizado com cobertura explícita: 0 áreas acessadas, 0 trabalhos carregados e 0 trabalhos individualmente validados; catálogo estruturado permanece vazio.
+- Ação manual registrada: proprietário deve abrir a fonte no Opera/Chrome com acesso legítimo e disponibilizar a aba ou exportação autorizada, sem compartilhar credenciais.
+- `tests/hemo-b3-works-gsh.test.mjs` foi incorporado ao script `npm test`; nenhum arquivo `public/*` foi alterado.

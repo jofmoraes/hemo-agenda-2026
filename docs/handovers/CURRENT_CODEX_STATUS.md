@@ -95,3 +95,12 @@
 - Proposta futura: aba `Trabalhos científicos` e único filtro `Trabalhos GSH`, somente sobre registros individuais confirmados.
 - Teste específico: `node --test tests/hemo-b3-works-gsh.test.mjs`.
 - Pendência: obter exportação legitimamente acessível da lista oficial para reconciliar IDs e metadados. Não modificar a agenda pública até esse gate.
+
+## HEMO B3-WORKS2 — Extração pelo navegador
+
+- Status: `SOURCE_ACCESS_BLOCKED`; tentativa única no navegador integrado encontrou HTTP 403 antes do conteúdo oficial.
+- Branch: `feat/hemo-b3-works-gsh`, derivada do commit WORKS1 `a88bf59710731146860d2aa1d2fc6cad4a451837`.
+- Cobertura: 0 áreas, 0 trabalhos carregados e 0 trabalhos individualmente validados; catálogo estruturado vazio.
+- Verificação de sessão autorizada Chrome foi somente leitura de abas; nenhuma aba da fonte oficial estava aberta. Cookies, tokens, armazenamento e credenciais não foram acessados.
+- Ação manual necessária: proprietário abrir a fonte no Opera/Chrome com acesso normal e disponibilizar a aba conectada ao Codex ou entregar exportação autorizada HTML/MHTML/PDF.
+- `public/*`, Vercel, QA, `main`, CONAHP e preferências pessoais permanecem inalterados.

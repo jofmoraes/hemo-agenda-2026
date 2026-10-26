@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/hemo-b1.test.mjs tests/hemo-b2.test.mjs tests/hemo-b2-web.test.mjs tests/hemo-b2-preview.test.mjs tests/hemo-b2-preview-ui.test.mjs tests/hemo-b2-ux1.test.mjs tests/hemo-b2-sw.test.mjs tests/hemo-b2-ux2-r1.test.mjs tests/hemo-b2-public1.test.mjs",
+    "test": "node --test tests/hemo-b1.test.mjs tests/hemo-b2.test.mjs tests/hemo-b2-web.test.mjs tests/hemo-b2-preview.test.mjs tests/hemo-b2-preview-ui.test.mjs tests/hemo-b2-ux1.test.mjs tests/hemo-b2-sw.test.mjs tests/hemo-b2-ux2-r1.test.mjs tests/hemo-b2-public1.test.mjs tests/hemo-b3-works-gsh.test.mjs",
     "check": "node --check public/b18.js && node --check public/schedule-utils.js && node --check public/schedule-mode.js && node --check public/service-worker.js && node --check scripts/build-preview.mjs && npm run check:preview && npm test",
     "test:b2": "node --test tests/hemo-b2.test.mjs tests/hemo-b2-web.test.mjs tests/hemo-b2-preview.test.mjs tests/hemo-b2-preview-ui.test.mjs tests/hemo-b2-ux1.test.mjs",
     "build:preview": "node scripts/build-preview.mjs",

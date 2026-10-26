@@ -24,6 +24,39 @@
     "result": "registros individuais nao obtidos",
     "note": "A pesquisa foi encerrada no bloqueio da camada de seguranca. Nao houve tentativa de CAPTCHA, cookies, endpoint alternativo ou contorno de autenticacao."
   },
+  "works2Extraction": {
+    "attemptedOn": "2026-10-26",
+    "method": "navegador integrado do Codex; depois verificacao somente leitura de abas do navegador Chrome autorizado",
+    "interactiveNavigation": "blocked_before_page_content",
+    "browserEvidence": [
+      {
+        "browser": "Codex In-app Browser",
+        "url": "https://www.hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+        "result": "HTTP 403; pagina de verificacao Cloudflare; assuntos e controles de expansao nao ficaram acessiveis",
+        "interactionAfterBlock": false
+      },
+      {
+        "browser": "Chrome autorizado",
+        "result": "nenhuma aba aberta da fonte oficial disponivel para reivindicar; nenhuma leitura de cookies, tokens, armazenamento ou credenciais",
+        "interactionAfterBlock": false
+      }
+    ],
+    "coverage": {
+      "declaredTotal": null,
+      "declaredByArea": [],
+      "areasAccessed": [],
+      "areasNotAccessed": ["todas"],
+      "recordsLoaded": 0,
+      "recordsIndividuallyValidated": 0,
+      "gshConfirmed": 0,
+      "leandroMentions": 0,
+      "eduardoMentions": 0,
+      "candidatesRequiringReview": 0
+    },
+    "catalog": [],
+    "manualActionRequired": "O proprietario deve abrir a URL oficial no Opera ou Chrome que ja possui acesso normal e deixar a lista de trabalhos carregada. Em seguida, deve disponibilizar a propria aba por navegador conectado ao Codex ou fornecer uma exportacao autorizada HTML, MHTML ou PDF. Nao compartilhar cookies, tokens, credenciais ou dados de outras abas.",
+    "status": "SOURCE_ACCESS_BLOCKED"
+  },
   "confirmedWorks": [],
   "candidateWorks": [],
   "aggregateReconciliationReferences": [

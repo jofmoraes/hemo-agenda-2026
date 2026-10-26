@@ -8,6 +8,21 @@ Status do inventário: `BLOCKED_EXTERNAL`.
 
 O arquivo [b3-works-gsh-research.json](../data/b3-works-gsh-research.json) separa `confirmedWorks` e `candidateWorks` (ambos vazios), a referência institucional agregada de 117 trabalhos e pistas nominais ainda pendentes. A referência de 117 não é uma lista individual e não deve alimentar `works[]` nem o filtro público.
 
+## WORKS2 — cobertura da extração
+
+A tentativa de extração interativa foi feita uma única vez no navegador integrado do Codex. A fonte retornou HTTP 403 antes de exibir assuntos, áreas, contagens, paginação ou controles de expansão. Também foi verificada, somente em leitura, a existência de uma sessão Chrome autorizada reivindicável; não havia aba da fonte oficial aberta. Cookies, tokens, armazenamento e credenciais não foram acessados.
+
+Cobertura registrada:
+
+- Áreas acessadas: 0.
+- Áreas não acessadas: todas.
+- Trabalhos carregados: 0.
+- Trabalhos individualmente validados: 0.
+- Total oficial declarado: não obtido nesta sessão.
+- Catálogo estruturado: vazio, sem registros inventados ou duplicações.
+
+A ação manual mínima é o proprietário abrir a URL oficial no Opera ou Chrome que já possui acesso normal e deixar a lista carregada. Depois, a aba pode ser disponibilizada pelo navegador conectado ao Codex, ou o proprietário pode fornecer uma exportação autorizada em HTML, MHTML ou PDF. Não devem ser compartilhados cookies, tokens, credenciais ou dados de outras abas.
+
 ## Critério único
 
 O conceito futuro é somente `Trabalhos GSH`. Leandro e Eduardo são pistas alternativas para localizar autoria, e não filtros separados nem condições simultâneas. A confirmação de cada registro exigirá ID oficial, título, autores/instituições e evidência explícita de associação ao Grupo GSH ou a unidade comprovadamente integrante.

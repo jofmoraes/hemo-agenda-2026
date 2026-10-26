@@ -24,6 +24,15 @@ test('agregado de 117 nao e promovido a trabalho individual', () => {
   assert.equal(aggregate.promotionRule.includes('Nao promover'), true);
 });
 
+test('WORKS2 registra cobertura zero sem inventar totais ou registros', () => {
+  assert.equal(research.works2Extraction.status, 'SOURCE_ACCESS_BLOCKED');
+  assert.equal(research.works2Extraction.coverage.recordsLoaded, 0);
+  assert.deepEqual(research.works2Extraction.coverage.areasAccessed, []);
+  assert.deepEqual(research.works2Extraction.coverage.areasNotAccessed, ['todas']);
+  assert.deepEqual(research.works2Extraction.catalog, []);
+  assert.equal(research.works2Extraction.manualActionRequired.includes('cookies'), true);
+});
+
 test('evidencia de identidade nao inventa autoria HEMO 2026', () => {
   assert.equal(research.identityEvidence.length, 2);
   for (const identity of research.identityEvidence) {
