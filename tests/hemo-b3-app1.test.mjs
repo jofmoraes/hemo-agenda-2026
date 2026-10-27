@@ -55,7 +55,7 @@ test('B3 APP1: aba, busca, backup separado e programação original preservados'
  assert.match(js,/hemo2026:flora:works-ui:v1/);
  assert.match(js,/works:\[\.\.\.st\.worksPrefs\.values\(\)\]/);
  const sw=read('public/service-worker.js');
- assert.match(sw,/hemo2026:public:b3app1-v1/);
+ assert.match(sw,/hemo2026:public:b3final1-v1/);
  assert.match(sw,/works-catalog\.json/);
  assert.equal(production.status,'pending_b2');
  assert.deepEqual(production.sessions,[]);

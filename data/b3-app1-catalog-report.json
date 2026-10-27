@@ -1,7 +1,7 @@
 {
   "kind": "HEMO_B3_APP1_CATALOG_REPORT",
   "status": "READY_FOR_AUDIT",
-  "generatedAt": "2026-10-27T18:40:35.506Z",
+  "generatedAt": "2026-10-27T19:36:51.120Z",
   "output": "public/works-catalog.json",
   "outputBytes": 1802540,
   "records": 1987,
@@ -26,6 +26,58 @@
   "sourceInput": {
     "inventory": "HEMO2026_B3_WORKS4_INVENTORY.json",
     "gsh": "HEMO2026_B3_WORKS4_GSH.json",
+    "validation": "HEMO2026_B3_WORKS4_REPORT.json",
     "directory": "D:\\JUCA\\AI Lab\\hemo-2026\\hemo-tampermonkey"
+  },
+  "integrity": {
+    "jsonRecords": 1987,
+    "csvRecords": 1987,
+    "gshCsvRecords": 28,
+    "uniqueIds": 1987,
+    "duplicateIds": 0,
+    "coverageTextRecords": 1987,
+    "sourceCoverageUnique": 1987,
+    "areaSubjects": 40,
+    "areaDeclaredTotal": 1987,
+    "areaAssociationsFromSavedDetails": 355,
+    "areaAssociationsUnresolved": 1632,
+    "inferredAreaAssignments": 0,
+    "oralExpected": 110,
+    "oralTimesRecovered": 110,
+    "oralTimesMissing": 0,
+    "oralTimeAnomalies": [
+      {
+        "id": "3855",
+        "time": {
+          "start": "06:45:00",
+          "end": "16:52:00",
+          "raw": "06:45:00 às 16:52:00",
+          "source": "listMetaText"
+        }
+      }
+    ],
+    "titleCorrections": 1,
+    "authorCorrections": 50,
+    "detailOk": 366,
+    "detailPending": 1620,
+    "detailBlocked": 1,
+    "dates": {
+      "28/10/2026": 444,
+      "29/10/2026": 506,
+      "30/10/2026": 558,
+      "31/10/2026": 479
+    },
+    "modalities": {
+      "Apresentação Oral": 110,
+      "Painel": 1430,
+      "Visita Guiada": 447
+    },
+    "gshCandidates": 28,
+    "gshByStatus": {
+      "AUTHORSHIP_CONFIRMED": 7,
+      "FALSE_POSITIVE": 1,
+      "INSTITUTION_CONFIRMED": 14,
+      "PENDING_VERIFICATION": 6
+    }
   }
 }

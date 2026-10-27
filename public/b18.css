@@ -320,3 +320,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
  color:#fff!important;
 }
 #backupBtn.clear-filters-active:hover{background:#8f4824!important;border-color:#8f4824!important}
+
+/* B3-FINAL1: mobile tabs keep complete labels in an accessible internal scroller. */
+.tabs{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
+.tab{white-space:nowrap}
+.tabs-hint{display:none}
+@media(max-width:680px){
+ .tabs{justify-content:flex-start;scroll-snap-type:x proximity}
+ .tab{flex:0 0 auto;min-width:max-content;padding-left:16px;padding-right:16px;scroll-snap-align:start}
+ .tabs-hint{display:block;margin:5px 5px 0;color:#6b716f;font-size:10px;text-align:right}
+}

@@ -5,6 +5,7 @@ import path from 'node:path';
 const sourceDir = process.env.HEMO_B3_SOURCE_DIR || 'D:\\JUCA\\AI Lab\\hemo-2026\\hemo-tampermonkey';
 const inputName = 'HEMO2026_B3_WORKS4_INVENTORY.json';
 const gshName = 'HEMO2026_B3_WORKS4_GSH.json';
+const validationName = 'HEMO2026_B3_WORKS4_REPORT.json';
 const outputPath = path.resolve('public/works-catalog.json');
 const reportPath = path.resolve('data/b3-app1-catalog-report.json');
 const leadIds = new Set(['4264', '4097', '5894', '5626', '4067']);
@@ -76,8 +77,10 @@ function compactWork(work, gshById) {
 async function main() {
   const inventoryRaw = await readFile(path.join(sourceDir, inputName));
   const gshRaw = await readFile(path.join(sourceDir, gshName));
+  const validationRaw = await readFile(path.join(sourceDir, validationName));
   const inventory = JSON.parse(inventoryRaw);
   const gshInventory = JSON.parse(gshRaw);
+  const validationReport = JSON.parse(validationRaw);
   if (inventory.kind !== 'HEMO_B3_WORKS4_INVENTORY' || inventory.works.length !== 1987) throw new Error('Inventário B3 inesperado.');
   if (gshInventory.kind !== 'HEMO_B3_WORKS4_GSH_INVENTORY') throw new Error('Inventário GSH B3 inesperado.');
   const gshById = new Map(gshInventory.works.map(work => [String(work.officialId), work.gsh]));
@@ -133,7 +136,8 @@ async function main() {
     gshIncluded: works.filter(work => work.gsh).length,
     gshLeadsExcluded: [...leadIds],
     rawFieldsExcluded: ['raw', 'listMetaText', 'detail', 'sanitizedHTML', 'summary', 'keywords', 'resources'],
-    sourceInput: {inventory: inputName, gsh: gshName, directory: sourceDir}
+    sourceInput: {inventory: inputName, gsh: gshName, validation: validationName, directory: sourceDir},
+    integrity: validationReport.validation
   };
   await mkdir(path.dirname(outputPath), {recursive: true});
   await mkdir(path.dirname(reportPath), {recursive: true});

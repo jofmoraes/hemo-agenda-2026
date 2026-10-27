@@ -44,3 +44,11 @@
 - Preferências de interesse e UI dos trabalhos usam namespace próprio e entram no backup sem tocar preferências de sessões. O ID 3855 permanece com horário a confirmar.
 - Cache HEMO foi versionado para `hemo2026:public:b3app1-v1` e inclui apenas os recursos necessários do catálogo.
 - `npm test` 51/51, `npm run check` e `npm run check:preview` passaram; smoke Chromium local realizado em 360, 390, 430 e 1280 px.
+
+## 2026-10-27 — HEMO B3-FINAL1
+
+- Endurecida a entrega pública sem alterar a programação: abas completas em rolagem interna mobile, sem link público para o modo normal vazio, e aviso parcial preservado.
+- Catálogo de 1.987 trabalhos permanece compacto e carregado sob demanda; falha offline sem cache retorna `503 text/plain`, nunca HTML, e o cache continua exclusivo do namespace HEMO.
+- Proveniência WORKS4 incorporada ao relatório público de validação, mantendo 27 trabalhos GSH, 3855 como horário a confirmar e 3566 fora da associação Eduardo.
+- Backup antigo sem `works` continua válido; backup novo preserva namespaces separados, merge não destrutivo e tratamento explícito de armazenamento indisponível.
+- Evidências Chromium versionadas em `docs/evidence/hemo-b3-final1/`; `npm test` 58/58, `npm run check` e `npm run check:preview` passaram.

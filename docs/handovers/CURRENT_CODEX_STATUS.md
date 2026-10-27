@@ -89,3 +89,14 @@
 - Validação: `npm test` 51/51 PASS; `npm run check` PASS; `npm run check:preview` PASS; Chromium local PASS em 360/390/430/1280 px, com persistência de trabalho após recarga.
 - Restrições: sem alteração de `main`, CONAHP, Vercel, programação, curadoria Flora ou preferências de sessões; publicação e PWA físico NOT_RUN.
 - Próximo passo: auditoria independente do orquestrador antes de qualquer publicação.
+
+## HEMO B3-FINAL1 — Hardening e release público
+
+- Status: hardening local concluído; deployment público condicionado ao preflight final e ao único gate de publicação autorizado na Issue #4.
+- Branch: `feat/hemo-b3-final1-release`, baseada exatamente em `3df073a088188a04bf3f8e201c24c94f3d5a96e9`.
+- Projeto público autorizado: `hemo-flora-2026` (`prj_3oTPmcroB9IeJZ4FAxSoyW8yEmsC`), equipe `team_Wqr8VqX0PftIKdW6x5jZciqo`; projeto QA protegido não foi alterado.
+- Preflight Vercel: CLI 58.10.0 autenticada na conta/equipe corretas; projeto confirmado por ID; plano Hobby sem indicação de custo; Git autodeploy desabilitado; deployment anterior READY e alias preservados; exatamente um deployment anterior antes da publicação.
+- Catálogo: 1.987 IDs únicos, 27 GSH, 1.802.540 bytes, carregamento sob demanda; validação WORKS4 preserva 40 assuntos, 110 orais recuperados, 3855 anômalo e 3566 excluído.
+- QA local: `npm test` 58/58, `npm run check`, `npm run check:preview`; Chromium em 360/390/430/1280; normal `pending_b2` com 0 sessões; prévia 121/42/66; GSH 27; última página 67/67 com 7; preferência de trabalho sobreviveu a reload; console sem erros.
+- Evidências visuais: `docs/evidence/hemo-b3-final1/`; hashes distintos para normal/GSH e viewports 360/390/430/1280.
+- Pendências antes do release: commit/push, único deployment público, readback de alias/deployment e smoke anônimo HTTPS; Android/iPhone físico permanece NOT_RUN se não houver dispositivos disponíveis.
