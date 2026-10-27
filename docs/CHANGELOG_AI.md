@@ -68,3 +68,11 @@
 - Registradas 51 correções auditáveis de normalização (50 em autores e 1 título) e classificação dos 28 candidatos GSH: 7 autoria, 14 instituição, 6 pendentes e 1 falso positivo.
 - Criados inventários JSON, relatório, documentação e teste nativo; a proposta de aba `Trabalhos científicos` com filtro único `Trabalhos GSH` permanece sem implementação/publicação.
 - Arquivos fonte originais na pasta Tampermonkey não foram sobrescritos; `public/*`, Vercel, `main`, CONAHP e dados públicos permaneceram inalterados.
+
+## 2026-10-27 — HEMO B3-GSH2
+
+- Criada reconciliação offline independente em `feat/hemo-b3-gsh2-enrichment`, usando o export já autorizado de 1.987 trabalhos e sem novas consultas ao site HEMO.
+- Produzidos `data/b3-gsh2-review.json`, `data/b3-gsh2-filter-patch.json`, schema, script e testes; evidência compacta não copia `raw`, HTML integral, resumos ou o PDF de 196 MB.
+- Resultado: 21 IDs confirmados, 6 relacionados explicitamente pelo título com autoria não verificada, 5 leads fora do filtro e 1 falso positivo homônimo excluído.
+- A busca nominal encontrou Sandra em 4 IDs e Édyla em 11; somente o lead Édyla/4067 foi mantido para revisão, sem propagar identidade para outros trabalhos. O conjunto de 27 IDs do APP1 permanece inalterado.
+- `node --check`, reconstrução idempotente e teste específico passaram. Nenhum `public/*`, Vercel, `main`, CONAHP ou B3-FINAL1 foi alterado.

@@ -114,3 +114,14 @@
 - Resultado: 1.987 IDs únicos; 355 áreas confirmadas por detalhe salvo; 1.632 áreas pendentes; 110/110 horários orais recuperados; 7 autorias GSH, 14 instituições, 6 pendências e 1 falso positivo.
 - Fonte local: `D:\JUCA\AI Lab\hemo-2026\hemo-tampermonkey`; originais não sobrescritos. Não houve acesso web ou nova requisição de detalhes.
 - Validação: `node --test tests/hemo-b3-works4.test.mjs`, `npm test` (57/57), `npm run check` e `npm run check:preview` passaram; pendentes apenas commit/push e auditoria independente do orquestrador.
+
+## HEMO B3-GSH2 — Reconciliação offline
+
+- Status: `HEMO_B3_GSH2_READY_FOR_ORCHESTRATOR_REVIEW`; sem publicação e sem alteração do catálogo público.
+- Branch/worktree: `feat/hemo-b3-gsh2-enrichment` em `D:\JUCA\AI Lab\hemo-2026\hemo-2026-app-b3-gsh2-enrichment`, derivado de `8d6e24d6be9957ac47e03fdb2c4d2029c56e41c7`, independente da B3-FINAL1.
+- Artefatos: `data/b3-gsh2-review.json`, `data/b3-gsh2-filter-patch.json`, `data/b3-gsh2-review.schema.json`, `docs/B3_GSH2_REVIEW.md`, `scripts/build-b3-gsh2-review.mjs`, `tests/hemo-b3-gsh2.test.mjs`.
+- Resultado: 1.987 IDs auditados; 21 confirmados, 6 relacionados pelo título, 5 leads de revisão, 1 falso positivo; filtro futuro de 27 IDs igual ao APP1 (`added=[]`, `removed=[]`).
+- Leads: Sandra `4264/4097/5894/5626`; Édyla `4067`; outros nove IDs com Édyla foram deliberadamente excluídos por falta de prova individual GSH. `3566` é homônimo excluído.
+- Fonte: export offline SHA-256 `c14f63621b8ae2b38fc88ad12c851c2e708c3000776c32796893caa414b1a2bd`; nenhum detalhe foi requisitado novamente e o PDF não foi copiado/convertido.
+- Validação: `node --check scripts/build-b3-gsh2-review.mjs`, `node scripts/build-b3-gsh2-review.mjs` e `node --test tests/hemo-b3-gsh2.test.mjs` passam.
+- Restrições: sem `public/*`, Vercel, `main`, CONAHP, B3-FINAL1, PR, Code Review ou deploy. Próxima decisão: auditoria do orquestrador e eventual integração futura autorizada.

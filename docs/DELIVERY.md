@@ -278,3 +278,14 @@ Não foi feito deployment/redeploy nem alterada a Vercel. A migração foi valid
 - Fontes originais preservadas em `D:\JUCA\AI Lab\hemo-2026\hemo-tampermonkey`; somente três arquivos derivados foram gravados nessa pasta.
 - O PDF complementar não foi convertido integralmente; detalhes ausentes/403 não foram requisitados novamente.
 - Não houve mudança em `public/*`, Vercel, agenda pública, `main`, CONAHP, preferências ou integração da aba científica.
+
+## HEMO B3-GSH2 — Reconciliação offline (27/10/2026)
+
+- **Status:** `HEMO_B3_GSH2_READY_FOR_ORCHESTRATOR_REVIEW`; missão encerrada sem publicação, deploy ou integração do filtro.
+- **Branch/worktree:** `feat/hemo-b3-gsh2-enrichment`, derivada de `8d6e24d6be9957ac47e03fdb2c4d2029c56e41c7`, em workspace independente da B3-FINAL1.
+- **Entrada:** export offline já autorizado, 1.987 registros/IDs únicos, SHA-256 `c14f63621b8ae2b38fc88ad12c851c2e708c3000776c32796893caa414b1a2bd`. Nenhuma consulta automatizada adicional ao HEMO.
+- **Revisão:** 21 confirmados (7 identidade/autoria e 14 evidência institucional), 6 relacionados por título com autoria não verificada, 5 leads fora do filtro e 1 falso positivo homônimo excluído.
+- **Leads:** Sandra `4264`, `4097`, `5894`, `5626`; Édyla `4067`. Édyla também aparece em outros nove IDs, todos mantidos fora por falta de prova individual; `4307` já está confirmado por Leandro.
+- **Diff APP1:** `added=[]`, `removed=[]`; os 27 IDs do filtro operacional não mudaram. A taxonomia foi refinada em `data/b3-gsh2-review.json`.
+- **Artefatos:** revisão, patch futuro não publicável, schema, script, documentação e teste específico. Nenhum `public/*`, Vercel, `main`, CONAHP ou B3-FINAL1 foi alterado.
+- **Validação:** `node --check scripts/build-b3-gsh2-review.mjs`, `node scripts/build-b3-gsh2-review.mjs`, `node --test tests/hemo-b3-gsh2.test.mjs`, `npm test` (57/57), `npm run check` e `npm run check:preview` passaram.

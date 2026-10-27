@@ -1,0 +1,221 @@
+{
+  "kind": "HEMO_B3_GSH2_FILTER_PATCH",
+  "schemaVersion": "1.0",
+  "status": "FUTURE_INTEGRATION_ONLY",
+  "baseCatalog": {
+    "branch": "feat/hemo-b3-app1-works",
+    "sha": "3df073a088188a04bf3f8e201c24c94f3d5a96e9"
+  },
+  "filter": "Trabalhos GSH",
+  "confirmedIds": [
+    "3732",
+    "3887",
+    "3911",
+    "3939",
+    "3941",
+    "3997",
+    "4243",
+    "4307",
+    "4510",
+    "4538",
+    "4548",
+    "4900",
+    "5125",
+    "5403",
+    "5452",
+    "5454",
+    "5660",
+    "5756",
+    "5769",
+    "5960",
+    "6362"
+  ],
+  "relatedTitleIds": [
+    "4514",
+    "4599",
+    "4601",
+    "5163",
+    "5383",
+    "5594"
+  ],
+  "reviewOnlyIds": [
+    "4067",
+    "4097",
+    "4264",
+    "5626",
+    "5894"
+  ],
+  "falsePositiveIds": [
+    "3566"
+  ],
+  "filterIds": [
+    "3732",
+    "3887",
+    "3911",
+    "3939",
+    "3941",
+    "3997",
+    "4243",
+    "4307",
+    "4510",
+    "4514",
+    "4538",
+    "4548",
+    "4599",
+    "4601",
+    "4900",
+    "5125",
+    "5163",
+    "5383",
+    "5403",
+    "5452",
+    "5454",
+    "5594",
+    "5660",
+    "5756",
+    "5769",
+    "5960",
+    "6362"
+  ],
+  "added": [],
+  "removed": [],
+  "changed": [
+    {
+      "id": "3732",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "3887",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "3911",
+      "from": "AUTHORSHIP_CONFIRMED",
+      "to": "AUTHOR_IDENTITY_CONFIRMED"
+    },
+    {
+      "id": "3939",
+      "from": "AUTHORSHIP_CONFIRMED",
+      "to": "AUTHOR_IDENTITY_CONFIRMED"
+    },
+    {
+      "id": "3941",
+      "from": "AUTHORSHIP_CONFIRMED",
+      "to": "AUTHOR_IDENTITY_CONFIRMED"
+    },
+    {
+      "id": "3997",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "4243",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "4307",
+      "from": "AUTHORSHIP_CONFIRMED",
+      "to": "AUTHOR_IDENTITY_CONFIRMED"
+    },
+    {
+      "id": "4510",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "4514",
+      "from": "TITLE_RELATED_PENDING_AFFILIATION",
+      "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+    },
+    {
+      "id": "4538",
+      "from": "AUTHORSHIP_CONFIRMED",
+      "to": "AUTHOR_IDENTITY_CONFIRMED"
+    },
+    {
+      "id": "4548",
+      "from": "AUTHORSHIP_CONFIRMED",
+      "to": "AUTHOR_IDENTITY_CONFIRMED"
+    },
+    {
+      "id": "4599",
+      "from": "TITLE_RELATED_PENDING_AFFILIATION",
+      "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+    },
+    {
+      "id": "4601",
+      "from": "TITLE_RELATED_PENDING_AFFILIATION",
+      "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+    },
+    {
+      "id": "4900",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "5125",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "5163",
+      "from": "TITLE_RELATED_PENDING_AFFILIATION",
+      "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+    },
+    {
+      "id": "5383",
+      "from": "TITLE_RELATED_PENDING_AFFILIATION",
+      "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+    },
+    {
+      "id": "5403",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "5452",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "5454",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "5594",
+      "from": "TITLE_RELATED_PENDING_AFFILIATION",
+      "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+    },
+    {
+      "id": "5660",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "5756",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "5769",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    },
+    {
+      "id": "5960",
+      "from": "AUTHORSHIP_CONFIRMED",
+      "to": "AUTHOR_IDENTITY_CONFIRMED"
+    },
+    {
+      "id": "6362",
+      "from": "INSTITUTION_CONFIRMED",
+      "to": "GSH_INSTITUTION_EVIDENCED"
+    }
+  ],
+  "publishable": false,
+  "integrationRule": "Aplicar somente em futura rodada autorizada de integração, com regressão e smoke; não sobrescrever public/works-catalog.json nesta missão."
+}

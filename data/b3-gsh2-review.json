@@ -1,0 +1,1779 @@
+{
+  "kind": "HEMO_B3_GSH2_REVIEW",
+  "schemaVersion": "1.0",
+  "status": "READY_FOR_ORCHESTRATOR_REVIEW",
+  "event": "HEMO 2026",
+  "concept": "Trabalhos GSH",
+  "reviewedOn": "2026-10-27",
+  "policy": {
+    "sourceMode": "offline_only",
+    "automatedHemoQueries": false,
+    "publicApplicationChanged": false,
+    "individualAuthorFilters": false,
+    "aggregate117IsNotIndividualEvidence": true,
+    "titleRelationDoesNotProveAuthorEmployment": true
+  },
+  "source": {
+    "url": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+    "exportCreatedAt": "2026-10-27T15:08:54.341Z",
+    "primaryFile": "HEMO2026_TRABALHOS_2026-10-27T15-08-54-380Z_COMPLETO.json",
+    "primarySha256": "c14f63621b8ae2b38fc88ad12c851c2e708c3000776c32796893caa414b1a2bd",
+    "files": [
+      {
+        "name": "HEMO2026_TRABALHOS_2026-10-27T15-08-54-380Z_COMPLETO.json",
+        "bytes": 7099055,
+        "sha256": "c14f63621b8ae2b38fc88ad12c851c2e708c3000776c32796893caa414b1a2bd"
+      },
+      {
+        "name": "HEMO2026_TRABALHOS_2026-10-27T15-08-54-380Z_TRABALHOS.csv",
+        "bytes": 2382788,
+        "sha256": "64ba66595db307ffe9575d57618609c1eac89e3d27bd6e49bd2b6977b9c39dd2"
+      },
+      {
+        "name": "HEMO2026_TRABALHOS_2026-10-27T15-08-54-380Z_GSH_CANDIDATOS.csv",
+        "bytes": 11101,
+        "sha256": "60f825481ce9baa28175923b186a125dba6ae15dfc2ee22c5b3da7729974e959"
+      },
+      {
+        "name": "HEMO2026_TRABALHOS_2026-10-27T15-08-54-380Z_COBERTURA.txt",
+        "bytes": 15501,
+        "sha256": "d0e45f94ad1a2d828336d31bbead7caf7332a49a7a7ab788c9c65d0db845934a"
+      },
+      {
+        "name": "Hemo 2026 - Relação Trabalhos.pdf",
+        "bytes": 195742446,
+        "sha256": "c7399ed01c828b00f1bfb5f5a2eec49a81c52c789f5c89a74d1d95a5064e3116"
+      }
+    ]
+  },
+  "coverage": {
+    "inputRecords": 1987,
+    "uniqueIds": 1987,
+    "gshMentionIds": [
+      "3732",
+      "3887",
+      "3997",
+      "4243",
+      "4510",
+      "4514",
+      "4599",
+      "4601",
+      "4900",
+      "5125",
+      "5163",
+      "5383",
+      "5403",
+      "5452",
+      "5454",
+      "5594",
+      "5660",
+      "5756",
+      "5769",
+      "6362"
+    ],
+    "gshMentionCount": 20,
+    "gshMentionByField": {
+      "title": [
+        "3732",
+        "3887",
+        "3997",
+        "4514",
+        "4599",
+        "4601",
+        "4900",
+        "5125",
+        "5163",
+        "5383",
+        "5403",
+        "5452",
+        "5454",
+        "5594",
+        "5660",
+        "5756"
+      ],
+      "detailText": [
+        "3732",
+        "3887",
+        "3997",
+        "4243",
+        "4510",
+        "4900",
+        "5125",
+        "5403",
+        "5452",
+        "5454",
+        "5660",
+        "5756",
+        "5769",
+        "6362"
+      ],
+      "authorsText": [],
+      "institutionsText": []
+    },
+    "namedSearch": {
+      "leandro": [
+        "3939",
+        "3941",
+        "5960",
+        "4307"
+      ],
+      "eduardoCarvalho": [
+        "3911",
+        "4538",
+        "4548"
+      ],
+      "eduardoHomonym": [
+        "3566"
+      ],
+      "sandra": [
+        "4264",
+        "4097",
+        "5894",
+        "5626"
+      ],
+      "edyla": [
+        "4067",
+        "4198",
+        "5541",
+        "6193",
+        "4203",
+        "5555",
+        "5554",
+        "4307",
+        "5522",
+        "5906",
+        "5542"
+      ]
+    },
+    "reviewedRecordCount": 33
+  },
+  "counts": {
+    "confirmedIds": 21,
+    "relatedTitleIds": 6,
+    "reviewOnlyIds": 5,
+    "falsePositiveIds": 1,
+    "futureFilterIds": 27,
+    "app1FilterIds": 27
+  },
+  "ids": {
+    "confirmedIds": [
+      "3732",
+      "3887",
+      "3911",
+      "3939",
+      "3941",
+      "3997",
+      "4243",
+      "4307",
+      "4510",
+      "4538",
+      "4548",
+      "4900",
+      "5125",
+      "5403",
+      "5452",
+      "5454",
+      "5660",
+      "5756",
+      "5769",
+      "5960",
+      "6362"
+    ],
+    "relatedTitleIds": [
+      "4514",
+      "4599",
+      "4601",
+      "5163",
+      "5383",
+      "5594"
+    ],
+    "reviewOnlyIds": [
+      "4067",
+      "4097",
+      "4264",
+      "5626",
+      "5894"
+    ],
+    "falsePositiveIds": [
+      "3566"
+    ],
+    "futureFilterIds": [
+      "3732",
+      "3887",
+      "3911",
+      "3939",
+      "3941",
+      "3997",
+      "4243",
+      "4307",
+      "4510",
+      "4514",
+      "4538",
+      "4548",
+      "4599",
+      "4601",
+      "4900",
+      "5125",
+      "5163",
+      "5383",
+      "5403",
+      "5452",
+      "5454",
+      "5594",
+      "5660",
+      "5756",
+      "5769",
+      "5960",
+      "6362"
+    ]
+  },
+  "records": [
+    {
+      "officialId": "3566",
+      "title": "Inovação tecnológica para supervisão da adesão ao uso de EPI em bancos de sangue: desenvolvimento de um aplicativo móvel",
+      "authors": [
+        "Wagner Leite Miranda",
+        "Eduardo Ferro Dos Santos"
+      ],
+      "modality": "Visita Guiada",
+      "date": "29/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/3566",
+      "status": "FALSE_POSITIVE",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "author_mismatch",
+          "field": "authors",
+          "value": "Wagner Leite Miranda, Eduardo Ferro Dos Santos",
+          "source": "offline_export.works[].authors"
+        }
+      ],
+      "decision": "excluded",
+      "notes": [
+        "Eduardo Ferro dos Santos não é Eduardo Ferro de Carvalho; homônimo não promove relação GSH."
+      ]
+    },
+    {
+      "officialId": "3732",
+      "title": "Descrição e resultados do Projeto para captação de doadores jovens realizado na unidade GSH- BSST (Banco de Sangue Santa Teresa – Petrópolis/ RJ)",
+      "authors": [
+        "Marcela Zilves Colonese",
+        "Carla Maria Duarte"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/3732",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "Descrição e resultados do Projeto para captação de doadores jovens realizado na unidade GSH- BSST (Banco de Sangue Santa Teresa – Petrópolis/ RJ)",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "3887",
+      "title": "PERFIL DAS INAPTIDÕES CLÍNICAS ENTRE DOADORES DE SANGUE EM UM BANCO DE SANGUE DO GRUPO GSH – SANTO ANDRÉ (SP)",
+      "authors": [
+        "Douglas Eduardo Rossetto",
+        "Juliana Erdmann Di Giacomo",
+        "Mayara Rosário De Azevedo",
+        "Pablo Raphael Gomiero Alves"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/3887",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "PERFIL DAS INAPTIDÕES CLÍNICAS ENTRE DOADORES DE SANGUE EM UM BANCO DE SANGUE DO GRUPO GSH – SANTO ANDRÉ (SP)",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "3911",
+      "title": "LOGISTICA COMPARTILHADA VERSUS TRANSPORTE DEDICADO DE HEMOCOMPONENTES: UMA ANÁLISE AMBIENTAL, SOCIAL E DE GOVERNANÇA",
+      "authors": [
+        "Bruno Henrique Souza Lopes",
+        "Carlos André Holanda Teixeira Alves",
+        "Eduardo Ferro Carvalho"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/3911",
+      "status": "AUTHOR_IDENTITY_CONFIRMED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Eduardo Ferro Carvalho",
+          "value": "Bruno Henrique Souza Lopes, Carlos André Holanda Teixeira Alves, Eduardo Ferro Carvalho",
+          "source": "offline_export.works[].authors"
+        }
+      ],
+      "decision": "confirmed",
+      "notes": [
+        "A identidade institucional de Eduardo vem da evidência corporativa já registrada em data/b3-works-gsh-research.json; esta execução não refez consulta externa."
+      ]
+    },
+    {
+      "officialId": "3939",
+      "title": "PERFIL DOS TESTES DE ANTIGLOBULINA DIRETO EM RECÉM-NASCIDOS ATENDIDOS PELA ROTINA MATERNIDADE DE UMA AGÊNCIA TRANSFUSIONAL",
+      "authors": [
+        "Bruna Da Luz Bernadino",
+        "Douglas Eduardo Rossetto",
+        "Juliana Erdmann Di Giacomo",
+        "Leandro Felipe Figueiredo Dalmazzo",
+        "Mariana Da Silva Freitas Mouraria"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/3939",
+      "status": "AUTHOR_IDENTITY_CONFIRMED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Leandro Felipe Figueiredo Dalmazzo",
+          "value": "Bruna Da Luz Bernadino, Douglas Eduardo Rossetto, Juliana Erdmann Di Giacomo, Leandro Felipe Figueiredo Dalmazzo, Mariana Da Silva Freitas Mouraria",
+          "source": "offline_export.works[].authors"
+        }
+      ],
+      "decision": "confirmed",
+      "notes": [
+        "A identidade institucional de Leandro vem da evidência corporativa já registrada em data/b3-works-gsh-research.json; esta execução não refez consulta externa."
+      ]
+    },
+    {
+      "officialId": "3941",
+      "title": "POSITIVIDADE E PERFIL DE ESPECIFICIDADE DAS PESQUISAS DE ANTICORPOS IRREGULARES EM GESTANTES ATENDIDAS PELA ROTINA MATERNIDADE DE UMA AGÊNCIA TRANSFUSIONAL",
+      "authors": [
+        "Bruna Da Luz Bernadino",
+        "Douglas Eduardo Rossetto",
+        "Juliana Erdmann Di Giacomo",
+        "Leandro Felipe Figueiredo Dalmazzo",
+        "Mariana Da Silva Freitas Mouraria"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/3941",
+      "status": "AUTHOR_IDENTITY_CONFIRMED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Leandro Felipe Figueiredo Dalmazzo",
+          "value": "Bruna Da Luz Bernadino, Douglas Eduardo Rossetto, Juliana Erdmann Di Giacomo, Leandro Felipe Figueiredo Dalmazzo, Mariana Da Silva Freitas Mouraria",
+          "source": "offline_export.works[].authors"
+        }
+      ],
+      "decision": "confirmed",
+      "notes": [
+        "A identidade institucional de Leandro vem da evidência corporativa já registrada em data/b3-works-gsh-research.json; esta execução não refez consulta externa."
+      ]
+    },
+    {
+      "officialId": "3997",
+      "title": "Resultados da fenotipagem eritrocitaria para os antigenos dos sistemas Duffy, Kidd e MNS (S;s) entre maio e julho de 2025 em doadores de sangue do GSH - Banco de Sangue São Paulo - Paraíso",
+      "authors": [
+        "Ana Paula Chagas Sessin",
+        "Evanilde Pereira Araujo",
+        "Ariane Cristina Almeida Pitol",
+        "Marília Valvasori",
+        "Ana Paula Carrijo Rodrigues",
+        "Renata De Almeida Bento",
+        "Douglas Eduardo Rossetto"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/3997",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "Resultados da fenotipagem eritrocitaria para os antigenos dos sistemas Duffy, Kidd e MNS (S;s) entre maio e julho de 2025 em doadores de sangue do GSH - Banco de Sangue São Paulo - Paraíso",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "4067",
+      "title": "Long-term trends in hepatitis B and C prevalence, incidence, and force of infection among blood donors in Brazil",
+      "authors": [
+        "André Rolim Belisário",
+        "Paulo Jeng Chian Suen",
+        "Isabelle Rocha de Oliveira",
+        "Teresa Cristina de Abreu Ferrari",
+        "Maisa Aparecida Ribeiro",
+        "Carolina Miranda",
+        "Marcio Oikawa",
+        "Luiz Amorim",
+        "Edyla Almeida",
+        "Allyson Guimarães da Costa",
+        "Cesar de Almeida-Neto",
+        "Eduard Grebe",
+        "Renata Buccheri",
+        "Michael Busch",
+        "Brian Custer",
+        "Ester C. Sabino"
+      ],
+      "modality": "Apresentação Oral",
+      "date": "28/10/2026",
+      "room": "Auditório Anexo",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4067",
+      "status": "LEAD_NEEDS_EVIDENCE",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Edyla Almeida",
+          "value": "André Rolim Belisário, Paulo Jeng Chian Suen, Isabelle Rocha de Oliveira, Teresa Cristina de Abreu Ferrari, Maisa Aparecida Ribeiro, Carolina Miranda, Marcio Oikawa, Luiz Amorim, Edyla Almeida, Allyson Guimarães da Costa, Cesar de Almeida-Neto, Eduard Grebe, Renata Buccheri, Michael Busch, Brian Custer, Ester C. Sabino",
+          "source": "offline_export.works[].authors"
+        },
+        {
+          "kind": "prior_institutional_lead",
+          "source": "data/b3-works-gsh-research.json",
+          "sourceUrl": "https://br.linkedin.com/company/grupogsh",
+          "sourceStatus": "pre-existing_record_not_refetched",
+          "value": "A publicação institucional previamente registrada cita Édyla Almeida em trabalho reconhecido sobre hepatites B/C em doadores."
+        }
+      ],
+      "decision": "review_only",
+      "notes": [
+        "O nome e o tema correspondem à pista institucional, mas o registro HEMO não contém afiliação GSH capturada."
+      ]
+    },
+    {
+      "officialId": "4097",
+      "title": "The danger of being lost in transition: the lack of structured transition programs from pediatric to adult hematology care in Brazil according to a national survey",
+      "authors": [
+        "Andrea Thives de Carvalho Hoepers",
+        "Josefina Aparecida Pellegrini Braga",
+        "Verena Pfister",
+        "Stefane Caroline Pereira Da Silva",
+        "Adriana Seber",
+        "Alayde Vieira Wanderley",
+        "Luiz Guilherme Darrigo Jr",
+        "Mariana Bohns Michalowski",
+        "Mônica Pinheiro de Almeida Veríssimo",
+        "Sandra Regina Loggetto"
+      ],
+      "modality": "Apresentação Oral",
+      "date": "30/10/2026",
+      "room": "Sala 205",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4097",
+      "status": "LEAD_NEEDS_EVIDENCE",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Sandra Regina Loggetto",
+          "value": "Andrea Thives de Carvalho Hoepers, Josefina Aparecida Pellegrini Braga, Verena Pfister, Stefane Caroline Pereira Da Silva, Adriana Seber, Alayde Vieira Wanderley, Luiz Guilherme Darrigo Jr, Mariana Bohns Michalowski, Mônica Pinheiro de Almeida Veríssimo, Sandra Regina Loggetto",
+          "source": "offline_export.works[].authors"
+        },
+        {
+          "kind": "prior_institutional_lead",
+          "source": "data/b3-works-gsh-research.json",
+          "sourceUrl": "https://br.linkedin.com/company/grupogsh",
+          "sourceStatus": "pre-existing_record_not_refetched",
+          "value": "A publicação institucional previamente registrada cita Sandra Loggetto em dois trabalhos sobre eventos tromboembólicos pediátricos e transição do cuidado."
+        }
+      ],
+      "decision": "review_only",
+      "notes": [
+        "A correspondência de nome e, nos IDs 4264/4097, de tema, cria pista; não prova afiliação GSH no registro HEMO."
+      ]
+    },
+    {
+      "officialId": "4243",
+      "title": "Experiência de um Banco de Sangue na mobilização e coleta ambulatorial de CPH e linfócitos por aférese",
+      "authors": [
+        "Ana Paula Dariano Olcese",
+        "Livia Chiosini De Nadai",
+        "Bruno Sussumu Maeda",
+        "Aline Miranda De Souza",
+        "Marilia Valvasori",
+        "Ricardo De Paula Battaglini"
+      ],
+      "modality": "Visita Guiada",
+      "date": "29/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4243",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_detail_text",
+          "field": "detail.text",
+          "value": "os assistenciais. Métodos: Estudo observacional, retrospectivo e descritivo realizado no ambulatório do Banco de Sangue GSH do Hospital Beneficência Portuguesa de São Paulo no período de janeiro a julho de 2026. Foram incluídos pacientes adultos submetidos à coleta de CPH para transplante autólogo e alogênico, coleta de células mononucleares",
+          "source": "offline_export.works[].detail.text"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "4264",
+      "title": "Avaliação de eventos tromboembólicos em crianças e adolescentes de zero a dezoito anos em um hospital pediátrico: análise retrospectiva de 2018 a 2024",
+      "authors": [
+        "Bianca Ribeiro do Amaral Santos",
+        "Priscila Grizante Lopes",
+        "Thiago De Souza Vilela",
+        "Sandra Regina Loggetto",
+        "Janahyna Gomes Emerenciano",
+        "Fernanda Martins Barbosa",
+        "Julia Loureiro Sion"
+      ],
+      "modality": "Apresentação Oral",
+      "date": "31/10/2026",
+      "room": "Sala 205",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4264",
+      "status": "LEAD_NEEDS_EVIDENCE",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Sandra Regina Loggetto",
+          "value": "Bianca Ribeiro do Amaral Santos, Priscila Grizante Lopes, Thiago De Souza Vilela, Sandra Regina Loggetto, Janahyna Gomes Emerenciano, Fernanda Martins Barbosa, Julia Loureiro Sion",
+          "source": "offline_export.works[].authors"
+        },
+        {
+          "kind": "prior_institutional_lead",
+          "source": "data/b3-works-gsh-research.json",
+          "sourceUrl": "https://br.linkedin.com/company/grupogsh",
+          "sourceStatus": "pre-existing_record_not_refetched",
+          "value": "A publicação institucional previamente registrada cita Sandra Loggetto em dois trabalhos sobre eventos tromboembólicos pediátricos e transição do cuidado."
+        }
+      ],
+      "decision": "review_only",
+      "notes": [
+        "A correspondência de nome e, nos IDs 4264/4097, de tema, cria pista; não prova afiliação GSH no registro HEMO."
+      ]
+    },
+    {
+      "officialId": "4307",
+      "title": "Diagnóstico situacional das práticas relacionadas ao Patient Blood Management como ferramenta estratégica para atuação de uma rede nacional de hemoterapia",
+      "authors": [
+        "Fernanda Da Cunha Vieira Perini",
+        "Erika Abdon Fiquene Oliveira",
+        "Fabiana Akil",
+        "Edyla Almeida de Sousa Moraes",
+        "Karina Todeschini Pires",
+        "Leandro Felipe Figueiredo Dalmazzo",
+        "Sergio Domingos Vieira"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4307",
+      "status": "AUTHOR_IDENTITY_CONFIRMED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Leandro Felipe Figueiredo Dalmazzo",
+          "value": "Fernanda Da Cunha Vieira Perini, Erika Abdon Fiquene Oliveira, Fabiana Akil, Edyla Almeida de Sousa Moraes, Karina Todeschini Pires, Leandro Felipe Figueiredo Dalmazzo, Sergio Domingos Vieira",
+          "source": "offline_export.works[].authors"
+        }
+      ],
+      "decision": "confirmed",
+      "notes": [
+        "A identidade institucional de Leandro vem da evidência corporativa já registrada em data/b3-works-gsh-research.json; esta execução não refez consulta externa."
+      ]
+    },
+    {
+      "officialId": "4510",
+      "title": "PLASMAFÉRESE TERAPÊUTICA EM MIASTENIA GRAVIS: UM RELATO DE CASO",
+      "authors": [
+        "MIASTENIA GRAVIS"
+      ],
+      "modality": "Painel",
+      "date": "29/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4510",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_detail_text",
+          "field": "detail.text",
+          "value": " de caráter descritivo e retrospectivo, elaborado a partir da análise de prontuário de uma paciente atendida pelo Grupo GSH em um hospital da cidade de Curitiba, Paraná. Foram coletadas informações referentes às características clínicas, comorbidades, evolução durante a internação, indicação da plasmaférese, número de sessões realizadas e re",
+          "source": "offline_export.works[].detail.text"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "4514",
+      "title": "ANÁLISE DAS REAÇÕES TRANSFUSIONAIS NOTIFICADAS EM HOSPITAL DE CURITIBA ATENDIDO PELO GRUPO GSH NO ANO DE 2025",
+      "authors": [
+        "Fabiana Hoelz"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4514",
+      "status": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "ANÁLISE DAS REAÇÕES TRANSFUSIONAIS NOTIFICADAS EM HOSPITAL DE CURITIBA ATENDIDO PELO GRUPO GSH NO ANO DE 2025",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "related_by_title",
+      "notes": [
+        "O título comprova relação temática/institucional com GSH, mas a afiliação individual dos autores não foi confirmada porque o detalhe permanece pendente."
+      ]
+    },
+    {
+      "officialId": "4538",
+      "title": "CENTRAL DE CADASTROS DE FORNECEDORES: GANHOS DE SEGURANÇA E VELOCIDADE NO PROCESSO DE COMPRAS DE PRODUTOS E SERVIÇOS",
+      "authors": [
+        "Bruno Amaury Kreischer Cilento",
+        "Joedson Gonçalves Lopes",
+        "Carlos André Holanda Teixeira Alves",
+        "Eduardo Ferro de Carvalho"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4538",
+      "status": "AUTHOR_IDENTITY_CONFIRMED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Eduardo Ferro de Carvalho",
+          "value": "Bruno Amaury Kreischer Cilento, Joedson Gonçalves Lopes, Carlos André Holanda Teixeira Alves, Eduardo Ferro de Carvalho",
+          "source": "offline_export.works[].authors"
+        }
+      ],
+      "decision": "confirmed",
+      "notes": [
+        "A identidade institucional de Eduardo vem da evidência corporativa já registrada em data/b3-works-gsh-research.json; esta execução não refez consulta externa."
+      ]
+    },
+    {
+      "officialId": "4548",
+      "title": "RESULTADOS DO USO DE INTELIGÊNCIA ARTIFICIAL NA AUTOMAÇÃO DE PROCESSOS DE COMPRAS DE PRODUTOS",
+      "authors": [
+        "Bruno Amaury Kreischer Cilento",
+        "Joedson Gonçalves Lopes",
+        "Carlos André Holanda Teixeira Alves",
+        "Eduardo Ferro de Carvalho"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4548",
+      "status": "AUTHOR_IDENTITY_CONFIRMED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Eduardo Ferro de Carvalho",
+          "value": "Bruno Amaury Kreischer Cilento, Joedson Gonçalves Lopes, Carlos André Holanda Teixeira Alves, Eduardo Ferro de Carvalho",
+          "source": "offline_export.works[].authors"
+        }
+      ],
+      "decision": "confirmed",
+      "notes": [
+        "A identidade institucional de Eduardo vem da evidência corporativa já registrada em data/b3-works-gsh-research.json; esta execução não refez consulta externa."
+      ]
+    },
+    {
+      "officialId": "4599",
+      "title": "PERFIL TRANSFUSIONAL DE HOSPITAL EM CURITIBA ATENDIDO PELO GRUPO GSH",
+      "authors": [
+        "Fabiana Hoelz"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4599",
+      "status": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "PERFIL TRANSFUSIONAL DE HOSPITAL EM CURITIBA ATENDIDO PELO GRUPO GSH",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "related_by_title",
+      "notes": [
+        "O título comprova relação temática/institucional com GSH, mas a afiliação individual dos autores não foi confirmada porque o detalhe permanece pendente."
+      ]
+    },
+    {
+      "officialId": "4601",
+      "title": "AVALIAÇÃO DA PREVALÊNCIA DE ANTICORPOS IRREGULARES EM UM HOSPITAL DE CURITIBA ATENDIDO PELO GRUPO GSH",
+      "authors": [
+        "Weslley Mendes Dos Santos",
+        "Isadora Geronimo Del Roio",
+        "Fabiana Hoelz"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4601",
+      "status": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "AVALIAÇÃO DA PREVALÊNCIA DE ANTICORPOS IRREGULARES EM UM HOSPITAL DE CURITIBA ATENDIDO PELO GRUPO GSH",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "related_by_title",
+      "notes": [
+        "O título comprova relação temática/institucional com GSH, mas a afiliação individual dos autores não foi confirmada porque o detalhe permanece pendente."
+      ]
+    },
+    {
+      "officialId": "4900",
+      "title": "Perfil epidemiológico e resultados da implementação do NAT para malária em doadores dos Bancos de Sangue GSH em São Paulo",
+      "authors": [
+        "Ana Paula Dariano Olcese",
+        "Livia Chiosini De Nadai",
+        "Ricardo De Paula Battaglini",
+        "Ana Paula Carrijo Rodrigues",
+        "Fabrício José Benati",
+        "Ana Paula Chagas Sessin",
+        "Bruno Sussumu Maeda"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/4900",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "Perfil epidemiológico e resultados da implementação do NAT para malária em doadores dos Bancos de Sangue GSH em São Paulo",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "5125",
+      "title": "Incidência de inaptidão temporária em triagem clínica e sua taxa de retorno: Experiência da unidade Grupo GSH - Banco de Sangue Santa Teresa – Petrópolis/ RJ",
+      "authors": [
+        "Carla Maria Duarte",
+        "Mariane Andrade Pinheiro"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5125",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "Incidência de inaptidão temporária em triagem clínica e sua taxa de retorno: Experiência da unidade Grupo GSH - Banco de Sangue Santa Teresa – Petrópolis/ RJ",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "5163",
+      "title": "EFICACIA DO USO DE PROFILAXIA PRIMÁRIA AO DESENVOLVIMENTO DE ANTICORPOS IRREGULARES EM PACIENTE ONCOLÓGICOS - EXPERIÊNCIA NA UNIDADE TRANSFUSIONAL DO HOSPITAL SÃO JOSÉ DE TERESÓPOLIS UNIDADE GSH - RJ",
+      "authors": [
+        "Wallace Diniz Ferreira",
+        "Carla Maria Duarte"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5163",
+      "status": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "EFICACIA DO USO DE PROFILAXIA PRIMÁRIA AO DESENVOLVIMENTO DE ANTICORPOS IRREGULARES EM PACIENTE ONCOLÓGICOS - EXPERIÊNCIA NA UNIDADE TRANSFUSIONAL DO HOSPITAL SÃO JOSÉ DE TERESÓPOLIS UNIDADE GSH - RJ",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "related_by_title",
+      "notes": [
+        "O título comprova relação temática/institucional com GSH, mas a afiliação individual dos autores não foi confirmada porque o detalhe permanece pendente."
+      ]
+    },
+    {
+      "officialId": "5383",
+      "title": "MANEJO TRANSFUSIONAL PERINATAL NA DOENÇA FALCIFORME GRAVE: RELATO DE CASO DE SUCESSO RECORRENDO ÀS MODALIDADES DE HEMOTERÁPICAS EM AMBULATÓRIO TRANSFUSIONAL SERUM CENTRO – RJ – GRUPO GSH",
+      "authors": [
+        "Patricia Gomes Moura",
+        "Marcela Simao",
+        "Igor Gomes Claudio",
+        "Fabiana Akil",
+        "Leidiliane Avelar",
+        "Regiane Lima",
+        "Marcia Augusto"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5383",
+      "status": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "MANEJO TRANSFUSIONAL PERINATAL NA DOENÇA FALCIFORME GRAVE: RELATO DE CASO DE SUCESSO RECORRENDO ÀS MODALIDADES DE HEMOTERÁPICAS EM AMBULATÓRIO TRANSFUSIONAL SERUM CENTRO – RJ – GRUPO GSH",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "related_by_title",
+      "notes": [
+        "O título comprova relação temática/institucional com GSH, mas a afiliação individual dos autores não foi confirmada porque o detalhe permanece pendente."
+      ]
+    },
+    {
+      "officialId": "5403",
+      "title": "Perfil da identificação de anticorpos encontrados em doadores de sangue com pesquisa positiva para anticorpos irregulares coletados no Banco de Sague São Paulo (Grupo GSH)",
+      "authors": [
+        "Ana Paula Chagas Sessin",
+        "Renata De Almeida Bento",
+        "Ariane Cristina Almeida Pitol",
+        "Fabricio José Benati",
+        "Douglas Eduardo Rossetto",
+        "Ana Paula Carrijo Rodrigues"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5403",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "Perfil da identificação de anticorpos encontrados em doadores de sangue com pesquisa positiva para anticorpos irregulares coletados no Banco de Sague São Paulo (Grupo GSH)",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "5452",
+      "title": "MODELO DE GESTÃO DE ESTOQUE E PREVISÃO DE DEMANDA PARA REDUÇÃO DE DESCARTES DE PLAQUETAS POR AFÉRESE POR VALIDADE NO BANCO DE SANGUE SÃO PAULO (GRUPO GSH)",
+      "authors": [
+        "Douglas Eduardo Rossetto",
+        "Renata Almeida Bento",
+        "Juliana Erdman Giacomo",
+        "Ana Paula Sessin"
+      ],
+      "modality": "Painel",
+      "date": "29/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5452",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "MODELO DE GESTÃO DE ESTOQUE E PREVISÃO DE DEMANDA PARA REDUÇÃO DE DESCARTES DE PLAQUETAS POR AFÉRESE POR VALIDADE NO BANCO DE SANGUE SÃO PAULO (GRUPO GSH)",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "5454",
+      "title": "FREQUÊNCIA DE MARCADORES SOROLÓGICOS PARA INFECÇÕES TRANSMISSÍVEIS PELO SANGUE EM DOADORES DO BANCO DE SANGUE SÃO PAULO GRUPO GSH.",
+      "authors": [
+        "Douglas Eduardo Rossetto",
+        "Renata Almeida Bento",
+        "Juliana Erdmann Giacomo",
+        "Ana Paula Sessim"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5454",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "FREQUÊNCIA DE MARCADORES SOROLÓGICOS PARA INFECÇÕES TRANSMISSÍVEIS PELO SANGUE EM DOADORES DO BANCO DE SANGUE SÃO PAULO GRUPO GSH.",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "5594",
+      "title": "A IMPORTÂNCIA DA COLETA DOMICILIAR PRÉVIA NO SUPORTE TRANSFUSIONAL AMBULATORIAL – GRUPO GSH – SERUM RJ",
+      "authors": [
+        "Patricia Gomes Moura",
+        "Leidiliane Avelar",
+        "Mario Sampaio",
+        "Regiane Lima",
+        "Marcia Augusto"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5594",
+      "status": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "A IMPORTÂNCIA DA COLETA DOMICILIAR PRÉVIA NO SUPORTE TRANSFUSIONAL AMBULATORIAL – GRUPO GSH – SERUM RJ",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "related_by_title",
+      "notes": [
+        "O título comprova relação temática/institucional com GSH, mas a afiliação individual dos autores não foi confirmada porque o detalhe permanece pendente."
+      ]
+    },
+    {
+      "officialId": "5626",
+      "title": "Caracterização Clínica e Molecular da Variante HBB:c.315+4_315+5delAG em uma Família com Talassemia Beta Intermediária",
+      "authors": [
+        "Kaiky Corturato Piva",
+        "Lucas Nathan De Souza Nunes",
+        "Marcela Cantarin Roncada",
+        "Bárbara Braga Vieira Marques",
+        "Laila Ribeiro Soares",
+        "Viviani Lourdes Rosa Pessoa",
+        "Sandra Regina Loggetto",
+        "Edis Belini-junior"
+      ],
+      "modality": "Painel",
+      "date": "30/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5626",
+      "status": "LEAD_NEEDS_EVIDENCE",
+      "confidence": "low",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Sandra Regina Loggetto",
+          "value": "Kaiky Corturato Piva, Lucas Nathan De Souza Nunes, Marcela Cantarin Roncada, Bárbara Braga Vieira Marques, Laila Ribeiro Soares, Viviani Lourdes Rosa Pessoa, Sandra Regina Loggetto, Edis Belini-junior",
+          "source": "offline_export.works[].authors"
+        },
+        {
+          "kind": "prior_institutional_lead",
+          "source": "data/b3-works-gsh-research.json",
+          "sourceUrl": "https://br.linkedin.com/company/grupogsh",
+          "sourceStatus": "pre-existing_record_not_refetched",
+          "value": "A publicação institucional previamente registrada cita Sandra Loggetto em dois trabalhos sobre eventos tromboembólicos pediátricos e transição do cuidado."
+        }
+      ],
+      "decision": "review_only",
+      "notes": [
+        "A correspondência de nome e, nos IDs 4264/4097, de tema, cria pista; não prova afiliação GSH no registro HEMO."
+      ]
+    },
+    {
+      "officialId": "5660",
+      "title": "Avaliação dos resultados de controle de qualidade de pool de concentrados de plaquetas por método buffy coat, produzidos pelo Banco de Sangue de São Paulo - Grupo GSH.",
+      "authors": [
+        "Ana Paula Chagas Sessin",
+        "Renata De Almeida Bento",
+        "Douglas Eduardo Rossetto",
+        "Fabricio José Benati",
+        "Ariane Cristina Almeida Pitol",
+        "Ana Paula Carrijo Rodrigues"
+      ],
+      "modality": "Painel",
+      "date": "29/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5660",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "Avaliação dos resultados de controle de qualidade de pool de concentrados de plaquetas por método buffy coat, produzidos pelo Banco de Sangue de São Paulo - Grupo GSH.",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "5756",
+      "title": "PACIENTE COM MULTIPLOS ANTICORPOS NO SORO MIMETIZANDO ALO ANTICORPO ANTI-D - (D FRACO TIPO 1) Grupo Gestor de Serviços de Hemoterapia - Grupo GSH - São Paulo -SP - Brasil",
+      "authors": [
+        "Evanilde Pereira Araújo",
+        "Marina Decarli Faria Teodoro",
+        "Marilia Valvasori"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5756",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_title_field",
+          "field": "title",
+          "value": "PACIENTE COM MULTIPLOS ANTICORPOS NO SORO MIMETIZANDO ALO ANTICORPO ANTI-D - (D FRACO TIPO 1) Grupo Gestor de Serviços de Hemoterapia - Grupo GSH - São Paulo -SP - Brasil",
+          "source": "offline_export.works[].title"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "5769",
+      "title": "ANÁLISE DE AMOSTRAS RHD COM SCOR =",
+      "authors": [
+        "Marilia Valvasori",
+        "Evanilde Pereira Araújo",
+        "Marina Decarli Faria Teodoro",
+        "Gabriela Mendes Cruz"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5769",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_detail_text",
+          "field": "detail.text",
+          "value": "ições Científicas Trabalhos Dados do Trabalho Título ANÁLISE DE AMOSTRAS RHD COM SCOR =<2+ NO LABORATÓRIO DE REFERÊNCIA Grupo Gestor de Serviços de Hemoterapia - Grupo GSH - São Paulo -SP - Brasil Resumo Introdução: Os genes RHD e RHCE contêm 10 éxons cada e abrangem aproximadamente 75 kb de DNA. O gene RHD é flanqueado por duas sequências altamente homólogas de 9 kb, denomina",
+          "source": "offline_export.works[].detail.text"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    },
+    {
+      "officialId": "5894",
+      "title": "ANEMIA HEMOLÍTICA AUTOIMUNE A FRIO SECUNDÁRIA A INFECÇÃO POR EPSTEIN-BARR EM PACIENTE COM BETA TALASSEMIA INTERMEDIÁRIA",
+      "authors": [
+        "Sandra Regina Loggetto",
+        "Ana Paula Carrijo Rodrigues",
+        "Ana Paula Sessin",
+        "Ariane Cristina Almeida Pitol",
+        "Evanilde Pereira",
+        "Laura Coutinho Vassali",
+        "Laila Ribeiro Soares"
+      ],
+      "modality": "Painel",
+      "date": "30/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5894",
+      "status": "LEAD_NEEDS_EVIDENCE",
+      "confidence": "low",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Sandra Regina Loggetto",
+          "value": "Sandra Regina Loggetto, Ana Paula Carrijo Rodrigues, Ana Paula Sessin, Ariane Cristina Almeida Pitol, Evanilde Pereira, Laura Coutinho Vassali, Laila Ribeiro Soares",
+          "source": "offline_export.works[].authors"
+        },
+        {
+          "kind": "prior_institutional_lead",
+          "source": "data/b3-works-gsh-research.json",
+          "sourceUrl": "https://br.linkedin.com/company/grupogsh",
+          "sourceStatus": "pre-existing_record_not_refetched",
+          "value": "A publicação institucional previamente registrada cita Sandra Loggetto em dois trabalhos sobre eventos tromboembólicos pediátricos e transição do cuidado."
+        }
+      ],
+      "decision": "review_only",
+      "notes": [
+        "A correspondência de nome e, nos IDs 4264/4097, de tema, cria pista; não prova afiliação GSH no registro HEMO."
+      ]
+    },
+    {
+      "officialId": "5960",
+      "title": "Frequency of arbovirus RNA among Brazilian blood donors during the epidemic period in 2026",
+      "authors": [
+        "Fabricio José Benati",
+        "Isabel Ferreira La Rocque Freitas",
+        "Ana Carolina Resende Barreto",
+        "José Eduardo Levi",
+        "Leandro Felipe Figueiredo Dalmazzo"
+      ],
+      "modality": "Visita Guiada",
+      "date": "29/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "PENDENTE",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/5960",
+      "status": "AUTHOR_IDENTITY_CONFIRMED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_authors_field",
+          "field": "authors",
+          "matched": "Leandro Felipe Figueiredo Dalmazzo",
+          "value": "Fabricio José Benati, Isabel Ferreira La Rocque Freitas, Ana Carolina Resende Barreto, José Eduardo Levi, Leandro Felipe Figueiredo Dalmazzo",
+          "source": "offline_export.works[].authors"
+        }
+      ],
+      "decision": "confirmed",
+      "notes": [
+        "A identidade institucional de Leandro vem da evidência corporativa já registrada em data/b3-works-gsh-research.json; esta execução não refez consulta externa."
+      ]
+    },
+    {
+      "officialId": "6362",
+      "title": "Impacto da doação de plaquetas por aférese na contagem plaquetária de doadores voluntários: influência do rendimento da coleta e fatores associados",
+      "authors": [
+        "Thais Aline Pedri",
+        "Janaína Alves Santos",
+        "Thais Oliveira Santos Briet Marchesi"
+      ],
+      "modality": "Painel",
+      "date": "31/10/2026",
+      "room": "Área de Exposição: Painéis",
+      "detailStatus": "OK",
+      "listUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+      "detailUrl": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados/naintegra/6362",
+      "status": "GSH_INSTITUTION_EVIDENCED",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "official_detail_text",
+          "field": "detail.text",
+          "value": " a redução plaquetária. Métodos Estudo observacional, retrospectivo e descritivo, realizado no Banco de Sangue do Grupo GSH em São Paulo, com 50 doações de plaquetas por aférese realizadas entre março e agosto de 2026. Foram analisados sexo, idade, rendimento da coleta, contagem plaquetária pré e pós-doação e redução absoluta e percentual da",
+          "source": "offline_export.works[].detail.text"
+        }
+      ],
+      "decision": "confirmed_relation",
+      "notes": [
+        "A prova é do trabalho relacionado à GSH; não prova vínculo profissional atual de cada coautor."
+      ]
+    }
+  ],
+  "namedLeadAudit": {
+    "sandraReginaLoggetto": {
+      "allMatchingIds": [
+        "4264",
+        "4097",
+        "5894",
+        "5626"
+      ],
+      "reviewOnlyIds": [
+        "4264",
+        "4097",
+        "5894",
+        "5626"
+      ],
+      "decision": "não promovida sem afiliação individual GSH capturada"
+    },
+    "edylaAlmeida": {
+      "allMatchingIds": [
+        "4067",
+        "4198",
+        "5541",
+        "6193",
+        "4203",
+        "5555",
+        "5554",
+        "4307",
+        "5522",
+        "5906",
+        "5542"
+      ],
+      "leadId": "4067",
+      "alreadyConfirmedByLeandroId": "4307",
+      "otherMatchingIds": [
+        "4198",
+        "5541",
+        "6193",
+        "4203",
+        "5555",
+        "5554",
+        "5522",
+        "5906",
+        "5542"
+      ],
+      "decision": "somente 4067 permanece como lead; não propagar a pista para os outros nove IDs"
+    },
+    "eduardoFerroHomonym": {
+      "matchingIds": [
+        "3566"
+      ],
+      "decision": "3566 excluído como falso positivo"
+    }
+  },
+  "authorExpansion": {
+    "institutionalWorkIds": [
+      "4243",
+      "4510",
+      "3997",
+      "5452",
+      "5403",
+      "5756",
+      "5769",
+      "5660",
+      "3732",
+      "3887",
+      "4900",
+      "5125",
+      "5454",
+      "6362"
+    ],
+    "repeatedAuthors": [
+      {
+        "name": "Aline Miranda De Souza",
+        "workIds": [
+          "4243"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Ana Paula Carrijo Rodrigues",
+        "workIds": [
+          "3997",
+          "4900",
+          "5403",
+          "5660"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Ana Paula Chagas Sessin",
+        "workIds": [
+          "3997",
+          "4900",
+          "5403",
+          "5660"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Ana Paula Dariano Olcese",
+        "workIds": [
+          "4243",
+          "4900"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Ana Paula Sessim",
+        "workIds": [
+          "5454"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Ana Paula Sessin",
+        "workIds": [
+          "5452"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Ariane Cristina Almeida Pitol",
+        "workIds": [
+          "3997",
+          "5403",
+          "5660"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Bruno Sussumu Maeda",
+        "workIds": [
+          "4243",
+          "4900"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Carla Maria Duarte",
+        "workIds": [
+          "3732",
+          "5125"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Douglas Eduardo Rossetto",
+        "workIds": [
+          "3887",
+          "3997",
+          "5403",
+          "5452",
+          "5454",
+          "5660"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Evanilde Pereira Araujo",
+        "workIds": [
+          "3997"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Evanilde Pereira Araújo",
+        "workIds": [
+          "5756",
+          "5769"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Fabricio José Benati",
+        "workIds": [
+          "5403",
+          "5660"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Fabrício José Benati",
+        "workIds": [
+          "4900"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Gabriela Mendes Cruz",
+        "workIds": [
+          "5769"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Janaína Alves Santos",
+        "workIds": [
+          "6362"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Juliana Erdman Giacomo",
+        "workIds": [
+          "5452"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Juliana Erdmann Di Giacomo",
+        "workIds": [
+          "3887"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Juliana Erdmann Giacomo",
+        "workIds": [
+          "5454"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Livia Chiosini De Nadai",
+        "workIds": [
+          "4243",
+          "4900"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Marcela Zilves Colonese",
+        "workIds": [
+          "3732"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Mariane Andrade Pinheiro",
+        "workIds": [
+          "5125"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Marilia Valvasori",
+        "workIds": [
+          "4243",
+          "5756",
+          "5769"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Marília Valvasori",
+        "workIds": [
+          "3997"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Marina Decarli Faria Teodoro",
+        "workIds": [
+          "5756",
+          "5769"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Mayara Rosário De Azevedo",
+        "workIds": [
+          "3887"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "MIASTENIA GRAVIS",
+        "workIds": [
+          "4510"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Pablo Raphael Gomiero Alves",
+        "workIds": [
+          "3887"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Renata Almeida Bento",
+        "workIds": [
+          "5452",
+          "5454"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Renata De Almeida Bento",
+        "workIds": [
+          "3997",
+          "5403",
+          "5660"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Ricardo De Paula Battaglini",
+        "workIds": [
+          "4243",
+          "4900"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Thais Aline Pedri",
+        "workIds": [
+          "6362"
+        ],
+        "promoted": false
+      },
+      {
+        "name": "Thais Oliveira Santos Briet Marchesi",
+        "workIds": [
+          "6362"
+        ],
+        "promoted": false
+      }
+    ],
+    "promotedAuthors": [],
+    "rule": "Relação do grupo não é propagada a todos os coautores ou a todos os trabalhos de uma pessoa sem prova individual."
+  },
+  "diffAgainstApp1": {
+    "baseBranch": "feat/hemo-b3-app1-works",
+    "baseSha": "3df073a088188a04bf3f8e201c24c94f3d5a96e9",
+    "added": [],
+    "removed": [],
+    "changed": [
+      {
+        "id": "3732",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "3887",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "3911",
+        "from": "AUTHORSHIP_CONFIRMED",
+        "to": "AUTHOR_IDENTITY_CONFIRMED"
+      },
+      {
+        "id": "3939",
+        "from": "AUTHORSHIP_CONFIRMED",
+        "to": "AUTHOR_IDENTITY_CONFIRMED"
+      },
+      {
+        "id": "3941",
+        "from": "AUTHORSHIP_CONFIRMED",
+        "to": "AUTHOR_IDENTITY_CONFIRMED"
+      },
+      {
+        "id": "3997",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "4243",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "4307",
+        "from": "AUTHORSHIP_CONFIRMED",
+        "to": "AUTHOR_IDENTITY_CONFIRMED"
+      },
+      {
+        "id": "4510",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "4514",
+        "from": "TITLE_RELATED_PENDING_AFFILIATION",
+        "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+      },
+      {
+        "id": "4538",
+        "from": "AUTHORSHIP_CONFIRMED",
+        "to": "AUTHOR_IDENTITY_CONFIRMED"
+      },
+      {
+        "id": "4548",
+        "from": "AUTHORSHIP_CONFIRMED",
+        "to": "AUTHOR_IDENTITY_CONFIRMED"
+      },
+      {
+        "id": "4599",
+        "from": "TITLE_RELATED_PENDING_AFFILIATION",
+        "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+      },
+      {
+        "id": "4601",
+        "from": "TITLE_RELATED_PENDING_AFFILIATION",
+        "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+      },
+      {
+        "id": "4900",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "5125",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "5163",
+        "from": "TITLE_RELATED_PENDING_AFFILIATION",
+        "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+      },
+      {
+        "id": "5383",
+        "from": "TITLE_RELATED_PENDING_AFFILIATION",
+        "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+      },
+      {
+        "id": "5403",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "5452",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "5454",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "5594",
+        "from": "TITLE_RELATED_PENDING_AFFILIATION",
+        "to": "GSH_TITLE_EVIDENCED_AUTHORSHIP_UNVERIFIED"
+      },
+      {
+        "id": "5660",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "5756",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "5769",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      },
+      {
+        "id": "5960",
+        "from": "AUTHORSHIP_CONFIRMED",
+        "to": "AUTHOR_IDENTITY_CONFIRMED"
+      },
+      {
+        "id": "6362",
+        "from": "INSTITUTION_CONFIRMED",
+        "to": "GSH_INSTITUTION_EVIDENCED"
+      }
+    ],
+    "filterSetUnchanged": true
+  },
+  "limitations": [
+    "A prova institucional de Leandro/Eduardo foi herdada do registro de pesquisa anterior e não foi reconsultada nesta missão.",
+    "Os leads de Sandra e Édyla têm autoria nominal e pista institucional previamente registrada, mas não têm afiliação GSH individual capturada no export.",
+    "O PDF de 196 MB não foi copiado nem convertido; seus metadados/hash já constam na proveniência anterior.",
+    "Os 117 trabalhos divulgados pela GSH permanecem referência agregada e não denominador de IDs individuais."
+  ]
+}
