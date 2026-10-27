@@ -125,3 +125,4 @@
 - Fonte: export offline SHA-256 `c14f63621b8ae2b38fc88ad12c851c2e708c3000776c32796893caa414b1a2bd`; nenhum detalhe foi requisitado novamente e o PDF não foi copiado/convertido.
 - Validação: `node --check scripts/build-b3-gsh2-review.mjs`, `node scripts/build-b3-gsh2-review.mjs` e `node --test tests/hemo-b3-gsh2.test.mjs` passam.
 - Restrições: sem `public/*`, Vercel, `main`, CONAHP, B3-FINAL1, PR, Code Review ou deploy. Próxima decisão: auditoria do orquestrador e eventual integração futura autorizada.
+- Box: conector/plugin não disponível nesta execução; pendência registrada localmente. A Issue #5 contém o fechamento remoto e os artefatos versionados.
