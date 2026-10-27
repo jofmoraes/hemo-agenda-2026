@@ -104,3 +104,13 @@
 - Verificação de sessão autorizada Chrome foi somente leitura de abas; nenhuma aba da fonte oficial estava aberta. Cookies, tokens, armazenamento e credenciais não foram acessados.
 - Ação manual necessária: proprietário abrir a fonte no Opera/Chrome com acesso normal e disponibilizar a aba conectada ao Codex ou entregar exportação autorizada HTML/MHTML/PDF.
 - `public/*`, Vercel, QA, `main`, CONAHP e preferências pessoais permanecem inalterados.
+
+## HEMO B3-WORKS4 — Consolidação offline
+
+- Status: `HEMO_B3_WORKS4_OFFLINE_INVENTORY_READY_FOR_ORCHESTRATOR_REVIEW`.
+- Branch: `feat/hemo-b3-works4-offline-inventory`, derivada da branch B3 existente sem alterar sua base.
+- Escopo: normalização offline dos 1.987 registros exportados, reconciliação dos 40 controles, horários das 110 apresentações orais, correções auditáveis e classificação dos 28 candidatos GSH.
+- Artefatos: `data/b3-works4-inventory.json`, `data/b3-works4-gsh.json`, `data/b3-works4-report.json`, `docs/B3_WORKS4_OFFLINE.md`, `scripts/build-b3-works4.mjs`, `tests/hemo-b3-works4.test.mjs`.
+- Resultado: 1.987 IDs únicos; 355 áreas confirmadas por detalhe salvo; 1.632 áreas pendentes; 110/110 horários orais recuperados; 7 autorias GSH, 14 instituições, 6 pendências e 1 falso positivo.
+- Fonte local: `D:\JUCA\AI Lab\hemo-2026\hemo-tampermonkey`; originais não sobrescritos. Não houve acesso web ou nova requisição de detalhes.
+- Validação: `node --test tests/hemo-b3-works4.test.mjs`, `npm test` (57/57), `npm run check` e `npm run check:preview` passaram; pendentes apenas commit/push e auditoria independente do orquestrador.

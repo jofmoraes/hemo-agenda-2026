@@ -265,3 +265,16 @@ Não foi feito deployment/redeploy nem alterada a Vercel. A migração foi valid
 - PWA: manifesto, ícones PNG, splash HTML e cache `hemo2026:public:b2public1-v1` verificados; instalação Android/iPhone e offline em dispositivo físico permanecem **NOT_RUN**.
 - Rollback: não foi necessário; como o projeto público tem um único deployment, qualquer reversão futura deve ser decidida pelo orquestrador e executada como operação separada. Não reenviar nesta missão.
 - O conteúdo continua deliberadamente parcial e não representa a programação científica completa. A URL não deve ser encaminhada a Flora antes da auditoria independente.
+
+## HEMO B3-WORKS4 — Consolidação offline dos trabalhos científicos (27/10/2026)
+
+**Status:** `HEMO_B3_WORKS4_OFFLINE_INVENTORY_READY_FOR_ORCHESTRATOR_REVIEW`, sem alteração ou publicação do aplicativo.
+
+- Branch de entrega: `feat/hemo-b3-works4-offline-inventory`.
+- Base: `feat/hemo-b3-works-gsh`, sem modificar a branch de pesquisa original.
+- Artefatos: `data/b3-works4-inventory.json`, `data/b3-works4-gsh.json`, `data/b3-works4-report.json`, `docs/B3_WORKS4_OFFLINE.md`, `scripts/build-b3-works4.mjs` e `tests/hemo-b3-works4.test.mjs`.
+- Cobertura: 1.987 IDs únicos; 40 assuntos com total agregado 1.987; 110 horários orais recuperados; 355 áreas individuais evidenciadas e 1.632 não atribuídas por segurança.
+- GSH: 28 candidatos, distribuídos em 7 autorias confirmadas, 14 evidências institucionais, 6 pendências e 1 falso positivo (ID 3566).
+- Fontes originais preservadas em `D:\JUCA\AI Lab\hemo-2026\hemo-tampermonkey`; somente três arquivos derivados foram gravados nessa pasta.
+- O PDF complementar não foi convertido integralmente; detalhes ausentes/403 não foram requisitados novamente.
+- Não houve mudança em `public/*`, Vercel, agenda pública, `main`, CONAHP, preferências ou integração da aba científica.

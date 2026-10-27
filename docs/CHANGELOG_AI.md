@@ -59,3 +59,12 @@
 - Inventário atualizado com cobertura explícita: 0 áreas acessadas, 0 trabalhos carregados e 0 trabalhos individualmente validados; catálogo estruturado permanece vazio.
 - Ação manual registrada: proprietário deve abrir a fonte no Opera/Chrome com acesso legítimo e disponibilizar a aba ou exportação autorizada, sem compartilhar credenciais.
 - `tests/hemo-b3-works-gsh.test.mjs` foi incorporado ao script `npm test`; nenhum arquivo `public/*` foi alterado.
+
+## 2026-10-27 — HEMO B3-WORKS4
+
+- Consolidado offline o export Tampermonkey v2 com 1.987 registros e IDs únicos, preservando o objeto bruto e a proveniência por registro.
+- Reconciliados os 40 controles de assunto (soma 1.987) sem distribuir áreas por inferência; 355 áreas individuais foram confirmadas em detalhes já salvos e 1.632 permaneceram pendentes.
+- Recuperados os horários dos 110 trabalhos orais a partir de `listMetaText`; o ID 3855 ficou sinalizado como anomalia de duração, sem correção especulativa.
+- Registradas 51 correções auditáveis de normalização (50 em autores e 1 título) e classificação dos 28 candidatos GSH: 7 autoria, 14 instituição, 6 pendentes e 1 falso positivo.
+- Criados inventários JSON, relatório, documentação e teste nativo; a proposta de aba `Trabalhos científicos` com filtro único `Trabalhos GSH` permanece sem implementação/publicação.
+- Arquivos fonte originais na pasta Tampermonkey não foram sobrescritos; `public/*`, Vercel, `main`, CONAHP e dados públicos permaneceram inalterados.

@@ -1,0 +1,833 @@
+{
+  "kind": "HEMO_B3_WORKS4_OFFLINE_REPORT",
+  "status": "READY_FOR_AUDIT",
+  "generatedAt": "2026-10-27T16:09:27.665Z",
+  "source": {
+    "url": "https://hemo.org.br/evento/hemo2026/pt/trabalhosaprovados",
+    "exportedAt": "2026-10-27T15:08:54.341Z",
+    "provenance": "Página oficial em aba Opera do usuário; detalhes via links da própria página; não houve tentativa de contornar bloqueios",
+    "files": [
+      {
+        "name": "HEMO2026_TRABALHOS_2026-10-27T15-08-54-380Z_COMPLETO.json",
+        "bytes": 7099055,
+        "sha256": "c14f63621b8ae2b38fc88ad12c851c2e708c3000776c32796893caa414b1a2bd"
+      },
+      {
+        "name": "HEMO2026_TRABALHOS_2026-10-27T15-08-54-380Z_TRABALHOS.csv",
+        "bytes": 2382788,
+        "sha256": "64ba66595db307ffe9575d57618609c1eac89e3d27bd6e49bd2b6977b9c39dd2"
+      },
+      {
+        "name": "HEMO2026_TRABALHOS_2026-10-27T15-08-54-380Z_GSH_CANDIDATOS.csv",
+        "bytes": 11101,
+        "sha256": "60f825481ce9baa28175923b186a125dba6ae15dfc2ee22c5b3da7729974e959"
+      },
+      {
+        "name": "HEMO2026_TRABALHOS_2026-10-27T15-08-54-380Z_COBERTURA.txt",
+        "bytes": 15501,
+        "sha256": "d0e45f94ad1a2d828336d31bbead7caf7332a49a7a7ab788c9c65d0db845934a"
+      },
+      {
+        "name": "Hemo 2026 - Relação Trabalhos.pdf",
+        "bytes": 195742446,
+        "sha256": "c7399ed01c828b00f1bfb5f5a2eec49a81c52c789f5c89a74d1d95a5064e3116"
+      }
+    ]
+  },
+  "validation": {
+    "jsonRecords": 1987,
+    "csvRecords": 1987,
+    "gshCsvRecords": 28,
+    "uniqueIds": 1987,
+    "duplicateIds": 0,
+    "coverageTextRecords": 1987,
+    "sourceCoverageUnique": 1987,
+    "areaSubjects": 40,
+    "areaDeclaredTotal": 1987,
+    "areaAssociationsFromSavedDetails": 355,
+    "areaAssociationsUnresolved": 1632,
+    "inferredAreaAssignments": 0,
+    "oralExpected": 110,
+    "oralTimesRecovered": 110,
+    "oralTimesMissing": 0,
+    "oralTimeAnomalies": [
+      {
+        "id": "3855",
+        "time": {
+          "start": "06:45:00",
+          "end": "16:52:00",
+          "raw": "06:45:00 às 16:52:00",
+          "source": "listMetaText"
+        }
+      }
+    ],
+    "titleCorrections": 1,
+    "authorCorrections": 50,
+    "detailOk": 366,
+    "detailPending": 1620,
+    "detailBlocked": 1,
+    "dates": {
+      "28/10/2026": 444,
+      "29/10/2026": 506,
+      "30/10/2026": 558,
+      "31/10/2026": 479
+    },
+    "modalities": {
+      "Apresentação Oral": 110,
+      "Painel": 1430,
+      "Visita Guiada": 447
+    },
+    "gshCandidates": 28,
+    "gshByStatus": {
+      "AUTHORSHIP_CONFIRMED": 7,
+      "FALSE_POSITIVE": 1,
+      "INSTITUTION_CONFIRMED": 14,
+      "PENDING_VERIFICATION": 6
+    }
+  },
+  "areaReconciliation": [
+    {
+      "area": "Aférese",
+      "controlValue": "126",
+      "declaredCount": 26,
+      "recordsWithSavedDetailArea": 25
+    },
+    {
+      "area": "Antígenos das Células do Sangue",
+      "controlValue": "127",
+      "declaredCount": 59,
+      "recordsWithSavedDetailArea": 58
+    },
+    {
+      "area": "Ciências Biomédicas",
+      "controlValue": "138",
+      "declaredCount": 27,
+      "recordsWithSavedDetailArea": 25
+    },
+    {
+      "area": "Citometria de Fluxo",
+      "controlValue": "110",
+      "declaredCount": 23,
+      "recordsWithSavedDetailArea": 23
+    },
+    {
+      "area": "Controle de Qualidade de Hemocomponentes",
+      "controlValue": "134",
+      "declaredCount": 19,
+      "recordsWithSavedDetailArea": 17
+    },
+    {
+      "area": "Cuidados Paliativos",
+      "controlValue": "123",
+      "declaredCount": 7,
+      "recordsWithSavedDetailArea": 6
+    },
+    {
+      "area": "Doação de Sangue",
+      "controlValue": "128",
+      "declaredCount": 96,
+      "recordsWithSavedDetailArea": 93
+    },
+    {
+      "area": "Doação/Transfusão Autóloga",
+      "controlValue": "136",
+      "declaredCount": 2,
+      "recordsWithSavedDetailArea": 2
+    },
+    {
+      "area": "Doenças da Série Vermelha: Anemia aplástica, hemoglobinúria paroxística noturna, anemias congênitas, anemia de Fanconi",
+      "controlValue": "105",
+      "declaredCount": 42,
+      "recordsWithSavedDetailArea": 41
+    },
+    {
+      "area": "Doenças da Série Vermelha: Anemias carenciais, hemocromatose e porfiria",
+      "controlValue": "106",
+      "declaredCount": 20,
+      "recordsWithSavedDetailArea": 20
+    },
+    {
+      "area": "Doenças da Série Vermelha: Anemias hemolíticas",
+      "controlValue": "107",
+      "declaredCount": 104,
+      "recordsWithSavedDetailArea": 45
+    },
+    {
+      "area": "Doenças Transmitidas por Transfusões e Sorologia",
+      "controlValue": "129",
+      "declaredCount": 38,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Enfermagem",
+      "controlValue": "139",
+      "declaredCount": 41,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Farmácia",
+      "controlValue": "140",
+      "declaredCount": 26,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Gestão de Qualidade",
+      "controlValue": "130",
+      "declaredCount": 38,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Gestão para serviços de saúde",
+      "controlValue": "141",
+      "declaredCount": 76,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Hematologia Laboratorial",
+      "controlValue": "108",
+      "declaredCount": 57,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Hematologia pediátrica clássica",
+      "controlValue": "124",
+      "declaredCount": 38,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Hemostasia e Parede Vascular: Biologia",
+      "controlValue": "118",
+      "declaredCount": 2,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Hemostasia e Parede Vascular: Doenças de coagulação e fibrinólise",
+      "controlValue": "119",
+      "declaredCount": 76,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Hemostasia e Parede Vascular: Doenças de plaquetas",
+      "controlValue": "120",
+      "declaredCount": 24,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Hemostasia e Parede Vascular: Trombose",
+      "controlValue": "121",
+      "declaredCount": 24,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Hemovigilância",
+      "controlValue": "135",
+      "declaredCount": 40,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Leucemia linfoide crônica e outras doenças linfoproliferativas crônicas",
+      "controlValue": "111",
+      "declaredCount": 36,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Leucemia mieloide crônica e outras síndromes mieloproliferativas crônicas, incluindo as Policitemias",
+      "controlValue": "112",
+      "declaredCount": 70,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Leucemias Agudas",
+      "controlValue": "113",
+      "declaredCount": 159,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Leucócitos, Inflamação, Infecção e Imunologia",
+      "controlValue": "109",
+      "declaredCount": 54,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Linfoma Hodgkin",
+      "controlValue": "114",
+      "declaredCount": 17,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Linfoma não-Hodgkin",
+      "controlValue": "115",
+      "declaredCount": 112,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Medicina Transfusional",
+      "controlValue": "131",
+      "declaredCount": 105,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Medicina Veterinária",
+      "controlValue": "137",
+      "declaredCount": 3,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Mieloma múltiplo",
+      "controlValue": "116",
+      "declaredCount": 109,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Odontologia",
+      "controlValue": "142",
+      "declaredCount": 41,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Onco-hematologia pediátrica",
+      "controlValue": "125",
+      "declaredCount": 50,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Patient Blood Management (PBM)",
+      "controlValue": "132",
+      "declaredCount": 36,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Preparo de Componente, Armazenagem e Inativação de Patógenos",
+      "controlValue": "133",
+      "declaredCount": 17,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Psicologia",
+      "controlValue": "143",
+      "declaredCount": 37,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Síndromes mielodisplásicas",
+      "controlValue": "117",
+      "declaredCount": 27,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Trabalhos das Ligas Acadêmicas de Medicina",
+      "controlValue": "144",
+      "declaredCount": 106,
+      "recordsWithSavedDetailArea": 0
+    },
+    {
+      "area": "Transplante de Medula Óssea e Terapia Celular",
+      "controlValue": "122",
+      "declaredCount": 103,
+      "recordsWithSavedDetailArea": 0
+    }
+  ],
+  "corrections": [
+    {
+      "id": "3474",
+      "field": "authors",
+      "originalValue": "Allium sativum",
+      "normalizedValue": [
+        "Roberto Brito Marques",
+        "Tamires Correa Marchi",
+        "Thais Soares Farnesi Assunção",
+        "Karina Ferrazoli Devienne Vicentine",
+        "Anna Cecília Dia Maciel Carneiro",
+        "Fernanda Bernadelli De Vito"
+      ],
+      "reason": "O campo da listagem contém uma expressão do título; autores recuperados do detalhe oficial já salvo."
+    },
+    {
+      "id": "5342",
+      "field": "authors",
+      "originalValue": "THG1L",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "6377",
+      "field": "authors",
+      "originalValue": "TPMT",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4951",
+      "field": "authors",
+      "originalValue": "TTN",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5424",
+      "field": "authors",
+      "originalValue": "CYP3A5",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4510",
+      "field": "authors",
+      "originalValue": "MIASTENIA GRAVIS",
+      "normalizedValue": [
+        "Isadora Geronimo Del Roio",
+        "Kely Alessandra De Almeida",
+        "Fabiana Hoelz"
+      ],
+      "reason": "O campo da listagem contém uma expressão do título; autores recuperados do detalhe oficial já salvo."
+    },
+    {
+      "id": "4484",
+      "field": "authors",
+      "originalValue": [
+        "Marina Miqueline Dos Santos",
+        "Eliana Abreu Santos",
+        "Luciana Pereira Rangel",
+        "Luciana Serrão Wermelinger"
+      ],
+      "normalizedValue": [
+        "Marina Miqueline Dos Santos",
+        "Eliana Abreu Santos",
+        "Luciana Pereira Rangel",
+        "Luciana Serrão Wermelinger"
+      ],
+      "reason": "A listagem e o detalhe salvo divergem; valor da listagem preservado até revisão manual.",
+      "detailValue": [
+        "investigarem essa mutação em seus trabalhos. Dada à grande extensão do território brasileiro e a grande miscigenação presente na população",
+        "o relato desta mutação encontrada no Rio de Janeiro pode contribuir para o diagnóstico de anemias microcíticas locais",
+        "além do aconselhamento genético. Área Doenças da Série Vermelha: Anemia aplástica",
+        "hemoglobinúria paroxística noturna",
+        "anemias congênitas",
+        "anemia de Fanconi Autores Marina Miqueline Dos Santos",
+        "Eliana Abreu Santos",
+        "Luciana Pereira Rangel",
+        "Luciana Serrão Wermelinger"
+      ]
+    },
+    {
+      "id": "4884",
+      "field": "authors",
+      "originalValue": "TP53",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "3576",
+      "field": "authors",
+      "originalValue": [
+        "Laise Calixto Batalha Belém",
+        "Maria Do Rosário Silva Marcos",
+        "Lucas Henrique dos Santos Sousa",
+        "Jeysse Kelle França Lopes"
+      ],
+      "normalizedValue": [
+        "Laise Calixto Batalha Belém",
+        "Maria Do Rosário Silva Marcos",
+        "Lucas Henrique dos Santos Sousa",
+        "Jeysse Kelle França Lopes"
+      ],
+      "reason": "A listagem e o detalhe salvo divergem; valor da listagem preservado até revisão manual.",
+      "detailValue": [
+        "declaram não haver qualquer conflito de interesses relacionado à realização deste estudo. INTRODUÇÃO A incorporação de novas tecnologias em serviços de hemoterapia exige planejamento estruturado",
+        "capacitação de equipes e validação criteriosa antes da operação em escala. O HEMOMAR",
+        "hemocentro coordenador da Hemorrede Estadual do Maranhão",
+        "responsável pelo atendimento transfusional de 100% da rede pública estadual e pela coordenação técnica de oito Núcleos de Hemoterapia",
+        "implantou em fevereiro de 2026 um sistema automatizado de processamento de hemocomponentes por centrifugação",
+        "com o objetivo de padronizar a produção e ampliar a qualidade e rastreabilidade do processo. OBJETIVOS Descrever a estratégia de implantação e validação de nova tecnologia de processamento automatizado de hemocomponentes no HEMOMAR",
+        "identificando desafios",
+        "soluções adotadas e ganhos observados. MATERIAL E MÉTODOS A validação foi estruturada em quatro etapas: mapeamento do processo e identificação de riscos por setor",
+        "definição de critérios de aceitação com base na Portaria de Consolidação nº 5",
+        "especificações do fabricante e literatura científica",
+        "realização de testes com registro sistemático de resultados e desvios",
+        "e revisão dos resultados pela equipe técnica. RESULTADOS Durante a validação",
+        "foi identificado desvio em duas unidades de concentrado de plaquetas com contagem plaquetária abaixo do critério de aceitação. A investigação da causa raiz revelou registro incorreto: o volume havia sido aferido após a retirada da alíquota para o controle de qualidade",
+        "e não do volume total do hemocomponente produzido. Como ação corretiva",
+        "o fluxo foi revisado e um formulário padronizado foi elaborado para garantir o registro correto da informação",
+        "prevenindo inadequações futuras. Após esse ajuste",
+        "todas as unidades avaliadas atenderam aos critérios de aceitação. Em comparação ao método convencional",
+        "o sistema demonstrou maior padronização",
+        "menor variabilidade entre operadores",
+        "maior reprodutibilidade e rastreabilidade ampliada pelo registro automatizado do colaborador",
+        "volumes",
+        "horários e intercorrências",
+        "também foi evidenciado uma aumento do volume médio do Plasma Fresco Congelado produzido",
+        "o mesmo passou de 170-180 ml para 200–210 ml com a nova metodologia. DISCUSSÃO E CONCLUSÃO Os principais desafios enfrentados foram a curva de aprendizado da equipe",
+        "a ausência de procedimento operacional padrão específico para a nova tecnologia e a resistência inicial da equipe à mudança de processos consolidados. As estratégias que se mostraram eficazes incluíram treinamento em fases com simulações",
+        "elaboração participativa dos procedimentos e planejamento escalonado que preservou a continuidade assistencial. A experiência evidencia que a validação cumpre papel essencial não apenas na verificação da conformidade dos hemocomponentes",
+        "mas na estruturação de um processo produtivo mais seguro e auditável. Desvios identificados durante a validação revelam fragilidades que",
+        "não detectadas",
+        "comprometeriam a confiabilidade do controle de qualidade e o fornecimento de hemocomponentes com qualidade assegurada. Validar antes de operar em escala é medida de proteção ao paciente e de responsabilidade institucional. Área Controle de Qualidade de Hemocomponentes Autores Laise Calixto Batalha Belém",
+        "Maria Do Rosário Silva Marcos",
+        "Lucas Henrique dos Santos Sousa",
+        "Jeysse Kelle França Lopes"
+      ]
+    },
+    {
+      "id": "4110",
+      "field": "authors",
+      "originalValue": "BUFFY COAT",
+      "normalizedValue": [
+        "Michelle Sousa Cunha Bandierini",
+        "Francisco Rondinelle Abrantes",
+        "Geane Santiago Bispo",
+        "Janayna Da Costa Ferreira",
+        "Katiane Da Costa Lima Oliveira",
+        "Monica Maria Cunha Da Silva"
+      ],
+      "reason": "O campo da listagem contém uma expressão do título; autores recuperados do detalhe oficial já salvo."
+    },
+    {
+      "id": "5769",
+      "field": "title",
+      "originalValue": "ANÁLISE DE AMOSTRAS RHD COM SCOR =",
+      "normalizedValue": "ANÁLISE DE AMOSTRAS RHD COM SCOR =<2+ NO LABORATÓRIO DE REFERÊNCIA",
+      "reason": "Título da listagem foi truncado após \"SCOR =\"; trecho completo aparece no HTML do detalhe oficial já salvo."
+    },
+    {
+      "id": "3627",
+      "field": "authors",
+      "originalValue": "TP53",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "3881",
+      "field": "authors",
+      "originalValue": "PDGFRA",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "3645",
+      "field": "authors",
+      "originalValue": "PLASMODIUM",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4477",
+      "field": "authors",
+      "originalValue": "LIGHTBLOOD",
+      "normalizedValue": [
+        "Monique Da Silva Gomes",
+        "Karinne Cristinne da Silva Cunha"
+      ],
+      "reason": "O campo da listagem contém uma expressão do título; autores recuperados do detalhe oficial já salvo."
+    },
+    {
+      "id": "4544",
+      "field": "authors",
+      "originalValue": [
+        "Alexia Viana Costa",
+        "Kauan Rubio Fabricatori",
+        "Vinicios William Silva de Menezes",
+        "Tifany Escaleira Jardim",
+        "Ana Beatriz Correa Dos Santos",
+        "Eduarda Dos Santos Oliveira",
+        "Vitória Latorre Garcia",
+        "Heloísa Ester Gonçalves Dos Santos Almeida",
+        "Gustavo Aref Potzmann Manrique",
+        "Julia Sasazaki Martins",
+        "Yanne Thaissa Sobreira Freire",
+        "Solivanda Trindade Alves"
+      ],
+      "normalizedValue": [
+        "Alexia Viana Costa",
+        "Kauan Rubio Fabricatori",
+        "Vinicios William Silva de Menezes",
+        "Tifany Escaleira Jardim",
+        "Ana Beatriz Correa Dos Santos",
+        "Eduarda Dos Santos Oliveira",
+        "Vitória Latorre Garcia",
+        "Heloísa Ester Gonçalves Dos Santos Almeida",
+        "Gustavo Aref Potzmann Manrique",
+        "Julia Sasazaki Martins",
+        "Yanne Thaissa Sobreira Freire",
+        "Solivanda Trindade Alves"
+      ],
+      "reason": "A listagem e o detalhe salvo divergem; valor da listagem preservado até revisão manual.",
+      "detailValue": [
+        "declaram não possuir conflitos de interesse. Foi utilizada ferramenta de inteligência artificial como auxílio na organização textual e revisão da redação",
+        "sem participação na geração",
+        "alteração ou interpretação dos dados científicos. Área Doação de Sangue Autores Alexia Viana Costa",
+        "Kauan Rubio Fabricatori",
+        "Vinicios William Silva de Menezes",
+        "Tifany Escaleira Jardim",
+        "Ana Beatriz Correa Dos Santos",
+        "Eduarda Dos Santos Oliveira",
+        "Vitória Latorre Garcia",
+        "Heloísa Ester Gonçalves Dos Santos Almeida",
+        "Gustavo Aref Potzmann Manrique",
+        "Julia Sasazaki Martins",
+        "Yanne Thaissa Sobreira Freire",
+        "Solivanda Trindade Alves"
+      ]
+    },
+    {
+      "id": "3834",
+      "field": "authors",
+      "originalValue": "HBB",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5839",
+      "field": "authors",
+      "originalValue": "in vivo",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4549",
+      "field": "authors",
+      "originalValue": "frameshift",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5347",
+      "field": "authors",
+      "originalValue": "miR-223-3p",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5451",
+      "field": "authors",
+      "originalValue": "Tet2",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5870",
+      "field": "authors",
+      "originalValue": "PODOPLANINA",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "3934",
+      "field": "authors",
+      "originalValue": "machine learning",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4266",
+      "field": "authors",
+      "originalValue": "Melipona seminigra pernigra",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4442",
+      "field": "authors",
+      "originalValue": "STREPTOCOCCUS GALLOLYTICUS",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4773",
+      "field": "authors",
+      "originalValue": "Histoplasma capsulatum",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5015",
+      "field": "authors",
+      "originalValue": "MRPL21",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5183",
+      "field": "authors",
+      "originalValue": "ANXA2",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5584",
+      "field": "authors",
+      "originalValue": "HBB:",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5450",
+      "field": "authors",
+      "originalValue": "FLT3-ITD",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5700",
+      "field": "authors",
+      "originalValue": "GATA3",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5731",
+      "field": "authors",
+      "originalValue": "NPM1",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5779",
+      "field": "authors",
+      "originalValue": "LAMP5",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "3565",
+      "field": "authors",
+      "originalValue": "MYB::GATA1",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5218",
+      "field": "authors",
+      "originalValue": "NUDT15.",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5495",
+      "field": "authors",
+      "originalValue": "TPMT",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5852",
+      "field": "authors",
+      "originalValue": "TBL1XR1",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5868",
+      "field": "authors",
+      "originalValue": "EZH2",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "6131",
+      "field": "authors",
+      "originalValue": "P2RY8::CRLF2",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4857",
+      "field": "authors",
+      "originalValue": "PATIENT BLOOD MANAGEMENT.",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4223",
+      "field": "authors",
+      "originalValue": "PROS1",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4346",
+      "field": "authors",
+      "originalValue": "Bothrops",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4388",
+      "field": "authors",
+      "originalValue": "Latin American Training Program (LATP)",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "3489",
+      "field": "authors",
+      "originalValue": "in natura",
+      "normalizedValue": [
+        "Samara Aor dos Santos de Carvalho",
+        "Aline Cristina Souza da Silva",
+        "Anna Cecília Dias Maciel Carneiro",
+        "Fernanda Bernadelli De Vito"
+      ],
+      "reason": "O campo da listagem contém uma expressão do título; autores recuperados do detalhe oficial já salvo."
+    },
+    {
+      "id": "5328",
+      "field": "authors",
+      "originalValue": "Crotalus durissus",
+      "normalizedValue": [
+        "Marcos Francisco Miranda Cruz",
+        "Roberto Brito Marques",
+        "Fernanda Bernadelli De Vito",
+        "Aline Cristina Souza da Silva",
+        "Anna Cecília Dias Maciel Carneiro"
+      ],
+      "reason": "O campo da listagem contém uma expressão do título; autores recuperados do detalhe oficial já salvo."
+    },
+    {
+      "id": "5526",
+      "field": "authors",
+      "originalValue": "NFKB2",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "4197",
+      "field": "authors",
+      "originalValue": "Candida",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "6023",
+      "field": "authors",
+      "originalValue": "Upfront",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "6348",
+      "field": "authors",
+      "originalValue": "Plasmodium falciparum",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "5197",
+      "field": "authors",
+      "originalValue": "CYP3A4*1B",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    },
+    {
+      "id": "3567",
+      "field": "authors",
+      "originalValue": "HEMOBOT",
+      "normalizedValue": [],
+      "reason": "O campo da listagem contém uma expressão técnica do título, não um nome; detalhe não capturado, portanto autores permanecem pendentes."
+    }
+  ],
+  "limitations": [
+    "A área individual só foi atribuída quando aparece no detalhe oficial já salvo; não houve inferência por ordem dos IDs ou por contagem acumulada.",
+    "O PDF complementar foi preservado e teve metadados conferidos, mas não foi convertido integralmente nesta rodada.",
+    "Detalhes pendentes ou bloqueados não foram requisitados novamente."
+  ]
+}
