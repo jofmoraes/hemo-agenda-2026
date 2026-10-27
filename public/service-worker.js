@@ -1,8 +1,8 @@
 // Only this app's public assets and HEMO cache namespace are managed.
-const CACHE='hemo2026:public:b2public1-v1';
-const SHELL=['/','/index.html','/b18.css','/b18.js','/schedule.json','/schedule-utils.js','/schedule-mode.js','/logo-hemo.svg','/icon-192.png','/icon-512.png','/manifest.webmanifest'];
+const CACHE='hemo2026:public:b3app1-v1';
+const SHELL=['/','/index.html','/b18.css','/b18.js','/schedule.json','/schedule-utils.js','/schedule-mode.js','/works-utils.js','/works-catalog.json','/logo-hemo.svg','/icon-192.png','/icon-512.png','/manifest.webmanifest'];
 const CODE=new Set(['/','/index.html','/b18.css','/b18.js','/schedule-utils.js','/schedule-mode.js','/manifest.webmanifest']);
-const DATA=new Set(['/schedule.json','/preview-schedule.json']);
+const DATA=new Set(['/schedule.json','/preview-schedule.json','/works-catalog.json']);
 
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 

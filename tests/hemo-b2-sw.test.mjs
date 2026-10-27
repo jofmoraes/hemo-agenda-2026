@@ -33,7 +33,7 @@ test('UX2: rotates only HEMO caches after a browser was controlled by the previo
  await h.dispatch('install');
  await h.dispatch('activate');
  const names=await h.caches.keys();
- assert.ok(names.includes('hemo2026:public:b2public1-v1'));
+ assert.ok(names.includes('hemo2026:public:b3app1-v1'));
  assert.ok(!names.includes('hemo2026:public:b2w2-v1'));
  assert.ok(names.includes('conahp:public:legacy'));
  assert.ok(names.includes('riw:public:legacy'));
@@ -43,7 +43,7 @@ test('UX2: rotates only HEMO caches after a browser was controlled by the previo
 
 test('UX2: code assets are network-first with safe cached fallback and preview stays opt-in',async()=>{
  const h=harness();
- assert.match(sw,/const CACHE='hemo2026:public:b2public1-v1'/);
+ assert.match(sw,/const CACHE='hemo2026:public:b3app1-v1'/);
  assert.match(sw,/const CODE=new Set/);
  assert.match(sw,/function networkFirst/);
  assert.doesNotMatch(sw,/const SHELL=\[[^\]]*preview-schedule\.json/);
@@ -54,7 +54,7 @@ test('UX2: code assets are network-first with safe cached fallback and preview s
 
 test('UX2-R1: offline code uses its own cache and never falls back to HTML',async()=>{
  const h=harness({fetchImpl:async()=>{throw new Error('offline')}});
- const cache=await h.caches.open('hemo2026:public:b2public1-v1');
+ const cache=await h.caches.open('hemo2026:public:b3app1-v1');
  await cache.put({url:'https://hemo.test/b18.js'},new Response('cached-js',{status:200,headers:{'Content-Type':'text/javascript'}}));
  const response=await h.dispatch('fetch',{request:{method:'GET',mode:'cors',url:'https://hemo.test/b18.js'}});
  assert.equal(response.status,200);
@@ -68,13 +68,13 @@ test('UX2-R1: offline code cache miss returns 503 and is not cached',async()=>{
  assert.equal(response.status,503);
  assert.match(response.headers.get('Content-Type'),/text\/plain/);
  assert.doesNotMatch(await response.text(),/<html/i);
- const cache=await h.caches.open('hemo2026:public:b2public1-v1');
+ const cache=await h.caches.open('hemo2026:public:b3app1-v1');
  assert.equal(await cache.match({url:'https://hemo.test/b18.css'}),undefined);
 });
 
 test('UX2-R1: offline navigation may use the cached HTML shell',async()=>{
  const h=harness({fetchImpl:async()=>{throw new Error('offline')}});
- const cache=await h.caches.open('hemo2026:public:b2public1-v1');
+ const cache=await h.caches.open('hemo2026:public:b3app1-v1');
  await cache.put('/index.html',new Response('<!doctype html><title>cached shell</title>',{status:200,headers:{'Content-Type':'text/html'}}));
  const response=await h.dispatch('fetch',{request:{method:'GET',mode:'navigate',url:'https://hemo.test/?preview=1'}});
  assert.equal(response.status,200);

@@ -35,3 +35,12 @@
 - Atualizados manifesto, theme/background color, atalho `/?preview=1`, tela HTML de primeira pintura e redirect condicional da raiz exclusivamente para o projeto público.
 - Versionado o cache para `hemo2026:public:b2public1-v1`; `schedule.json` permanece `pending_b2` e a prévia permanece parcial.
 - Testes locais: `npm test` 46/46, `npm run check` e `npm run check:preview` passaram; smoke Chromium HTTP em 390x844 e 1280x900, incluindo captura com CSS/JS atrasados e cache vazio simulado.
+
+## 2026-10-27 — HEMO B3-APP1
+
+- Criada a aba independente `Trabalhos científicos` a partir da base funcional pública, sem alterar `main`, Vercel ou a programação atual.
+- Adicionado catálogo público compacto com 1.987 registros e 1.987 IDs únicos, carregamento progressivo de 30 itens por página, busca, filtros de dia/modalidade e filtro único `Trabalhos GSH`.
+- GSH operacional: 27 registros (7 autoria, 14 instituição explícita e 6 relacionados pelo título); falso positivo 3566 e cinco leads offline insuficientes permanecem excluídos.
+- Preferências de interesse e UI dos trabalhos usam namespace próprio e entram no backup sem tocar preferências de sessões. O ID 3855 permanece com horário a confirmar.
+- Cache HEMO foi versionado para `hemo2026:public:b3app1-v1` e inclui apenas os recursos necessários do catálogo.
+- `npm test` 51/51, `npm run check` e `npm run check:preview` passaram; smoke Chromium local realizado em 360, 390, 430 e 1280 px.

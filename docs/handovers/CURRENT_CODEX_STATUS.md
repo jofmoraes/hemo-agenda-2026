@@ -77,3 +77,15 @@
 - Dados preservados: `schedule.json` continua `pending_b2`/0; prévia continua 121 sessões, 42 falas e 66 salas a confirmar.
 - Testes: `npm test` 46/46 PASS; `npm run check` PASS; `npm run check:preview` PASS; smoke Chromium local PASS em 390x844 e 1280x900; splash com assets CSS/JS atrasados capturado.
 - Pendente: commit/push, único deployment público, QA anônimo online e testes de instalação real Android/iPhone; marcar NOT_RUN quando dispositivo não estiver disponível.
+
+## HEMO B3-APP1 — Integração local dos trabalhos científicos
+
+- Status: implementação local concluída e pronta para auditoria independente; nenhum deployment/redeploy foi feito.
+- Branch: `feat/hemo-b3-app1-works`.
+- Bases: aplicativo `0e9c360e70d2eb9fd9051b991becf84387bc8c1b`; inventário B3 `8d6e24d6be9957ac47e03fdb2c4d2029c56e41c7`.
+- Catálogo: `public/works-catalog.json`, 1.987 registros, 1.987 IDs únicos, 1.802.540 bytes; sem JSON bruto, HTML integral, resumos ou dados de depuração.
+- GSH: 27 no filtro único (`7` autoria, `14` instituição, `6` título pendente); ID 3566 excluído e leads 4264/4097/5894/5626/4067 mantidos fora.
+- Interface: aba separada, busca, dia, modalidade, filtro GSH, trabalhos salvos, paginação de 30 e namespace próprio de preferências/backup.
+- Validação: `npm test` 51/51 PASS; `npm run check` PASS; `npm run check:preview` PASS; Chromium local PASS em 360/390/430/1280 px, com persistência de trabalho após recarga.
+- Restrições: sem alteração de `main`, CONAHP, Vercel, programação, curadoria Flora ou preferências de sessões; publicação e PWA físico NOT_RUN.
+- Próximo passo: auditoria independente do orquestrador antes de qualquer publicação.

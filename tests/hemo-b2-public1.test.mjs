@@ -52,7 +52,7 @@ test('PUBLIC1: first paint and cache use the public HEMO release identity',()=>{
  assert.match(html,/preload" href="\/logo-hemo\.svg"/);
  assert.match(html,/href="\/\?preview=0" id="exitPreview"/);
  const sw=read('public/service-worker.js').toString('utf8');
- assert.match(sw,/const CACHE='hemo2026:public:b2public1-v1'/);
+ assert.match(sw,/const CACHE='hemo2026:public:b3app1-v1'/);
  assert.doesNotMatch(sw,/hemo2026:public:b2ux2-v1|hemo2026:public:b2w2-v1/);
  assert.doesNotMatch(sw,/localStorage|sessionStorage/);
 });
