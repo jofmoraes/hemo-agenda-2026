@@ -52,3 +52,4 @@
 - Proveniência WORKS4 incorporada ao relatório público de validação, mantendo 27 trabalhos GSH, 3855 como horário a confirmar e 3566 fora da associação Eduardo.
 - Backup antigo sem `works` continua válido; backup novo preserva namespaces separados, merge não destrutivo e tratamento explícito de armazenamento indisponível.
 - Evidências Chromium versionadas em `docs/evidence/hemo-b3-final1/`; `npm test` 58/58, `npm run check` e `npm run check:preview` passaram.
+- Publicação controlada concluída no projeto público existente: deployment `dpl_Az7QQaLt29Ynkz4MZ1DvEugXAsfT`, SHA `e04833a861c016885ec8f4aa8a7396e21247918d`, alias `https://hemo-flora-2026.vercel.app`; QA protegido permaneceu sem alteração.

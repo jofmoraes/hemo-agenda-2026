@@ -92,11 +92,14 @@
 
 ## HEMO B3-FINAL1 — Hardening e release público
 
-- Status: hardening local concluído; deployment público condicionado ao preflight final e ao único gate de publicação autorizado na Issue #4.
+- Status: release público concluído e verificado; pronto para revisão do orquestrador na Issue #4.
 - Branch: `feat/hemo-b3-final1-release`, baseada exatamente em `3df073a088188a04bf3f8e201c24c94f3d5a96e9`.
 - Projeto público autorizado: `hemo-flora-2026` (`prj_3oTPmcroB9IeJZ4FAxSoyW8yEmsC`), equipe `team_Wqr8VqX0PftIKdW6x5jZciqo`; projeto QA protegido não foi alterado.
 - Preflight Vercel: CLI 58.10.0 autenticada na conta/equipe corretas; projeto confirmado por ID; plano Hobby sem indicação de custo; Git autodeploy desabilitado; deployment anterior READY e alias preservados; exatamente um deployment anterior antes da publicação.
 - Catálogo: 1.987 IDs únicos, 27 GSH, 1.802.540 bytes, carregamento sob demanda; validação WORKS4 preserva 40 assuntos, 110 orais recuperados, 3855 anômalo e 3566 excluído.
 - QA local: `npm test` 58/58, `npm run check`, `npm run check:preview`; Chromium em 360/390/430/1280; normal `pending_b2` com 0 sessões; prévia 121/42/66; GSH 27; última página 67/67 com 7; preferência de trabalho sobreviveu a reload; console sem erros.
 - Evidências visuais: `docs/evidence/hemo-b3-final1/`; hashes distintos para normal/GSH e viewports 360/390/430/1280.
-- Pendências antes do release: commit/push, único deployment público, readback de alias/deployment e smoke anônimo HTTPS; Android/iPhone físico permanece NOT_RUN se não houver dispositivos disponíveis.
+- Release: deployment único `dpl_Az7QQaLt29Ynkz4MZ1DvEugXAsfT`, READY/PROMOTED, target production, alias `https://hemo-flora-2026.vercel.app`, SHA `e04833a861c016885ec8f4aa8a7396e21247918d`.
+- Smoke público anônimo: redirect raiz para `/?preview=1`; HTML, schedule normal, preview schedule, catálogo, manifest, SW e ícones retornaram 200 quando aplicável; 1.987/27 e 121/42/66 confirmados; navegador em 390 px sem overflow e console sem erros.
+- Alias anterior `hemo-flora-2026.vercel.app` deixou de apontar ao deployment antigo conforme a promoção autorizada; o deployment antigo permaneceu no histórico. O QA protegido permaneceu com suas configurações e deployments sem alteração deliberada.
+- Pendência: instalação física Android/iPhone e teste offline de dispositivo não foram executados (`NOT_RUN`); a versão continua parcial e não declara completude científica.

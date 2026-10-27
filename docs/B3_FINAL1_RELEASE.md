@@ -30,6 +30,12 @@ Este documento registra o gate local e o plano de publicação da Issue #4. A ve
 - Chromium local: 360, 390, 430 e 1280 px; busca, GSH, paginação, persistência após reload, raiz normal, prévia e console sem erros.
 - Capturas: [`docs/evidence/hemo-b3-final1/`](evidence/hemo-b3-final1/).
 
-## Publicação autorizada
+## Publicação verificada
 
-Executar no máximo um deployment no projeto público existente, sem domínio novo, Git autodeploy, alteração de QA ou upgrade. Após o deployment, fazer readback de ID/target/SHA, confirmar o alias `https://hemo-flora-2026.vercel.app`, e realizar smoke HTTPS anônimo sem expor credenciais. Se um gate crítico falhar, não insistir: rollback somente no próprio projeto quando indispensável e classificar `HEMO_B3_FINAL1_SAFE_ABORT`.
+- Deployment único: `dpl_Az7QQaLt29Ynkz4MZ1DvEugXAsfT`.
+- Estado/target: `READY` / `PROMOTED` / `production`.
+- SHA: `e04833a861c016885ec8f4aa8a7396e21247918d`.
+- URL canônica verificada: [`https://hemo-flora-2026.vercel.app`](https://hemo-flora-2026.vercel.app), com `/` redirecionando para `/?preview=1`.
+- Smoke HTTPS anônimo confirmou HTML, dados, catálogo 1.987/27, manifest, SW e ícones; navegador 390 px confirmou prévia, abas e ausência de overflow/erros de console.
+- O projeto QA protegido não foi alterado. Nenhum upgrade, integração Git, PR, Code Review ou segundo deployment foi feito.
+- Instalação Android/iPhone e offline em dispositivo físico: `NOT_RUN`.
